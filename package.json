@@ -2,7 +2,7 @@
   "name": "greens_pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://flmath.github.io/green_pages/",
+  "homepage": "https://flmath.github.io/greens_pages/",
   "dependencies": {
     "react": "16.8.3",
     "react-dom": "16.8.3",
