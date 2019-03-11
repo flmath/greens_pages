@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Game from './Game';
+import MainFrame from './MainFrame';
 
 ReactDOM.render(
-  <Game />,
+  <MainFrame />,
   document.getElementById('root')
 );
