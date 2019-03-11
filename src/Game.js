@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { Button } from 'reactstrap';
 
 function Square(props) {
   return (
@@ -36,7 +37,16 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-      </div>
+
+      <Button
+          tag="a"
+          color="success"
+          size="large"
+          href="http://reactstrap.github.io"
+          target="_blank" >
+          View Reactstrap Docs
+       </Button>
+       </div>
     );
   }
 }
@@ -113,7 +123,7 @@ class Game extends React.Component {
           <ol>{moves}</ol>
         </div>
       </div>
-      
+
     );
   }
 }
