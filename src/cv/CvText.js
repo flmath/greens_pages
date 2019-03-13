@@ -13,12 +13,18 @@ class CvText extends React.Component {
     render() {
       return (
         <div>
-        <PersonalInfo></PersonalInfo>
-        <Skills></Skills>
-        <Experience></Experience>
-        <Education></Education>
-        <Certicicates></Certicicates>
-        <Interests></Interests>
+        <hr/>
+          <PersonalInfo></PersonalInfo>
+        <hr/>
+          <Skills></Skills>
+        <hr/>
+          <Experience></Experience>
+        <hr/>
+          <Education></Education>
+        <hr/>
+          <Certicicates></Certicicates>
+        <hr/>
+          <Interests></Interests>
       </div>
       );
     }
