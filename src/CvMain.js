@@ -6,7 +6,7 @@ import CvText from './CvText';
 class CvMain extends React.Component {
   constructor(props) {
       super(props);
-
+    }
     render() {
       return (
         <div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import CvMain from './CvMain';
 
+const Box = props => <div className="box">{props.children} </div>;
 class MainFrame extends React.Component {
   constructor(props) {
       super(props);
