@@ -1,46 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-
-const ColKey = props => <Col
-xs={{ size: 0, offset: 0 }}
-sm={{ size: 0, offset: 0 }}
-md={{ size: 5, offset: 1 }}
-lg={{ size: 5, offset: 1 }}
-xl={{ size: 5, offset: 1 }}
->
-{props.children} </Col>;
-const ColVal = props => <Col
-  xs={{ size: 0, offset: 0 }}
-  sm={{ size: 0, offset: 0 }}
-  md={{ size: 6, offset: 0 }}
-  lg={{ size: 6, offset: 0 }}
-  xl={{ size: 6, offset: 0 }}>
-{props.children} </Col>;
-
-const ColData = props => <Col
-  xs={{ size: 12, offset: 0 }}
-  sm={{ size: 12, offset: 0 }}
-  md={{ size: 6, offset: 2 }}
-  lg={{ size: 6, offset: 2 }}
-  xl={{ size: 6, offset: 2 }}>
-{props.children} </Col>;
-
-const ColPic = props => <Col
-  xs={{ size: 0, offset: 0 }}
-  sm={{ size: 0, offset: 0 }}
-  md={{ size: 4, offset: 0 }}
-  lg={{ size: 4, offset: 0 }}
-  xl={{ size: 4, offset: 0 }}>
-{props.children} </Col>;
-
-const ColHalf = props => <Col
-  xs={{ size: 5, offset: 0 }}
-  sm={{ size: 5, offset: 0 }}
-  md={{ size: 5, offset: 0 }}
-  lg={{ size: 5, offset: 0 }}
-  xl={{ size: 5, offset: 0 }}>
-{props.children} </Col>;
-
+import {ColKey, ColVal, ColData, ColPic, ColHalf} from './support';
+import face from './face.png';
 
 export default class PersonalInfo extends React.Component {
   constructor(props) {
@@ -100,7 +61,7 @@ export default class PersonalInfo extends React.Component {
    	</Row>
          </ColData>
          <ColPic>
-   	<img src="includes/face.jpg" class="img-thumbnail" alt="Photo of me."/>
+   	<img src={face} class="img-thumbnail" alt="Photo of me."/>
          </ColPic>
    </Row> </Container>
      </div>
