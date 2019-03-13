@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import CvMain from './CvMain';
+import CvMain from './cv/CvMain';
 
 const Box = props => <div className="box">{props.children} </div>;
 class MainFrame extends React.Component {

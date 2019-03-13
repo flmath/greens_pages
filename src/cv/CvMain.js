@@ -20,7 +20,7 @@ class CvMain extends React.Component {
           <CvNav></CvNav>
         </Col>
         <Col>
-          <CvText></CvText>
+          <CvText> </CvText>
         </Col>
         </Row>
         </div>
