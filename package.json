@@ -5,9 +5,11 @@
   "homepage": "https://flmath.github.io/greens_pages/",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "npm": "^6.9.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
+    "react-scrollspy": "^3.4.0",
     "reactstrap": "^7.1.0"
   },
   "scripts": {
