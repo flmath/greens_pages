@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Col, Row} from "reactstrap";
+import {Container} from "reactstrap";
 export default function Interests(props) {
   return (
     <div class="personal_container_tint">

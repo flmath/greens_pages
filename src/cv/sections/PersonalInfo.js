@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col} from 'reactstrap';
+import {Container, Row} from 'reactstrap';
 import {ColKey, ColVal, ColData, ColPic, ColHalf} from './ReactstrapSupport';
 import face from './face.png';
 
@@ -57,7 +57,7 @@ export default function PersonalInfo(props) {
             </Row>
           </ColData>
           <ColPic>
-            <img src={face} class="img-thumbnail" alt="Photo of me."/>
+            <img src={face} class="img-thumbnail" alt="Here should be my face."/>
           </ColPic>
         </Row>
       </Container>
