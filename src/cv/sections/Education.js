@@ -1,15 +1,20 @@
-import React from 'react';
-
-export default class Education extends React.Component {
-  constructor(props) {
-      super(props);
-    }
-    render() {
-      return (
-        <div>
-
-        Education
-        </div>
-      );
-    }
-  }
+import React from "react";
+import {ColOff} from "./ReactstrapSupport";
+import {Container, Col, Row} from "reactstrap";
+export default function Education(props) {
+  return (
+    <div class="personal_container_tint">
+      <Container>
+        <Row>
+          <ColOff>2011:</ColOff>
+          <Col>
+            Faculty of Mathematics and Computer Science of the Jagiellonian
+            University:
+            <br />
+            Master of Science in Computational Mathematics
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+}
