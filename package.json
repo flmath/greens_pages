@@ -11,7 +11,7 @@
     "react-dom": "^16.8.4",
     "react-scripts": "^2.1.8",
     "react-scrollspy": "^3.4.0",
-    "reactstrap": "^7.1.0"  
+    "reactstrap": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
