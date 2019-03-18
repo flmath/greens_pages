@@ -6,11 +6,7 @@ import Education from './sections/Education';
 import Certicicates from './sections/Certificates';
 import Interests from './sections/Interests';
 
-class CvText extends React.Component {
-  constructor(props) {
-      super(props);
-    }
-    render() {
+function CvText(props) {
       return (
         <div>
         <hr/>
@@ -27,7 +23,6 @@ class CvText extends React.Component {
           <Interests></Interests>
       </div>
       );
-    }
   }
 
 export default CvText;
