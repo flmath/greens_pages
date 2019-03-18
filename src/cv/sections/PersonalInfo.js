@@ -5,7 +5,7 @@ import face from './face.png';
 
 export default function PersonalInfo(props) {
   return (<div class="personal_container_tint">
-    <Container fluid="true">
+    <Container fluid={'true'}>
       <Container >
         <Row>
           <ColData>
@@ -57,7 +57,7 @@ export default function PersonalInfo(props) {
             </Row>
           </ColData>
           <ColPic>
-            <img src={face} class="img-thumbnail" alt="Here should be my face."/>
+            <img src={face} className="img-thumbnail" alt="Here should be my face."/>
           </ColPic>
         </Row>
       </Container>
