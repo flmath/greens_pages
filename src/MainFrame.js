@@ -14,9 +14,8 @@ function MainFrame(props) {
         <div id="the_body">
           <CvMain></CvMain>
         </div></div>
-
       );
-    
+  
   }
 
 export default MainFrame;
