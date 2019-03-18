@@ -10,6 +10,7 @@ class MainFrame extends React.Component {
 
     render() {
       return (
+
         <div id="topdiv">
 
         <Navbar   id="navbar" >
@@ -18,6 +19,7 @@ class MainFrame extends React.Component {
         <div id="the_body">
           <CvMain></CvMain>
         </div></div>
+
       );
     }
   }
