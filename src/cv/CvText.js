@@ -14,13 +14,13 @@ class CvText extends React.Component {
       return (
         <div>
         <hr/>
-          <PersonalInfo></PersonalInfo>
+          <section id="section-1"> <PersonalInfo></PersonalInfo></section>
         <hr/>
           <Skills></Skills>
         <hr/>
           <Experience></Experience>
         <hr/>
-          <Education></Education>
+        <section id="section-2">  <Education></Education></section>
         <hr/>
           <Certicicates></Certicicates>
         <hr/>

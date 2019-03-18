@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Navbar } from 'reactstrap';
 import CvMain from './cv/CvMain';
 
 const Box = props => <div className="box">{props.children} </div>;
@@ -10,12 +10,14 @@ class MainFrame extends React.Component {
 
     render() {
       return (
-        <div><Container fluid="true">
-        <Row>
-            <Col><Box> .col </Box></Col>
-        </Row>
-        <CvMain></CvMain>
-    </Container></div>
+        <div id="topdiv">
+
+        <Navbar   id="navbar" >
+            <Box> .col </Box>
+        </Navbar>
+        <div id="the_body">
+          <CvMain></CvMain>
+        </div></div>
       );
     }
   }

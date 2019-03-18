@@ -1,3 +1,12 @@
+
+
+
+/*#topdiv {position: static;  top: 0px;}
+#cvcontainer{position: static; top: 0px;}
+#cvrow{position: static; top: 0px;}*/
+
+
+
 .ColOffClass {
   position: absolute;
   top: 50%;
@@ -62,33 +71,7 @@
 
 
 
-body {
-  position: relative;
-}
 
-
-body::after {
-    content: "";
-    background-image: url('cv/mebg2.png');
-    opacity: 0.20;
-    filter: alpha(opacity=20);
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-  /*    background-position: 65%; */
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-.background-tint {
-  background-color: rgba(228,235,244,.8);
-  background-blend-mode: multiply;
-}
 
 hr {
     border-color: rgba(83,192,240,1);
@@ -140,3 +123,93 @@ h3 {
     color: #fff;
     background-color: rgb(212,175,55);
 }
+
+body {
+  position: relative;
+}
+
+
+body::after {
+    content: "";
+    background-image: url('cv/mebg2.png');
+    opacity: 0.20;
+    filter: alpha(opacity=20);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /*background-position: 65%;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 0;
+    left: 0;
+    /*  bottom: -100px; in media part */
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.background-tint {
+  background-color: rgba(228,235,244,.8);
+  background-blend-mode: multiply;
+}
+
+
+
+/*Tiny bootstraps xs*/
+@media (min-width: 0px) {
+#navbar{position: fixed; top: 0px; height: 30px; width: 100%; z-index: 2}}
+@media (min-width: 0px) {
+#navcol{ position: fixed; top: 30px; left: 0; width: 20%; z-index: 1}
+ }
+ @media (min-width: 0px) {
+#the_body{ position: relative; top: 30px; left: 20%; width: 80%; z-index: 0}
+  }
+@media (min-width: 0px) {
+body::after { bottom: -30px;}}
+
+/* Small bootstraps sm*/
+@media (min-width: 576px) {
+#navbar{height: 90px}}
+@media (min-width: 576px) {
+#navcol{ top: 90px; width: 20%}
+ }
+@media (min-width: 576px) {
+#the_body{top: 90px}
+ }
+@media (min-width: 576px) {
+  body::after {   bottom: -90px;}}
+
+/* Medium devices (tablets, 768px and up) bootstraps md*/
+@media (min-width: 768px) {
+#navbar{ height: 100px}}
+@media (min-width: 768px) {
+#navcol{ top: 100px; width: 20% }
+ }
+@media (min-width: 768px) {
+#the_body{top: 100px }
+}
+@media (min-width: 768px) {
+body::after {  bottom: -100px;}}
+
+/* Large devices (desktops, 992px and up) bootstraps lg*/
+@media (min-width: 992px) {
+#navbar{height: 100px}}
+@media (min-width: 992px) {
+#navcol{top: 100px; width: 20% }
+ }
+@media (min-width: 992px) {
+#the_body{ top: 100px }
+}
+@media (min-width: 992px) {
+body::after { bottom: -100px;}}
+
+/* Extra large devices (large desktops, 1200px and up) bootstraps xl*/
+@media (min-width: 1200px) {
+#navbar{ height: 100px}}
+@media (min-width: 1200px) {
+#navcol{top: 100px; width: 20% }
+}
+@media (min-width: 1200px) {
+#the_body{top: 100px }
+}
+@media (min-width: 1200px) {
+body::after { bottom: -100px;}}
