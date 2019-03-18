@@ -24,5 +24,4 @@ function CvText(props) {
       </div>
       );
   }
-
 export default CvText;
