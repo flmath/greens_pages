@@ -5,6 +5,7 @@
   "homepage": "https://flmath.github.io/greens_pages/",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "jquery": "^1.9.1",
     "npm": "^6.9.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
