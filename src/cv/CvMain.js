@@ -3,8 +3,7 @@ import {Container, Row, Col } from 'reactstrap';
 
 import CvText from './CvText';
 
-import { Nav, NavItem, Navbar, DropdownItem,
-        DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 import Scrollspy from 'react-scrollspy'
 
 class CvMain extends React.Component {
