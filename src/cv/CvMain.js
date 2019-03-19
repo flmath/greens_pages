@@ -6,25 +6,7 @@ import CvText from "./CvText";
 import { NavLink } from "reactstrap";
 import Scrollspy from "react-scrollspy";
 
-class CvMain extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      activeTab: "1"
-    };
-  }
-
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab
-      });
-    }
-  }
-
-  render() {
+function CvMain(props) {
     return (
       <div id="cvmaindiv">
         <Container fluid id="cvcontainer">
@@ -64,7 +46,6 @@ class CvMain extends React.Component {
         </Container>
       </div>
     );
-  }
 }
 
 export default CvMain;
