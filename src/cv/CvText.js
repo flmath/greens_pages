@@ -10,28 +10,28 @@ import Interests from "./sections/Interests";
 function CvText(props) {
   return (
     <div>
-      <CvHeader>Personal Info</CvHeader>
       <section id="PersonalInfo">
+      <CvHeader>Personal Info</CvHeader>
         <PersonalInfo />
       </section>
-      <CvHeader>Skills</CvHeader>
       <section id="Skills">
+      <CvHeader>Skills</CvHeader>
         <Skills />
       </section>
-      <CvHeader>Experience</CvHeader>
       <section id="Experience">
+      <CvHeader>Experience</CvHeader>
         <Experience />
       </section>
-      <CvHeader>Education</CvHeader>
       <section id="Education">
+      <CvHeader>Education</CvHeader>
         <Education />
       </section>
-      <CvHeader>Certicicates</CvHeader>
       <section id="Certificates">
+      <CvHeader>Certicicates</CvHeader>
         <Certicicates />
       </section>
-      <CvHeader>Interests</CvHeader>
       <section id="Interests">
+      <CvHeader>Interests</CvHeader>
         <Interests />
       </section>
       <div id="empty_scroll"><br /></div>
