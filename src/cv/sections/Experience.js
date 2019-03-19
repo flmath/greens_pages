@@ -3,9 +3,9 @@ import React from "react";
 export default function Experience(props) {
   return (
     <div>
-      <div class="timeline">
-        <div class="container_leafs left">
-          <div class="content">
+      <div className="timeline">
+        <div className="container_leafs left">
+          <div className="content">
             <h2>
               08/2015 to present
               <br />
@@ -21,8 +21,8 @@ export default function Experience(props) {
             </p>
           </div>
         </div>
-        <div class="container_leafs right">
-          <div class="content">
+        <div className="container_leafs right">
+          <div className="content">
             <h2>
               08/2015 to present
               <br />
@@ -35,8 +35,8 @@ export default function Experience(props) {
             </p>
           </div>
         </div>
-        <div class="container_leafs left">
-          <div class="content">
+        <div className="container_leafs left">
+          <div className="content">
             <h2>
               01/2014 to 06/2015
               <br />
@@ -52,8 +52,8 @@ export default function Experience(props) {
             </p>
           </div>
         </div>
-        <div class="container_leafs left">
-          <div class="content">
+        <div className="container_leafs left">
+          <div className="content">
             <h2>
               05/2012 to 12/2013
               <br />
@@ -67,8 +67,8 @@ export default function Experience(props) {
             </p>
           </div>
         </div>
-        <div class="container_leafs right">
-          <div class="content">
+        <div className="container_leafs right">
+          <div className="content">
             <h2>
               02/2012 to 07/2015
               <br />

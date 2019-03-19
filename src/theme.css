@@ -80,7 +80,7 @@ h3 span {
 
 h1, h2 {
   font-weight: 700;
-  color: blacks;
+  color: black;
   background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
@@ -89,32 +89,45 @@ h1, h2 {
 
 h3 {
 
-  color: blacks;
+  color: black;
   background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
    background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
 }
 
-.nav {
+section {
+  padding-top: 40px 0;
+  color: #041e2d;
+  font-size: 17px;
+  /* padding-bottom: 120px;  */
+
+}
+
+section:last-child {
+  border-bottom: none;
+  padding-bottom: 450px;
+}
+
+a.nav-link{
     font-size: 20px;
 }
 
-.nav a {
+a.nav-link{
     color: white;
     background-color: rgba(83,192,240,0.8);
 }
 
-.nav li a:hover {
+a.nav-link:hover {
     color: #000;
     background-color: rgba(185,229,243,1);
 }
-.nav li a:focus {
+a.nav-link:focus {
     color: #fff;
     background-color: rgb(80,89,97);
 }
 
-.nav .active a{
+ a.active.nav-link {
     color: #fff;
     background-color: rgb(212,175,55);
 }
@@ -127,8 +140,8 @@ body {
 body::after {
     content: "";
     background-image: url('cv/mebg2.png');
-    opacity: 0.20;
-    filter: alpha(opacity=20);
+    opacity: 0.30;
+    filter: alpha(opacity=30);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     /*background-position: 65%;*/
@@ -151,60 +164,60 @@ body::after {
 
 /*Tiny bootstraps xs*/
 @media (min-width: 0px) {
-#navbar{position: fixed; top: 0px; height: 30px; width: 100%; z-index: 2}}
+  #navbar{position: fixed; top: 0px; height: 30px; width: 100%; z-index: 2}}
 @media (min-width: 0px) {
-#navcol{ position: fixed; top: 30px; left: 0; width: 20%; z-index: 1}
- }
- @media (min-width: 0px) {
-#the_body{ position: relative; top: 30px; left: 20%; width: 80%; z-index: 0}
-  }
+  #navcol{ position: fixed; top: 30px; left: 0; width: 20%; z-index: 1}}
 @media (min-width: 0px) {
-body::after { bottom: -30px;}}
+  #the_body{ position: relative; top: 30px; left: 20%; width: 80%; z-index: 0}}
+@media (min-width: 0px) {
+  body::after { bottom: -30px;}}
+@media (min-width: 0px) {
+  #empty_scroll {padding-bottom: 40px;}}
 
 /* Small bootstraps sm*/
 @media (min-width: 576px) {
-#navbar{height: 90px}}
+  #navbar{height: 90px}}
 @media (min-width: 576px) {
-#navcol{ top: 90px; width: 20%}
- }
+  #navcol{ top: 90px; width: 20%}}
 @media (min-width: 576px) {
-#the_body{top: 90px}
- }
+  #the_body{top: 90px}}
 @media (min-width: 576px) {
-  body::after {   bottom: -90px;}}
+  body::after { bottom: -90px;}}
+@media (min-width: 576px) {
+  #empty_scroll {padding-bottom: 95px;}}
 
 /* Medium devices (tablets, 768px and up) bootstraps md*/
 @media (min-width: 768px) {
-#navbar{ height: 100px}}
+  #navbar{ height: 100px}}
 @media (min-width: 768px) {
-#navcol{ top: 100px; width: 20% }
- }
+  #navcol{ top: 100px; width: 20% }}
 @media (min-width: 768px) {
-#the_body{top: 100px }
-}
+  #the_body{top: 100px }}
 @media (min-width: 768px) {
-body::after {  bottom: -100px;}}
+  body::after {  bottom: -100px;}}
+@media (min-width: 768px) {
+  #empty_scroll {padding-bottom: 350px;}}
 
 /* Large devices (desktops, 992px and up) bootstraps lg*/
 @media (min-width: 992px) {
-#navbar{height: 100px}}
+  #navbar{height: 100px}}
 @media (min-width: 992px) {
-#navcol{top: 100px; width: 20% }
- }
+  #navcol{top: 100px; width: 20% }}
 @media (min-width: 992px) {
-#the_body{ top: 100px }
-}
+  #the_body{ top: 100px }}
 @media (min-width: 992px) {
-body::after { bottom: -100px;}}
+  body::after { bottom: -100px;}}
+@media (min-width: 992px) {
+    #empty_scroll {padding-bottom: 450px;}}
 
 /* Extra large devices (large desktops, 1200px and up) bootstraps xl*/
 @media (min-width: 1200px) {
-#navbar{ height: 100px}}
+  #navbar{ height: 100px}}
 @media (min-width: 1200px) {
-#navcol{top: 100px; width: 20% }
-}
+  #navcol{top: 100px; width: 20%}}
 @media (min-width: 1200px) {
-#the_body{top: 100px }
-}
+  #the_body{top: 100px }}
+@media (min-width: 1200px){
+  body::after { bottom: -100px;}}
 @media (min-width: 1200px) {
-body::after { bottom: -100px;}}
+  #empty_scroll {padding-bottom: 600px;}}

@@ -1,27 +1,41 @@
-import React from 'react';
-import PersonalInfo from './sections/PersonalInfo';
-import Skills from './sections/Skills';
-import Experience from './sections/Experience';
-import Education from './sections/Education';
-import Certicicates from './sections/Certificates';
-import Interests from './sections/Interests';
+import React from "react";
+import { CvHeader } from "./HeadersSupport";
+import PersonalInfo from "./sections/PersonalInfo";
+import Skills from "./sections/Skills";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Certicicates from "./sections/Certificates";
+import Interests from "./sections/Interests";
 
 function CvText(props) {
-      return (
-        <div>
-        <hr/>
-          <section id="section-1"> <PersonalInfo></PersonalInfo></section>
-        <hr/>
-          <Skills></Skills>
-        <hr/>
-          <Experience></Experience>
-        <hr/>
-        <section id="section-2">  <Education></Education></section>
-        <hr/>
-          <Certicicates></Certicicates>
-        <hr/>
-          <Interests></Interests>
-      </div>
-      );
-  }
+  return (
+    <div>
+      <CvHeader>Personal Info</CvHeader>
+      <section id="PersonalInfo">
+        <PersonalInfo />
+      </section>
+      <CvHeader>Skills</CvHeader>
+      <section id="Skills">
+        <Skills />
+      </section>
+      <CvHeader>Experience</CvHeader>
+      <section id="Experience">
+        <Experience />
+      </section>
+      <CvHeader>Education</CvHeader>
+      <section id="Education">
+        <Education />
+      </section>
+      <CvHeader>Certicicates</CvHeader>
+      <section id="Certificates">
+        <Certicicates />
+      </section>
+      <CvHeader>Interests</CvHeader>
+      <section id="Interests">
+        <Interests />
+      </section>
+      <div id="empty_scroll"><br /></div>
+    </div>
+  );
+}
 export default CvText;

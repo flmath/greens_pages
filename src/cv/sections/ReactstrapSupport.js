@@ -21,7 +21,7 @@ const ColOff = props => (
     lg={{size: 2, offset: 0}}
     xl={{size: 2, offset: 0}}
   >
-    <div class="ColOffClass">{props.children}</div>{" "}
+    <div className="ColOffClass">{props.children}</div>{" "}
   </Col>
 );
 

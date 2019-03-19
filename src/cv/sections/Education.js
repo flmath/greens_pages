@@ -3,7 +3,7 @@ import {ColOff} from "./ReactstrapSupport";
 import {Container, Col, Row} from "reactstrap";
 export default function Education(props) {
   return (
-    <div class="personal_container_tint">
+    <div className="personal_container_tint">
       <Container>
         <Row>
           <ColOff>2011:</ColOff>

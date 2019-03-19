@@ -2,7 +2,7 @@ import React from "react";
 import {Container} from "reactstrap";
 export default function Interests(props) {
   return (
-    <div class="personal_container_tint">
+    <div className="personal_container_tint">
       <Container>
         <p>
           Right now I'm reasearching possible matrix representations in
@@ -24,6 +24,7 @@ export default function Interests(props) {
           </a>
         </p>
       </Container>
+
     </div>
   );
 }

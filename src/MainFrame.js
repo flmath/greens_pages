@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar } from 'reactstrap';
+import {Navbar} from 'reactstrap';
 import CvMain from './cv/CvMain';
 
 const Box = props => <div className="box">{props.children} </div>;
@@ -15,7 +15,7 @@ function MainFrame(props) {
           <CvMain></CvMain>
         </div></div>
       );
-  
+
   }
 
 export default MainFrame;
