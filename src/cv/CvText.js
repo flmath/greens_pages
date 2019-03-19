@@ -27,7 +27,7 @@ function CvText(props) {
         <Education />
       </section>
       <section id="Certificates">
-      <CvHeader>Certicicates</CvHeader>
+      <CvHeader>Certificates</CvHeader>
         <Certicicates />
       </section>
       <section id="Interests">
