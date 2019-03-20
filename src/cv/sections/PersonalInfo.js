@@ -23,10 +23,6 @@ export default function PersonalInfo(props) {
                 <a href="mailto:flmathematic@gmail.com?subject=Hello,%20I%20have%20found%20your%20web%20CV!"
                    target="_top">flmathematic@gmail.com</a>
 
-
-
-
-
               </ColVal>
             </Row>
             <Row>
