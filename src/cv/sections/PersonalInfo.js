@@ -4,8 +4,8 @@ import {ColKey, ColVal, ColData, ColPic, ColHalf} from './ReactstrapSupport';
 import face from './face.png';
 
 export default function PersonalInfo(props) {
-  return (<div className="personal_container_tint">
-    <Container fluid={true}>
+  return (<div>
+
       <Container >
         <Row>
           <ColData>
@@ -67,7 +67,7 @@ export default function PersonalInfo(props) {
           </ColPic>
         </Row>
       </Container>
-    </Container>
+
   </div>);
 
 }

@@ -5,9 +5,9 @@ const ColData = props => (
   <Col
     xs={{size: 12, offset: 0}}
     sm={{size: 12, offset: 0}}
-    md={{size: 6, offset: 2}}
-    lg={{size: 6, offset: 2}}
-    xl={{size: 6, offset: 2}}
+    md={{size: 6, offset: 1}}
+    lg={{size: 6, offset: 1}}
+    xl={{size: 6, offset: 1}}
   >
     {props.children}{" "}
   </Col>
@@ -41,9 +41,9 @@ const ColPic = props => (
   <Col
     xs={{size: 0, offset: 0}}
     sm={{size: 0, offset: 0}}
-    md={{size: 4, offset: 0}}
-    lg={{size: 4, offset: 0}}
-    xl={{size: 4, offset: 0}}
+    md={{size: 4, offset: 1}}
+    lg={{size: 4, offset: 1}}
+    xl={{size: 4, offset: 1}}
   >
     {props.children}{" "}
   </Col>
