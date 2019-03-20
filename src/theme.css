@@ -1,4 +1,73 @@
 
+/*Tiny bootstraps xs*/
+@media (min-width: 0px) {
+  :root {
+    --main-font-size: 10px;
+  }
+  #navbar{position: fixed; top: 0px; height: 30px; width: 100%; z-index: 2}
+  #navcol{ position: fixed; top: 35px; left: 0; width: 20%; z-index: 1; visibility: collapse;}
+  #the_body{ position: relative; top: 0px; left: 20%; width: 70%; z-index: 0}
+  body::after { bottom: -30px;}
+  #empty_scroll { padding-bottom: 40px;}
+  div section { padding-top: 30px;}
+  .ColOffClass {visibility: hidden;}
+}
+
+/* Small bootstraps sm*/
+@media (min-width: 576px) {
+  :root {
+    --main-font-size: 12px;
+  }
+  #navbar{height: 90px}
+  #navcol{ top: 95px; width: 20%}
+  #the_body{top: 0px}
+  body::after { bottom: -90px;}
+  #empty_scroll { padding-bottom: 95px;}
+  div section { padding-top: 90px;}}
+
+/* Medium devices (tablets, 768px and up) bootstraps md*/
+@media (min-width: 768px) {
+  :root {
+    --main-font-size: 14px;
+  }
+  #navbar{ height: 100px}
+  #navcol{ top: 105px; width: 20% }
+  #the_body{top: 0px }
+  body::after {  bottom: -100px;}
+  #empty_scroll { padding-bottom: 350px;}
+  div section { padding-top: 100px;}
+  .ColOffClass {visibility: visible;}}
+
+/* Large devices (desktops, 992px and up) bootstraps lg*/
+@media (min-width: 992px) {
+  :root {
+    --main-font-size: 18px;
+  }
+  #navbar{height: 100px}
+  #navcol{top: 105px; width: 20%; visibility: visible; }
+  #the_body{ top: 0px }
+  body::after { bottom: -100px;}
+  #empty_scroll { padding-bottom: 450px;}
+  div section { padding-top: 100px;}}
+
+/* Extra large devices (large desktops, 1200px and up) bootstraps xl*/
+@media (min-width: 1200px) {
+  :root {
+    --main-font-size: 18px;
+  }
+  #navbar{ height: 100px}
+  #navcol{ top: 105px; width: 20%}
+  #the_body{ top: 0px }
+  body::after { bottom: -100px;}
+  #empty_scroll { padding-bottom: 600px;}
+  div section { padding-top: 100px;}}
+
+div section {
+    color: #041e2d;
+    font-size: 15px;
+  }
+
+
 .ColOffClass {
   position: absolute;
   top: 50%;
@@ -22,10 +91,10 @@
 
 .container .row a{
     /* color: #111111; */
-    font-size: 18px;
+    font-size: var(--main-font-size);
 }
 .container {
-  font-size: 18px;
+  font-size: var(--main-font-size);
   color: #111111;
   background-color: rgba(228,235,244,.6);
   background-blend-mode: add;
@@ -38,13 +107,13 @@
 }
 
 .personal_info_container_tint .container {
-    font-size: 18px;
+    font-size: var(--main-font-size);
     color: #111111;
 }
 
 .personal_info_container_tint .container .row a{
     /* color: #111111; */
-       font-size: 18px;
+       font-size: var(--main-font-size);
 }
 .personal_info_container_tint {
   background-color: rgba(228,235,244,.6);
@@ -89,7 +158,7 @@ h3 {
 
 a.nav-link{
     word-wrap: break-word;
-    font-size: 18px;
+    font-size: var(--main-font-size);
 }
 
 a.nav-link{
@@ -148,83 +217,3 @@ body::after {
         opacity: 1.0;
         filter: alpha(opacity=1);
         }
-
-/*Tiny bootstraps xs*/
-@media (min-width: 0px) {
-  #navbar{position: fixed; top: 0px; height: 30px; width: 100%; z-index: 2}}
-@media (min-width: 0px) {
-  #navcol{ position: fixed; top: 35px; left: 0; width: 20%; z-index: 1; visibility: collapse;}}
-@media (min-width: 0px) {
-  #the_body{ position: relative; top: 0px; left: 20%; width: 70%; z-index: 0}}
-@media (min-width: 0px) {
-  body::after { bottom: -30px;}}
-@media (min-width: 0px) {
-  #empty_scroll {padding-bottom: 40px;}}
-@media (min-width: 0px) {
-  div section {
-      padding-top: 30px;}}
-
-/* Small bootstraps sm*/
-@media (min-width: 576px) {
-  #navbar{height: 90px}}
-@media (min-width: 576px) {
-  #navcol{ top: 95px; width: 20%}}
-@media (min-width: 576px) {
-  #the_body{top: 0px}}
-@media (min-width: 576px) {
-  body::after { bottom: -90px;}}
-@media (min-width: 576px) {
-  #empty_scroll {padding-bottom: 95px;}}
-@media (min-width: 576px) {
-  div section {
-      padding-top: 90px;}}
-
-/* Medium devices (tablets, 768px and up) bootstraps md*/
-@media (min-width: 768px) {
-  #navbar{ height: 100px}}
-@media (min-width: 768px) {
-  #navcol{ top: 105px; width: 20% }}
-@media (min-width: 768px) {
-  #the_body{top: 0px }}
-@media (min-width: 768px) {
-  body::after {  bottom: -100px;}}
-@media (min-width: 768px) {
-  #empty_scroll {padding-bottom: 350px;}}
-@media (min-width: 768px) {
-  div section {
-      padding-top: 100px;}}
-
-/* Large devices (desktops, 992px and up) bootstraps lg*/
-@media (min-width: 992px) {
-  #navbar{height: 100px}}
-@media (min-width: 992px) {
-  #navcol{top: 105px; width: 20%; visibility: visible; }}
-@media (min-width: 992px) {
-  #the_body{ top: 0px }}
-@media (min-width: 992px) {
-  body::after { bottom: -100px;}}
-@media (min-width: 992px) {
-    #empty_scroll {padding-bottom: 450px;}}
-@media (min-width: 992px) {
-  div section {
-      padding-top: 100px;}}
-
-/* Extra large devices (large desktops, 1200px and up) bootstraps xl*/
-@media (min-width: 1200px) {
-  #navbar{ height: 100px}}
-@media (min-width: 1200px) {
-  #navcol{top: 105px; width: 20%}}
-@media (min-width: 1200px) {
-  #the_body{top: 0px }}
-@media (min-width: 1200px){
-  body::after { bottom: -100px;}}
-@media (min-width: 1200px) {
-  #empty_scroll {padding-bottom: 600px;}}
-@media (min-width: 1200px) {
-  div section {
-      padding-top: 100px;}}
-
-div section {
-    color: #041e2d;
-    font-size: 15px;
-  }
