@@ -28,7 +28,7 @@ export default function PersonalInfo(props) {
             <Row>
               <ColKey>Linkedin profile:</ColKey>
               <ColVal>
-                <a href="www.linkedin.com/in/mathias-green">mathias-green</a>
+                <a href='https://www.linkedin.com/in/mathias-green'>mathias-green</a>
               </ColVal>
             </Row>
             <Row>
@@ -36,10 +36,10 @@ export default function PersonalInfo(props) {
               <ColVal>
                 <Row>
                   <ColHalf>
-                    <a href="https://github.com/flmath">main</a>
+                    <a href='https://github.com/flmath'>main</a>
                   </ColHalf>
                   <ColHalf>
-                    <a href="https://github.com/flmath-dirty">secondary</a>
+                    <a href='https://github.com/flmath-dirty'>secondary</a>
                   </ColHalf>
                 </Row>
               </ColVal>
