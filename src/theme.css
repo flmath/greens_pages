@@ -11,7 +11,8 @@
   #empty_scroll { padding-bottom: 40px;}
   div section { padding-top: 30px;}
   .ColOffClass {visibility: hidden;}
-  #cv_image{position: relative; width: 100%;  height: 20px; top: -20px;}
+  #cv_image{position: relative;
+     width: 100%;  height: 15px; top: -15px;}
 }
 
 /* Small bootstraps sm*/
@@ -25,7 +26,7 @@
   body::after { bottom: -90px;}
   #empty_scroll { padding-bottom: 95px;}
   div section { padding-top: 90px;}
-  #cv_image{width: 100%;  height: 80px;}}
+  #cv_image{width: 100%;  height: 80px; top: -10px;}}
 
 /* Medium devices (tablets, 768px and up) bootstraps md*/
 @media (min-width: 768px) {
@@ -52,6 +53,7 @@
   body::after { bottom: -100px;}
   #empty_scroll { padding-bottom: 450px;}
   div section { padding-top: 100px;}}
+
 
 /* Extra large devices (large desktops, 1200px and up) bootstraps xl*/
 @media (min-width: 1200px) {
@@ -183,7 +185,7 @@ body {
 
 body::after {
     content: "";
-    background-image: url('cv/mebg2.png');
+    background-image: url('cv/mebg3.jpg');
     opacity: 0.30;
     filter: alpha(opacity=30);
     /* Create the parallax scrolling effect */
@@ -206,7 +208,7 @@ body::after {
 
 
 
-#navbar{background-image: url('pics/leaves.png');
+#navbar{background-image: url('pics/leaves.jpg');
         background-repeat: repeat;
         background-size: cover;
         opacity: 1.0;
