@@ -126,8 +126,8 @@ div section {
 .container_leafs div.content {
     font-size: var(--main-font-size);
     padding: 20px 30px;
-    background-color: rgba(228,235,244,.6);
-    color: #111111;
+    background-color: rgba(228,235,244,.8);
+    background-blend-mode: add;
     position: relative;
     border-radius: 6px;
 }

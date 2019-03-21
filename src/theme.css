@@ -11,6 +11,7 @@
   #empty_scroll { padding-bottom: 40px;}
   div section { padding-top: 30px;}
   .ColOffClass {visibility: hidden;}
+  #cv_image{position: relative; width: 100%;  height: 20px; top: -20px;}
 }
 
 /* Small bootstraps sm*/
@@ -23,7 +24,8 @@
   #the_body{top: 0px}
   body::after { bottom: -90px;}
   #empty_scroll { padding-bottom: 95px;}
-  div section { padding-top: 90px;}}
+  div section { padding-top: 90px;}
+  #cv_image{width: 100%;  height: 80px;}}
 
 /* Medium devices (tablets, 768px and up) bootstraps md*/
 @media (min-width: 768px) {
@@ -36,7 +38,8 @@
   body::after {  bottom: -100px;}
   #empty_scroll { padding-bottom: 350px;}
   div section { padding-top: 100px;}
-  .ColOffClass {visibility: visible;}}
+  .ColOffClass {visibility: visible;}
+  #cv_image{width: 100%;  height: 90px;}}
 
 /* Large devices (desktops, 992px and up) bootstraps lg*/
 @media (min-width: 992px) {
@@ -80,15 +83,6 @@ div section {
   padding-left: 0;
 }
 
-.box {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: #c9c1d5;
-  border: 1px solid #c9c1d5;
-  color: #c101d5;
-  width: 100%;
-}
-
 .container .row a{
     /* color: #111111; */
     font-size: var(--main-font-size);
@@ -96,7 +90,7 @@ div section {
 .container {
   font-size: var(--main-font-size);
   color: #111111;
-  background-color: rgba(228,235,244,.6);
+  background-color: rgba(228,235,244,.8);
   background-blend-mode: add;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -116,7 +110,7 @@ div section {
        font-size: var(--main-font-size);
 }
 .personal_info_container_tint {
-  background-color: rgba(228,235,244,.6);
+  background-color: rgba(228,235,244,.8);
   background-blend-mode: add;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -144,16 +138,15 @@ h1, h2 {
   background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
-   background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
+  background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
 }
 
 h3 {
-
   color: black;
   background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
-   background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
+  background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
 }
 
 a.nav-link{
@@ -207,13 +200,15 @@ body::after {
     z-index: -1;
 }
 .background-tint {
-  background-color: rgba(228,235,244,.8);
-  background-blend-mode: multiply;
+  background-color: rgba(218,215,254,.8);
+  background-blend-mode: add;
 }
 
-#navbar{background-image: url('pics/brick-light.jpeg');
+
+
+#navbar{background-image: url('pics/leaves.png');
         background-repeat: repeat;
-        background-size: contain;
+        background-size: cover;
         opacity: 1.0;
         filter: alpha(opacity=1);
         }
