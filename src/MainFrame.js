@@ -1,11 +1,8 @@
 import React from 'react';
 
-import {Navbar, NavbarBrand,Form, FormGroup, Input} from 'reactstrap';
+import {Navbar, NavbarBrand,Form, Input} from 'reactstrap';
 import CvMain from './cv/CvMain';
 import ImgBrand from './ImgBrand';
-
-import brandCv from './pics/butterflycv.png';
-import brand from './pics/butterfly.png';
 
 function MainFrame(props) {
       return (
