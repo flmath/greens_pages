@@ -95,8 +95,21 @@ const ColShortVal = props => (
   </Col>
 );
 
+const ColBar = props => (
+  <Col
+    xs={{size: 10, offset: 0}}
+    sm={{size: 10, offset: 0}}
+    md={{size: 9, offset: 1}}
+    lg={{size: 9, offset: 1}}
+    xl={{size: 9, offset: 1}}
+  >
+    {props.children}{" "}
+  </Col>
+);
+
 export {
   ColOff,
+  ColBar,
   ColData,
   ColHalf,
   ColKey,
