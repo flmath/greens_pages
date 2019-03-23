@@ -10,7 +10,7 @@ class ImgBrand extends React.Component{
   }
 
   getPicture(){
-    if (this.state.frame==0) {return brand;
+    if (this.state.frame===0) {return brand;
     } else {return brandCv;}
   }
   setOnEnter = () => {
