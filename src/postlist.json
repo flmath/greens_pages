@@ -1,0 +1,7 @@
+{"the_list" :[
+  {"title" : "Matrixes in erlang", "is_address_relative": false, "tags": ["erlang", "efficiency", "jupyter", "mathematics" ],
+    "href": "https://nbviewer.jupyter.org/github/flmath/matrix_implementations_in_erlang/blob/master/jupyter/main.ipynb" },
+  {"title": "Matrixes in erlang: growth projections ", "is_address_relative": false,
+    "tags": ["growth","projections","erlang", "efficiency", "jupyter", "mathematics" ],
+      "href": "https://nbviewer.jupyter.org/github/flmath/matrix_implementations_in_erlang/blob/master/jupyter/growth_projections.ipynb" }
+]}

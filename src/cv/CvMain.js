@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 import CvText from "./CvText";
-
 import { NavLink } from "reactstrap";
 import Scrollspy from "react-scrollspy";
 
