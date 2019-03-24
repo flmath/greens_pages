@@ -9,12 +9,6 @@ class PostList extends React.Component {
    const filterText = this.props.filterText;
   }
 
-  filterJson(){
-  return json_data.the_list.map((aPost, index)=>
-  { return (
-    <p>{aPost.title}
-    {filterByTags(aPost.tags)}</p>
-  );});}
 
 
 
@@ -29,20 +23,34 @@ render(){
         <div>
         <hr />  <hr />  <hr />  <hr />  <hr />  <hr />  <hr />
         <h1 color='blue'> umm </h1>
-        {this.filterJson()}
-
-
-
+        {filterPosts()}
 </div>
       );
 
   }}
 
-function filterByTags(tags){
-return (<div>
-  {tags.map((aTag, index)=>{
-  return (<div>{aTag}</div> )})}
-  </div>)}
+function filterPosts(){
+  let filtered_data = json_data.the_list.filter(filterPostFun)
+return (
+filtered_data.map((aPost, index)=>
+{ return (
+  <p>{aPost.title}</p>
+
+);}))}
+
+function filterPostFun(filterText){
+return function(aPost){
+  let is_in_title = aPost.title.toLowerCase().indexOf(filterText.toLowerCase())!==-1;
+  let is_in_tags = aPost.tags.map(toLowerCaseFun).indexOf(filterText.toLowerCase())!==-1;
+
+  return (is_in_title || is_in_tags)}
+
+}
+
+function toLowerCaseFun(str){
+  return str.toLowerCase()
+}
+
 
 class PostListRow extends React.Component {
   render() {
