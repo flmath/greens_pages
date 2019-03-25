@@ -1,47 +1,41 @@
 import React from 'react';
 
-import {Container, Row, Col} from 'reactstrap';
+import {Container, Row, Col, Button} from 'reactstrap';
 import json_data from './postlist.json';
 
-class PostList extends React.Component {
-  constructor(props){
-    super(props)
-   const filterText = this.props.filterText;
-  }
-
-
-
-
-
-render(){
-
-      const rows = [];
-
-
+function PostList(props){
+      const filtered_data = json_data.the_list.filter(filterPostFun(props.filterText));
+      const route_to_page = props.routeToPage
       return (
-
         <div>
         <hr />  <hr />  <hr />  <hr />  <hr />  <hr />  <hr />
         <h1 color='blue'> umm </h1>
-        {filterPosts()}
-</div>
+        <Container>
+          <RenderPosts filteredData = {filtered_data}
+                       routeToPage  = {route_to_page}
+            ></RenderPosts>
+        </Container>
+        </div>
       );
 
-  }}
+  }
 
-function filterPosts(){
-  let filtered_data = json_data.the_list.filter(filterPostFun)
+function RenderPosts(props){
+const routeToPage = props.routeToPage
 return (
-filtered_data.map((aPost, index)=>
+props.filteredData.map((aPost, index)=>
 { return (
-  <p>{aPost.title}</p>
+<PostListRow title = {aPost.title}
+             href  = {aPost.href}
+             routeToPage = {routeToPage} >
+</PostListRow>
 
 );}))}
 
 function filterPostFun(filterText){
 return function(aPost){
   let is_in_title = aPost.title.toLowerCase().indexOf(filterText.toLowerCase())!==-1;
-  let is_in_tags = aPost.tags.map(toLowerCaseFun).indexOf(filterText.toLowerCase())!==-1;
+  let is_in_tags  = aPost.tags.map(toLowerCaseFun).indexOf(filterText.toLowerCase())!==-1;
 
   return (is_in_title || is_in_tags)}
 
@@ -52,17 +46,31 @@ function toLowerCaseFun(str){
 }
 
 
-class PostListRow extends React.Component {
-  render() {
-
-    return (
-      <Row>
-        <Col>name</Col>
-        <Col>href</Col>
-      </Row>
-    );
+class PostListRow extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = { frame : 0 };
   }
-}
+  setOnEnter = () => {
+    this.setState({frame : 1});
+  }
+  setOnLeave = () => {
+    this.setState({frame : 0});
+  }
+  handleClick(href) {
+  this.props.routeToPage(href)
+  }
+  render(){
+    const title = this.props.title;
+    const href = this.props.href;
+    return (
+        <Row><Button block color= {this.state.frame ? "primary" : "secondary"}
+           onMouseEnter={this.setOnEnter}
+           onMouseLeave={this.setOnLeave}
+           onClick={() => this.handleClick(href)}
+        >{title}</Button></Row>
+    )}}
+
 
 
 export default PostList;

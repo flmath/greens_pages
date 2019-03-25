@@ -11,9 +11,15 @@ class MainFrame extends React.Component {
   constructor(props){
     super(props)
     this.state = {body: 'cv',
-                  filterText: ''}
+                  filterText: ""}
 
   }
+  handleInput(event) {
+    this.setState({filterText: event.target.value})
+  }
+  route_to_page(href){
+alert(href)
+    return;}
   render(){
       return (
 
@@ -22,13 +28,15 @@ class MainFrame extends React.Component {
       <Navbar id="navbar">
         <Form id="searchForm">
       <Input type="text" name="postSearch" id="postSearchInput" placeholder="Type tag or title"
+          value={this.state.filterText}  onChange={this.handleInput.bind(this)}
          />
         </Form>
         <NavbarBrand href="/" className="ml-auto">
             <ImgBrand></ImgBrand>
         </NavbarBrand>
       </Navbar>
-       <PostList></PostList>
+       <PostList filterText = {this.state.filterText}
+                 routeToPage = {this.route_to_page} ></PostList>
 
 
 
