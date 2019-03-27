@@ -15,9 +15,9 @@
     "reactstrap": "^7.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start --scripts-version react-scripts",
+    "build": "react-app-rewired build --scripts-version react-scripts",
+    "test": "react-app-rewired test --scripts-version react-scripts",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,6 +30,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "copy-webpack-plugin": "^5.0.2",
+    "gh-pages": "^2.0.1",
+    "html-loader": "^0.5.5",
+    "react-app-rewired": "^2.1.1"
   }
 }

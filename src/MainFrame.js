@@ -63,27 +63,29 @@ class MainFrame extends React.Component {
                      </ul>
 
                      <Route path="/:id" component={Child} />
-                     <Route path='/privacy-policy' component={MyComponent} />
+                     <Route path='/privacy-policy' component={Page2} />
 
                    </div>
                  </Router>
-
-
-
       </div>
 
       );
 
   }}
 
+  function Page2(props) {
+    require("./pages/output")
 
-  function BlogPage(props) {
-    const PostUrl = { __html: "https://github.com"};
-    return (
-    <div dangerouslySetInnerHTML={PostUrl}>
-            </div>
-    );
-  }
+      return (
+      <div >
+        <iframe
+              src="./pages/output"
+
+        />
+         </div>)
+    }
+
+
   function Page(props) {
     return (
     <div >
@@ -112,23 +114,21 @@ class MainFrame extends React.Component {
     componentDidMount() {
         let header = new Headers();
         header.set('Content-Type', 'application/json')
-        header.set("Access-Control-Allow-Origin", "*")
-        header.set('Access-Control-Allow-Headers', "Content-Type")
-        header.append('Access-Control-Allow-Headers', "x-requested-with")
-        header.set('Access-Control-Allow-Methods', 'GET')
-        header.append('Access-Control-Allow-Methods', 'POST')
-        fetch('http://github.com',{
-        crossDomain: true,
-        method: 'GET',
-        headers: header}
-    )
-        .then((response)=> response.json())
-        .then(
-          (responseJson) => {
-            console.log(responseJson);
+
+
+        {/*fetch('https://raw.githubusercontent.com/flmath/matrix_implementations_in_erlang/master/jupyter/growth_projections.ipynb',{
+        mode: 'no-cors',
+        method: 'GET'
+        }
+    )*/}
+    fetch("[html-loader!./pages/output.html]")
+    .then((r) => r)
+    .then(
+          (response) => {
+
             this.setState({
               isLoaded: true,
-              items: []
+              items: response
             });
           },
           // Note: it's important to handle errors here
@@ -143,25 +143,19 @@ class MainFrame extends React.Component {
         )
     }
 
-    render() {
+
+      render() {
       const { error, isLoaded, items } = this.state;
       if (error) {
         return <div>ERror: {error.message}</div>;
       } else if (!isLoaded) {
         return <div>Loading...</div>;
       } else {
-        return (
-          <ul>
-            {items.map(item => (
-              <li key={item.name}>
-                {item.name} {item.price}
-              </li>
-            ))}
-          </ul>
-        );
+          return (<div dangerouslySetInnerHTML={{__html: items}}></div>)};
+
       }
     }
-  }
+
 
 
 
@@ -181,12 +175,6 @@ class MainFrame extends React.Component {
     );
   }
 
-  function ComponentWithRegex({ match }) {
-    return (
-      <div>
-        <h3>Only asc/desc are allowed: {match.params.direction}</h3>
-      </div>
-    );
-  }
+
 
 export default MainFrame;
