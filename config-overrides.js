@@ -1,4 +1,13 @@
 module.exports = function override(config, env) {
-  //do stuff with the webpack config...
+  config.module.rules.push(
+    {
+      test: /\.html$/,
+      use: [{
+        loader: 'html-loader',
+        options: {
+          attrs: [':data-src']
+        }
+      }],
+    })
   return config;
 }

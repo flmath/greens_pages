@@ -63,7 +63,7 @@ class MainFrame extends React.Component {
                      </ul>
 
                      <Route path="/:id" component={Child} />
-                     <Route path='/privacy-policy' component={Page2} />
+                     <Route path='/privacy-policy' component={MyComponent} />
 
                    </div>
                  </Router>
@@ -74,15 +74,12 @@ class MainFrame extends React.Component {
   }}
 
   function Page2(props) {
-    require("./pages/output")
-
-      return (
-      <div >
-        <iframe
-              src="./pages/output"
-
-        />
-         </div>)
+    require("./pages/output.html")
+    fetch("./pages/output.html")
+    .then((r) => r)
+    .then(text  => {
+      console.log(text);
+      return (<div dangerouslySetInnerHTML={{__html: text}}></div>)})
     }
 
 
@@ -121,8 +118,8 @@ class MainFrame extends React.Component {
         method: 'GET'
         }
     )*/}
-    fetch("[html-loader!./pages/output.html]")
-    .then((r) => r)
+    fetch("./output.html")
+    .then((r) => r.text())
     .then(
           (response) => {
 
