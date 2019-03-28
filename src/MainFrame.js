@@ -9,6 +9,8 @@ import ImgBrand from './ImgBrand';
 import "./theme.css";
 import "./leaf.css";
 
+
+
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
@@ -63,7 +65,7 @@ class MainFrame extends React.Component {
                      </ul>
 
                      <Route path="/:id" component={Child} />
-                     <Route path='/privacy-policy' component={MyComponent} />
+                     <Route path='/privacy-policy' component={PagesInterface} />
 
                    </div>
                  </Router>
@@ -73,21 +75,14 @@ class MainFrame extends React.Component {
 
   }}
 
-  function Page2(props) {
-    require("./pages/output.html")
-    fetch("./pages/output.html")
-    .then((r) => r)
-    .then(text  => {
-      console.log(text);
-      return (<div dangerouslySetInnerHTML={{__html: text}}></div>)})
-    }
+
 
 
   function Page(props) {
     return (
     <div >
            <iframe
-                 src={`https://github.com`}
+                 src={"out"}
 
            />
        </div>)
@@ -118,8 +113,9 @@ class MainFrame extends React.Component {
         method: 'GET'
         }
     )*/}
-    fetch("./output.html")
-    .then((r) => r.text())
+    require("./pages/output.html")
+    import("./pages/output.html")
+    .then((r) => r)
     .then(
           (response) => {
 

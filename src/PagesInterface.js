@@ -1,12 +1,8 @@
 import React  from 'react';
+import ThePage from "./pages/output.html"
 
 function PagesInterface(props){
-  fetch('./pages/Empirical_growth_testing')
-  .then((r) => r.text())
-  .then(text  => {
-    console.log(text);
-    return (<div dangerouslySetInnerHTML={{__html: text}}></div>)})
+    return (<div dangerouslySetInnerHTML={{__html: ThePage}}></div>)
   }
-
 
 export default PagesInterface;

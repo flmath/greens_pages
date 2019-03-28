@@ -1,13 +1,10 @@
 module.exports = function override(config, env) {
-  config.module.rules.push(
+  config.module.rules.unshift(
     {
-      test: /\.html$/,
-      use: [{
-        loader: 'html-loader',
-        options: {
-          attrs: [':data-src']
-        }
-      }],
+      test: /\.(html)$/,
+      use: {
+        loader: 'html-loader'
+      }
     })
   return config;
 }
