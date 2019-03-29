@@ -3,7 +3,7 @@ module.exports = function override(config, env) {
     {
       test: /\.(html)$/,
       use: {
-        loader: 'html-loader'
+        loader: 'html-loader',
       }
     })
   return config;

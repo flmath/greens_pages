@@ -25,9 +25,11 @@ const routeToPage = props.routeToPage
 return (
 props.filteredData.map((aPost, index)=>
 { return (
-<PostListRow title = {aPost.title}
-             href  = {aPost.href}
-             routeToPage = {routeToPage} >
+<PostListRow
+            key   = {aPost.id}
+            title = {aPost.title}
+            href  = {aPost.href}
+            routeToPage = {routeToPage} >
 </PostListRow>
 
 );}))}
