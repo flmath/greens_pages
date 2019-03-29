@@ -1,32 +1,18 @@
 import React  from 'react';
-import ThePage from './pages/output.html'
-
-class PagesInterface extends React.Component {
-      constructor(props) {
-        super(props);
-        this.state = {
-          isLoaded: false,
-          thePage: ""
-        };
-      }
+import json_data from './postlist.json';
 
 
-      componentDidMount() {
-              this.setState({
-                isLoaded: true,
-                thePage: ThePage
-              });
-            }
+function PagesInterface(props) {
+       const href = props.href
 
-        render() {
-        const {isLoaded, thePage } = this.state;
-        if (!isLoaded) {
-          return <div>Loading...</div>;
-        } else {
-            return (<div dangerouslySetInnerHTML={{__html: thePage}}></div>)
+        return(
+          <div>
+              <iframe id="iframe_routed"
+                src={process.env.PUBLIC_URL + href}></iframe>
+            </div>)
 
         }
-      }}
+
 
 
 export default PagesInterface;

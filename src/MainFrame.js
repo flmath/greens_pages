@@ -26,14 +26,15 @@ class MainFrame extends React.Component {
       return (
 
         <div id="topdiv">
+          <MainNavbar filterText={this.state.filterText}  handleInput = {this.handleInput.bind(this)}>
+          </MainNavbar>
        <Router>
-      <MainNavbar filterText={this.state.filterText}  handleInput = {this.handleInput.bind(this)}>
-      </MainNavbar>
+
        <PostList filterText = {this.state.filterText}
                  routeToPage = {this.route_to_page} ></PostList>
 
 
-                   <div>
+                   <div >
                      <h2>Accounts</h2>
                      <ul>
                        <li>
@@ -49,12 +50,14 @@ class MainFrame extends React.Component {
                          <Link to="/modus-create">Modus Create</Link>
                        </li>
                        <li>
-                         <Link to="/privacy-policy">external</Link>
+                         <Link to="/pages/EGT">external</Link>
                        </li>
                      </ul>
 
-                     <Route path="/:id" component={Child} />
-                     <Route path='/privacy-policy' component={PagesInterface} />
+
+                      <Route path="/:id" component={Child} />
+                      <Route path="/pages/:id"  component={PagesInterface} />
+
 
                    </div>
                  </Router>
