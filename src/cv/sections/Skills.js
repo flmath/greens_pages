@@ -3,8 +3,8 @@ import {Container, Row} from 'reactstrap';
 import {ColShortVal, ColShortKey} from './ReactstrapSupport';
 
 export default function Skills(props) {
-  return (<div >
-    <Container className="personal_container_tint">
+  return (<div className="personal_container_tint">
+    <Container className="my_cv_container" >
       <p>
         As a professional I work as an Erlang programmer developing Session Border Controller node in IMS network. The project is developed and running in Linux environment. We use Git as a version control system. Throughout my career I was working on Agile teams, mostly with Scrum methodologies. At my current team we are trying to follow Clean Code and TDD rules, as much as, it is compilant with the project established ways of working.
       </p>

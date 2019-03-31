@@ -5,6 +5,7 @@ import CvText from "./CvText";
 import { NavLink } from "reactstrap";
 import Scrollspy from "react-scrollspy";
 
+
 function CvMain(props) {
     return (
       <div id="cvmaindiv">

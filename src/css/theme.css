@@ -101,16 +101,16 @@ div section {
   transform: translate(-50%, -50%);
 }
 
-.container .row > [class^="Col"] {
+.my_cv_container  .row > [class^="Col"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.container .row a{
+.my_cv_container  .row a{
     /* color: #111111; */
     font-size: var(--main-font-size);
 }
-.container {
+.my_cv_container {
   font-size: var(--main-font-size);
   color: #111111;
   background-color: rgba(228,235,244,.8);
@@ -122,6 +122,7 @@ div section {
   text-align: justify;
   text-justify: auto;
 }
+
 
 .personal_info_container_tint .container {
     font-size: var(--main-font-size);
@@ -155,7 +156,10 @@ h3 span {
 
 }
 
-h1, h2 {
+
+
+
+h1.my_cv_header, h2.my_cv_header {
   font-weight: 700;
   color: black;
   background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
@@ -164,7 +168,8 @@ h1, h2 {
   background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
 }
 
-h3 {
+
+h3.my_cv_header {
   color: black;
   background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */

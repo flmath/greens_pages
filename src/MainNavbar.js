@@ -9,7 +9,6 @@ function MainNavbar(props){
       const filterText  = props.filterText
       const handleInput = props.handleInput
       return (
-
       <div>
       <Navbar id="navbar">
       <Form id="searchForm">

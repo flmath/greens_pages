@@ -4,7 +4,7 @@ import {Container, Col, Row} from "reactstrap";
 export default function Education(props) {
   return (
     <div className="personal_container_tint">
-      <Container>
+      <Container className="my_cv_container">
         <Row>
           <ColOff>2011:</ColOff>
           <Col>

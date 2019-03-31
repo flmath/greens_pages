@@ -6,7 +6,7 @@ import face from './face.png';
 export default function PersonalInfo(props) {
   return (<div>
 
-      <Container >
+      <Container className="my_cv_container">
         <Row>
           <ColData>
             <Row>

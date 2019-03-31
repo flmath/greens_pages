@@ -10,9 +10,7 @@ function PagesInterface(props) {
               <iframe id="iframe_routed"
                 src={process.env.PUBLIC_URL + href}></iframe>
             </div>)
-
         }
-
 
 
 export default PagesInterface;

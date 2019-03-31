@@ -12,7 +12,7 @@ import Erlang from '../certs/erlang.pdf'
 export default function Certicicates(props) {
   return (
     <div className="personal_container_tint">
-      <Container>
+      <Container className="my_cv_container">
         <Row>
           <ColOff>2018:</ColOff>
           <Col>
