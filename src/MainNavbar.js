@@ -8,6 +8,9 @@ import "./css/leaf.css";
 function MainNavbar(props){
       const filterText  = props.filterText
       const handleInput = props.handleInput
+      const handleStateChange = props.handleStateChange
+      const nextPayloadType = props.nextPayloadType
+
       return (
       <div>
       <Navbar id="navbar">
@@ -16,8 +19,9 @@ function MainNavbar(props){
           value={filterText}  onChange={handleInput}
          />
         </Form>
-        <NavbarBrand href="/" className="ml-auto">
-            <ImgBrand></ImgBrand>
+        <NavbarBrand className="ml-auto">
+            <ImgBrand handleStateChange = {handleStateChange}
+                      nextPayloadType = {nextPayloadType}></ImgBrand>
         </NavbarBrand>
       </Navbar>
       </div>
