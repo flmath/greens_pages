@@ -1,8 +1,5 @@
 import React from 'react';
 
-import {Navbar, NavbarBrand,Form, Input} from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 import MainNavbar from './MainNavbar'
 import CvMain from './cv/CvMain'
 import PostList from './PostList.js'

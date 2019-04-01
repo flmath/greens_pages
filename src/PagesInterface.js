@@ -1,13 +1,11 @@
 import React  from 'react';
-import json_data from './postlist.json';
-
 
 function PagesInterface(props) {
        const href = props.href
 
         return(
           <div>
-              <iframe id="iframe_routed"
+              <iframe id="iframe_routed" title="iframe_router_title"
                 src={process.env.PUBLIC_URL + href}></iframe>
             </div>)
         }

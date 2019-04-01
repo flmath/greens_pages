@@ -12,8 +12,8 @@ class ImgBrand extends React.Component{
 
   getPicture(){
     if (this.state.frame===0) {return brand}
-    else if (this.state.frame===1){return brandList}
-    else {return brandCv}
+    else if (this.state.frame===1){return brandCv}
+    else {return brandList}
   }
   setOnEnter = () => {
     this.setState({frame : this.props.nextPayloadType});
@@ -26,7 +26,6 @@ class ImgBrand extends React.Component{
   }
 
   render(){
-
 
       return (
         <div>
