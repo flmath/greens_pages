@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Row, Button} from 'reactstrap';
+import {Container, Row, Button, ButtonGroup} from 'reactstrap';
 import json_data from './postlist.json';
 
 function PostList(props){
@@ -8,13 +8,17 @@ function PostList(props){
       const route_to_page = props.routeToPage
       return (
         <div>
-        <hr />  <hr />  <hr />  <hr />  <hr />  <hr />  <hr />
-        <h1 color='blue'> umm </h1>
-        <Container>
+        <div id="skip_absolute_header"><br /></div>
+    <Container className="my_postlist_container">
+      <ButtonGroup vertical block size="lg" className="my_postlist_button_group">
           <RenderPosts filteredData = {filtered_data}
                        routeToPage  = {route_to_page}
             ></RenderPosts>
+      </ButtonGroup>
+          <div id="empty_scroll_postlist"><br /></div>
+
         </Container>
+
         </div>
       );
 
@@ -23,6 +27,7 @@ function PostList(props){
 function RenderPosts(props){
 const routeToPage = props.routeToPage
 return (
+
 props.filteredData.map((aPost, index)=>
 { return (
 <PostListRow
@@ -66,11 +71,11 @@ class PostListRow extends React.Component{
     const title = this.props.title;
     const href = this.props.href;
     return (
-        <Row><Button block color= {this.state.frame ? "primary" : "secondary"}
+        <Button block className = "my_postlist_button"
            onMouseEnter={this.setOnEnter}
            onMouseLeave={this.setOnLeave}
            onClick={() => this.handleClick(href)}
-        >{title}</Button></Row>
+        >{title}</Button>
     )}}
 
 

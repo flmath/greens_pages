@@ -18,7 +18,7 @@ function MainNavbar(props){
       <Input type="text" name="postSearch" id="postSearchInput" placeholder="Type tag or title"
           value={filterText}  onChange={handleInput}
          />
-        </Form>
+      </Form>
         <NavbarBrand className="ml-auto">
             <ImgBrand handleStateChange = {handleStateChange}
                       nextPayloadType = {nextPayloadType}></ImgBrand>

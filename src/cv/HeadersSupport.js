@@ -5,9 +5,11 @@ export function CvHeader(props)
 {
   return (
     <div>
-      <hr />
-      <Container><h2 className="my_cv_header"> {props.children}{" "}</h2></Container>
-      <hr />
+      <Container>
+      <hr className="my_cv_header" />
+      <h2 className="my_cv_header"> {props.children}{" "}</h2>
+      <hr className="my_cv_header" />
+      </Container>
     </div>
 );
 }
