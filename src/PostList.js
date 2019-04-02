@@ -53,30 +53,15 @@ function toLowerCaseFun(str){
 }
 
 
-class PostListRow extends React.Component{
-  constructor(props){
-    super(props)
-    this.state = { frame : 0 };
-  }
-  setOnEnter = () => {
-    this.setState({frame : 1});
-  }
-  setOnLeave = () => {
-    this.setState({frame : 0});
-  }
-  handleClick(href) {
-  this.props.routeToPage(href)
-  }
-  render(){
-    const title = this.props.title;
-    const href = this.props.href;
+function PostListRow(props){
+
+    const title = props.title;
+    const href = props.href;
     return (
         <Button block className = "my_postlist_button"
-           onMouseEnter={this.setOnEnter}
-           onMouseLeave={this.setOnLeave}
-           onClick={() => this.handleClick(href)}
+             onClick={() => props.routeToPage(href)}
         >{title}</Button>
-    )}}
+    )}
 
 
 
