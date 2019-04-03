@@ -1,5 +1,5 @@
 import React from "react";
-import {ColOff} from "./ReactstrapSupport";
+import {ColOff} from "../ReactstrapSupport";
 import {Container, Col, Row} from "reactstrap";
 
 import IntroToLogic from '../certs/introtologic.pdf'
@@ -11,8 +11,8 @@ import Erlang from '../certs/erlang.pdf'
 
 export default function Certicicates(props) {
   return (
-    <div className="personal_container_tint">
-      <Container className="my_cv_container">
+       <div className="my_cv_container">
+
         <Row>
           <ColOff>2018:</ColOff>
           <Col>
@@ -62,7 +62,6 @@ export default function Certicicates(props) {
             </a>
           </Col>
         </Row>
-      </Container>
-    </div>
+      </div>
   );
 }

@@ -1,10 +1,9 @@
 import React from "react";
-import {ColOff} from "./ReactstrapSupport";
+import {ColOff} from "../ReactstrapSupport";
 import {Container, Col, Row} from "reactstrap";
 export default function Education(props) {
   return (
-    <div className="personal_container_tint">
-      <Container className="my_cv_container">
+    <div className="my_cv_container">
         <Row>
           <ColOff>2011:</ColOff>
           <Col>
@@ -14,7 +13,6 @@ export default function Education(props) {
             Master of Science in Computational Mathematics
           </Col>
         </Row>
-      </Container>
     </div>
   );
 }

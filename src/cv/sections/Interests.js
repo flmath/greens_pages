@@ -2,8 +2,8 @@ import React from "react";
 import {Container} from "reactstrap";
 export default function Interests(props) {
   return (
-    <div className="personal_container_tint">
-      <Container className="my_cv_container">
+    <div className="my_cv_container">
+
         <p>
           Right now I'm reasearching possible matrix representations in
           Erlang/OTP. Since there is a lack of an OTP standarized module for
@@ -23,8 +23,6 @@ export default function Interests(props) {
             Matrixes in erlang: growth projections
           </a>
         </p>
-      </Container>
-
     </div>
   );
 }

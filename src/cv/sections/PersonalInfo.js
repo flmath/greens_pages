@@ -1,12 +1,10 @@
 import React from 'react';
-import {Container, Row} from 'reactstrap';
-import {ColKey, ColVal, ColData, ColPic, ColHalf} from './ReactstrapSupport';
+import {Container, Row, Col} from 'reactstrap';
+import {ColKey, ColVal, ColData, ColPic, ColHalf} from '../ReactstrapSupport';
 import face from './face.png';
 
 export default function PersonalInfo(props) {
-  return (<div>
-
-      <Container className="my_cv_container">
+  return (<div className="my_cv_container">
         <Row>
           <ColData>
             <Row>
@@ -58,12 +56,10 @@ export default function PersonalInfo(props) {
               </ColVal>
             </Row>
           </ColData>
-          <ColPic>
-            <img src={face} className="img-thumbnail" alt="Here should be my face."/>
+          <ColPic className="my_cv_face">
+            <img src={face}  className="my_cv_face_img" alt="Here should be my face."/>
           </ColPic>
         </Row>
-      </Container>
-
   </div>);
 
 }

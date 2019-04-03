@@ -13,6 +13,7 @@ const ColData = props => (
   </Col>
 );
 
+
 const ColOff = props => (
   <Col
     xs={{size: 1, offset: 0}}

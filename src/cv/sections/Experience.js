@@ -1,8 +1,10 @@
 import React from "react";
+import {Container} from "reactstrap";
 
 export default function Experience(props) {
   return (
     <div>
+      <Container className="my_transparent_container">
       <div className="timeline">
         <div className="container_leafs left">
           <div className="content">
@@ -87,6 +89,7 @@ export default function Experience(props) {
           </div>
         </div>
       </div>{" "}
+      </Container>
     </div>
   );
 }
