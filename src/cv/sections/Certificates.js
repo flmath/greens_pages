@@ -1,6 +1,6 @@
 import React from "react";
 import {ColOff} from "../ReactstrapSupport";
-import {Container, Col, Row} from "reactstrap";
+import {Col, Row} from "reactstrap";
 
 import IntroToLogic from '../certs/introtologic.pdf'
 import MachineLearning from '../certs/machinelearning.pdf'

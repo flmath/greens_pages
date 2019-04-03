@@ -1,5 +1,5 @@
 import React from "react";
-import {Container} from "reactstrap";
+
 export default function Interests(props) {
   return (
     <div className="my_cv_container">

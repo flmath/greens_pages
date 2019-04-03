@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col} from 'reactstrap';
+import {Row} from 'reactstrap';
 import {ColKey, ColVal, ColData, ColPic, ColHalf} from '../ReactstrapSupport';
 import face from './face.png';
 

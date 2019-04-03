@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row} from 'reactstrap';
+import {Row} from 'reactstrap';
 import {ColShortVal, ColShortKey} from '../ReactstrapSupport';
 
 export default function Skills(props) {

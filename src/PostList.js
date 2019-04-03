@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Row, Button, ButtonGroup} from 'reactstrap';
+import {Container, Button, ButtonGroup} from 'reactstrap';
 import json_data from './postlist.json';
 
 function PostList(props){
