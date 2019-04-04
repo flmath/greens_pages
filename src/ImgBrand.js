@@ -1,8 +1,8 @@
 import React from 'react';
 
-import brandCv from './pics/butterflycv.png';
-import brand from './pics/butterfly.png';
-import brandList from './pics/butterflyList.png';
+import brandCv from './pics/penrosecv.png';
+import brand from './pics/penrose3.png';
+import brandList from './pics/penroselist.png';
 
 class ImgBrand extends React.Component{
   constructor(props) {

@@ -10,7 +10,8 @@
 .my_cv_header_container_row{}
 #navbar{position: fixed; top: 0px; height: 30px; width: 100%; z-index: 2}
 #skip_absolute_header{ padding-top: 30px;}
-#navcol{ position: fixed; top: 35px; left: 0; z-index: 1; visibility: collapse;}
+body::after { top: 30px;}
+#navcol{ position: fixed; top: 35px; left: 0px; z-index: 1; visibility: collapse;}
 #searchForm{position: fixed; padding-left: 5%; width: 70%; height: 18px; top: 7px;}
 #postSearchInput{height: 7px;  font-size: 8px}
 #cv_image{position: fixed;  width: 20px;  height: 20px; top: 5px; left: 85%;}
@@ -36,6 +37,7 @@ div section { padding-top: 30px;}
 .my_cv_header_container_row{}
 #navbar{height: 90px}
 #skip_absolute_header{ padding-top: 90px;}
+body::after {}
 #navcol{}
 #searchForm{padding-left: 5%; width: 80%; height: 120px; top: 0px; padding-top: 15px;}
 #postSearchInput{height: 50px;  font-size: 20px; padding-top: 0px; top: 0;}
@@ -50,14 +52,15 @@ div section { padding-top: 90px;}
 /* Medium devices (tablets, 768px and up) bootstraps md*/
 @media (min-width: 768px) {
 :root {
-    --main-font-size: 16px;
+    --main-font-size: 14px;
   }
 .my_cv_container{}
 .my_transparent_container{}
 .my_cv_header_container_row{}
 #navbar{ height: 100px}
 #skip_absolute_header{ padding-top: 100px;}
-#navcol{ top: 105px; font-size: 10px }
+body::after { top: 100px;}
+#navcol{ top: 105px; font-size: 10px; }
 #searchForm{height: 120px; padding-top: 20px;}
 #postSearchInput{height: 50px;  font-size: 20px}
 #cv_image{width: 90px;  height: 90px; top: 0px; left: 85%;}
@@ -81,7 +84,7 @@ div section { padding-top: 100px;}
 .my_cv_header_container_row{width: 80%;}
 #navbar{}
 #skip_absolute_header{}
-#navcol{visibility: visible; width: 20%;}
+#navcol{visibility: visible; width: 20%; transform: 25% 0%;}
 #cv_image{width: 110px;  height: 110px; top: -10px}
 #the_body{ top: 0px }
 body::after { bottom: -100px;}
@@ -99,8 +102,13 @@ div section { padding-top: 100px;}
 .my_cv_header_container{left: 15%;}
 .my_cv_header_container_row{width: 80%;}
 #navbar{}
+  #cvmainbody{
+    width: 70%;
+    transform: translate(30%, 0%);
+  }
 #skip_absolute_header{}
-#navcol{ top: 105px; width: 15%; left: -2%;}
+body::after { top: 100px;}
+#navcol{ top: 105px; width: 15%;}
 #the_body{ top: 0px }
 body::after { bottom: -100px;}
 #empty_scroll { padding-bottom: 600px;}
@@ -133,8 +141,7 @@ div section {
 .my_cv_container {
   font-size: var(--main-font-size);
   color: #000000;
-  background-color: rgba(218,235,254,.8);
-  background-blend-mode: add;
+  background-color: rgba(228,235,244,.8);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 2%;
@@ -145,7 +152,7 @@ div section {
 
 hr.my_cv_header {
 
-    border-color: rgba(83,192,240,1);
+    border-color: rgba(75,172,216,1);
 }
 h1.my_cv_header, h2.my_cv_header {
   font-weight: 700;
@@ -192,33 +199,27 @@ h3.my_cv_header {
 p {
     text-indent: 30px;
 }
-h3 span {
-
-}
 
 a.nav-link{
-    word-wrap: break-word;
-    font-size: var(--main-font-size);
+
+        font-size: var(--main-font-size);
 }
 
 a.nav-link{
     color: white;
-    background-color: rgba(83,192,240,0.8);
+    background-color: rgba(75,172,216,0.8);
 }
 
 a.nav-link:hover {
-    word-wrap: break-word;
     color: #000;
     background-color: rgba(185,229,243,1);
 }
 a.nav-link:focus {
-    word-wrap: break-word;
     color: #fff;
-    background-color: rgb(80,89,97);
+    background-color: rgba(185,229,243,1);
 }
 
  a.active.nav-link {
-    word-wrap: break-word;
     color: #fff;
     background-color: rgb(212,175,55);
 }
@@ -230,20 +231,18 @@ body {
 
 body::after {
     content: "";
-    background-image: url('../cv/mebg3.jpg');
-    opacity: 0.30;
-    filter: alpha(opacity=30);
+    background-image: url('../pics/escher_cropped_small.jpg');
+    opacity: 0.20;
+    filter: alpha(opacity=20);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     /*background-position: 65%;*/
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    top: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
     left: 0;
     /*  bottom: -100px; in media part */
     right: 0;
-    position: absolute;
+    position:absolute;
     z-index: -1;
 }
 .background-tint {
@@ -253,9 +252,10 @@ body::after {
 
 
 
-#navbar{background-image: url('../pics/leaves.jpg');
-        background-repeat: repeat;
-        background-size: cover;
+#navbar{background-image: url('../pics/grid-blue.png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-color: #4bacd8;
         opacity: 1.0;
         filter: alpha(opacity=1);
         }
@@ -263,8 +263,9 @@ body::after {
 
 .my_postlist_container {
           font-size: var(--main-font-size);
-          padding-top: 0px;
-          padding-bottom: 0px;
+          background-color: rgba(228,235,244,.9);
+          padding-top: 10px;
+          padding-bottom: 10px;
           padding-right: 0%;
           padding-left: 0%;
           text-align: justify;
@@ -276,7 +277,7 @@ body::after {
 
 button.my_postlist_button{
     color: #fff;
-    background-color: rgba(83,192,240,0.9);
+    background-color: rgba(75,172,216,0.9);
     border: none;
 }
 button.my_postlist_button:focus {

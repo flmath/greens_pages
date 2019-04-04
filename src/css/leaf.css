@@ -50,7 +50,7 @@ div section {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: #51a2d9;
+    background-color:rgb(75,172,216);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -100,7 +100,7 @@ div section {
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgba(228,235,244,.6);
+    border-color: transparent transparent transparent rgba(228,235,244,.8);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -114,7 +114,7 @@ div section {
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(228,235,244,.6) transparent transparent;
+    border-color: transparent rgba(228,235,244,.8) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -136,7 +136,7 @@ div section {
     font-weight: 600;
     font-size: var(--bigger-font-size);
     background: none;
-    background-color: rgba(228,235,244,0);
+    background-color: none;
     color: #111111;
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */

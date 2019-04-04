@@ -15,9 +15,9 @@ function CvMain(props) {
               id="navcol"
               xs={{ size: 0, offset: 0 }}
               sm={{ size: 0, offset: 0 }}
-              md={{ size: 2, offset: 0 }}
+              md={{ size: 2, offset: 1 }}
               lg={{ size: 2, offset: 0 }}
-              xl={{ size: 2, offset: 0 }}
+              xl={{ size: 2, offset: 1 }}
             >
               <Scrollspy
                 offset={-100}

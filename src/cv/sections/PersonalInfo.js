@@ -19,8 +19,7 @@ export default function PersonalInfo(props) {
               <ColKey>Mail:</ColKey>
               <ColVal>
                 <a href="mailto:flmathematic@gmail.com?subject=Hello,%20I%20have%20found%20your%20web%20CV!"
-                   target="_top">flmathematic@gmail.com</a>
-
+                   target="_top">flmathematic</a>
               </ColVal>
             </Row>
             <Row>
@@ -47,10 +46,10 @@ export default function PersonalInfo(props) {
               <ColVal>
                 <Row>
                   <ColHalf>
-                    <a href="includes/offline/resume.pdf">PDF</a>
+                    <a href="/includes/resume.pdf">PDF</a>
                   </ColHalf>
                   <ColHalf>
-                    <a href="includes/offline/resume.odt">ODT</a>
+                    <a href="/includes/resume.odt">ODT</a>
                   </ColHalf>
                 </Row>
               </ColVal>

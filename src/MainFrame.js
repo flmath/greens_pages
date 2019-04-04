@@ -22,7 +22,9 @@ class MainFrame extends React.Component {
         const theNextType = nextPayloadType(this.state.bodyPayloadType)
         this.setState({bodyPayloadType: theNextType})
             }
-
+  componentDidMount() {
+              window.scrollTo(0, 0)
+            }
   render(){
       const theNextType = nextPayloadType(this.state.bodyPayloadType)
       return (

@@ -9,7 +9,7 @@ import Interests from "./sections/Interests";
 
 function CvText(props) {
   return (
-    <div>
+    <div id = "cvmainbody">
       <section id="PersonalInfo">
       <CvHeader>Personal Info</CvHeader>
         <PersonalInfo />
