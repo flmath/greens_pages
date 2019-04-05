@@ -6,6 +6,7 @@ import json_data from './postlist.json';
 function PostList(props){
       const filtered_data = json_data.the_list.filter(filterPostFun(props.filterText));
       const route_to_page = props.routeToPage
+      window.scrollTo(0, 0)
       return (
         <div>
         <div id="skip_absolute_header"><br /></div>
