@@ -76,7 +76,7 @@ div section { padding-top: 100px;}
 /* Large devices (desktops, 992px and up) bootstraps lg*/
 @media (min-width: 992px) {
   :root {
-    --main-font-size: 18px;
+    --main-font-size: 17px;
   }
 .my_transparent_container{left: 9%; width: 88%;}
 .my_cv_container{left: 15%; width: 78%;}
@@ -84,7 +84,7 @@ div section { padding-top: 100px;}
 .my_cv_header_container_row{width: 80%;}
 #navbar{}
 #skip_absolute_header{}
-#navcol{visibility: visible; width: 20%; transform: 25% 0%;}
+#navcol{visibility: visible; width: 20%;}
 #cv_image{width: 110px;  height: 110px; top: -10px}
 #the_body{ top: 0px }
 body::after { bottom: -100px;}
@@ -194,15 +194,14 @@ h3.my_cv_header {
 }
 
 
-
-
 p {
     text-indent: 30px;
 }
 
 a.nav-link{
-
-        font-size: var(--main-font-size);
+  position: relative;
+  left: -18%;
+   font-size: var(--main-font-size);
 }
 
 a.nav-link{
