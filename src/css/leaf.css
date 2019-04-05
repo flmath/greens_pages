@@ -1,40 +1,36 @@
 /*Tiny bootstraps xs*/
 @media (min-width: 0px) {
   :root {
-    --main-font-size: 10px;
     --bigger-font-size: 13px;
   }}
 
 /* Small bootstraps sm*/
 @media (min-width: 576px) {
   :root {
-    --main-font-size: 12px;
     --bigger-font-size: 15px;
   }}
 
 /* Medium devices (tablets, 768px and up) bootstraps md*/
 @media (min-width: 768px) {
   :root {
-    --main-font-size: 14px;
     --bigger-font-size: 17px;
   }}
 
 /* Large devices (desktops, 992px and up) bootstraps lg*/
 @media (min-width: 992px) {
   :root {
-    --main-font-size: 18px;
-    --bigger-font-size: 23px;
+    --bigger-font-size: 19px;
   }}
 
 /* Extra large devices (large desktops, 1200px and up) bootstraps xl*/
 @media (min-width: 1200px) {
   :root {
-    --main-font-size: 23px;
+    --bigger-font-size: 20px;
   }}
 
 div section {
     color: #041e2d;
-    font-size: 15px;
+    font-size: 13px;
   }
 
 
@@ -124,7 +120,7 @@ div section {
 
 /* The actual content */
 .container_leafs div.content {
-    font-size: var(--main-font-size);
+    font-size: var(--desc-font-size);
     padding: 20px 30px;
     background-color: rgba(228,235,244,.8);
     background-blend-mode: add;
