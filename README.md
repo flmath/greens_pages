@@ -1,68 +1,153 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# New take on my webCV, not expanded with blog post features.
 
-## Available Scripts
+### Graphics Sources and inspirations:
 
-In the project directory, you can run:
+I have tried to build the look based on bootstrap, but I have ended with quite a modifications:
+#### The navbar:
+https://pixabay.com/images/id-3227459/
+https://pixabay.com/images/id-677521/
+Penrose triangle and octagon for the button taken from wikipedia (and colorized)
+https://en.wikipedia.org/wiki/Penrose_triangle
+https://en.wikipedia.org/wiki/File:Penrose_octagon.svg
+https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg
+https://upload.wikimedia.org/wikipedia/commons/a/a3/Penrose_hexagon.svg
+https://upload.wikimedia.org/wikipedia/commons/2/25/Penrose_pentagon.svg
+https://upload.wikimedia.org/wikipedia/commons/1/1c/Penrose_square.svg
 
-### `npm start`
+#### The backround:
+https://en.wikipedia.org/wiki/Relativity_(M._C._Escher)
+The Escher Relativity drawing downloaded from https://www.flickr.com/photos/pmeimon/40066693941 then trimmed a little for the purpose.
+### The inspiration for color pallete:
+https://pixabay.com/images/id-669296/
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### The legacy look:
+Butterfly:
+https://pixabay.com/images/id-142506/
+Bricks:
+https://pixabay.com/images/id-2172682/
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### How to make flexible containers:
+https://medium.freecodecamp.org/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3
 
-### `npm test`
+### How to change image on hover with CSS:
+https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How to change image on hover with React (see BrandImg):
+https://stackoverflow.com/questions/32125708/how-can-i-access-a-hover-state-in-reactjs
 
-### `npm run build`
+### Reference functions in react properly:
+https://stackoverflow.com/questions/48497358/reactjs-maximum-update-depth-exceeded-error/48497410
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Search bar reactive:
+https://medium.com/capital-one-tech/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Libraries I have used:
+https://reactjs.org/
+https://reactstrap.github.io
+https://makotot.github.io/react-scrollspy/
+https://github.com/timarney/react-app-rewired -> https://jaketrent.com/post/change-webpack-config-create-react-app-without-ejecting/
+https://github.com/webpack-contrib/html-loader
 
-### `npm run eject`
+## For further considerations:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d
+https://www.npmjs.com/package/react-render-html
+https://stackoverflow.com/questions/35028591/react-dangerouslysetinnerhtml-to-render-an-iframe-youtube-embed-from-props
+https://facebook.github.io/create-react-app/docs/advanced-configuration
+https://survivejs.com/webpack/what-is-webpack/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+###Loading External sources and Lazy loading:
+https://www.robinwieruch.de/react-fetching-data/#react-fetch-data-render-props
+https://blog.logrocket.com/lazy-loading-components-in-react-16-6-6cea535c0b52
 
-## Learn More
+#### Fetch
+https://davidwalsh.name/fetch
+https://stackoverflow.com/questions/36631762/returning-html-with-fetch
+```javascript
+fetch('somePage.html')
+    .then(function(response) {
+        // When the page is loaded convert it to text
+        return response.text()
+    })
+    .then(function(html) {
+        // Initialize the DOM parser
+        var parser = new DOMParser();
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        // Parse the text
+        var doc = parser.parseFromString(html, "text/html");
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        // You can now even select part of that html as you would in the regular DOM 
+        // Example:
+        // var docArticle = doc.querySelector('article').innerHTML;
 
-### Code Splitting
+        console.log(doc);
+    })
+    .catch(function(err) {  
+        console.log('Failed to fetch page: ', err);  
+    });
+```
+#### Load/import
+https://stackoverflow.com/questions/7163061/is-there-a-require-for-json-in-node-js
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+As of node v0.5.x yes you can require your JSON just as you would require a js file.
+```javascript
+var someObject = require('./somefile.json')
+```
+In ES6:
+```javascript
+import someObject from ('./somefile.json')
+```
 
-### Analyzing the Bundle Size
+https://hackernoon.com/lazy-loading-and-preloading-components-in-react-16-6-804de091c82d
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+https://stackoverflow.com/questions/52042301/reactjs-import-a-dynamic-file-in-render-method
+```javascript
+render() {
+   let pdfFile = require('../' + this.props.termsAndCondition.pdfDocument);
+   return (
+      <li>
+         <a href={pdfFile} target="_blank" className="link">
+            <img src={pdfImage} className="phoneMain"></img> 
+            {this.props.termsAndCondition.language}
+         </a>
+      </li>
+   );
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### dangerouslySetInnerHTML
+https://reactjs.org/docs/dom-elements.html
 
-### Advanced Configuration
+### iframe
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Public folder
+https://facebook.github.io/create-react-app/docs/using-the-public-folder
 
-### Deployment
+https://stackoverflow.com/questions/47196800/reactjs-and-images-in-public-folder
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+## Other pictures:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+https://pixabay.com/vectors/cube-escher-gradient-mc-escher-1293954/
+https://pixabay.com/photos/tree-silhouette-mysterious-407256/
+https://pixabay.com/photos/nature-tree-fog-waters-snow-lake-3091991/
+https://pixabay.com/photos/tree-fog-november-cold-nature-554391/
+https://pixabay.com/photos/fog-tree-mood-backlighting-nature-553005/
+https://pixabay.com/photos/butterfly-blue-insect-142506/
+https://pixabay.com/photos/pattern-ceiling-steel-geometric-3130657/
+https://pixabay.com/photos/arches-architecture-bridge-columns-1837166/
+https://pixabay.com/photos/torino-royal-palace-piemonte-1220460/
+https://pixabay.com/photos/library-church-architecture-white-2544157/
+https://pixabay.com/photos/roof-glass-library-building-1878904/
+https://pixabay.com/photos/library-book-literature-knowledge-807931/
+https://pixabay.com/photos/peabody-institute-baltimore-usa-1629259/
+https://pixabay.com/photos/ice-eiskristalle-snow-iced-1997289/
+https://pixabay.com/photos/pattern-ceiling-steel-geometric-3130657/
+https://pixabay.com/photos/coast-beach-ocean-sea-nature-509195/
+https://pixabay.com/photos/ice-cave-ice-curtain-icicle-16574/
