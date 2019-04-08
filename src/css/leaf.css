@@ -51,6 +51,11 @@ div section {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    background-image: url(../pics/guil.png);
+    background-position: center right;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-blend-mode:overlay;
 }
 
 /* Container around content */
@@ -96,7 +101,7 @@ div section {
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgba(228,235,244,.8);
+    border-color: transparent transparent transparent rgba(225,225,225,.8);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -110,7 +115,7 @@ div section {
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(228,235,244,.8) transparent transparent;
+    border-color: transparent rgba(225,235,225,.8) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -122,8 +127,12 @@ div section {
 .container_leafs div.content {
     font-size: var(--desc-font-size);
     padding: 20px 30px;
-    background-color: rgba(228,235,244,.8);
-    background-blend-mode: add;
+    background-position: center center;
+    background-image: url(../pics/spiral.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-blend-mode:hue;
+    background-color: rgba(228,235,244,.85);
     position: relative;
     border-radius: 6px;
 }
@@ -131,8 +140,15 @@ div section {
 .container_leafs div.content h2 {
     font-weight: 600;
     font-size: var(--bigger-font-size);
-    background: none;
-    background-color: none;
+    background-color: rgba(225,225,225,.85);
+    background-image: url(../pics/guil.png);
+    background-position: center right;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-blend-mode:lighten;
+
+
+
     color: #111111;
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -152,9 +168,9 @@ div section {
   /* Make sure that all arrows are pointing leftwards */
   .container_leafs::before {
     left: 60px;
-    border: medium solid rgba(228,235,244,.8);
+    border: medium solid rgba(225,225,225,.8);
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(228,235,244,.8) transparent transparent;
+    border-color: transparent rgba(225,225,225,.8) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */

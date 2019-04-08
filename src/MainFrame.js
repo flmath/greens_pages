@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Suspense} from 'react';
 
-import MainNavbar from './MainNavbar'
-import CvMain from './cv/CvMain'
-import PostList from './PostList.js'
-import PagesInterface from './PagesInterface'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./css/theme.css";
+import "./css/leaf.css";
+
+const MainNavbar = React.lazy(() => import('./MainNavbar'));
+const CvMain = React.lazy(() => import('./cv/CvMain'));
+const PostList = React.lazy(() => import('./PostList'));
+const PagesInterface = React.lazy(() => import('./PagesInterface'));
+
 
 class MainFrame extends React.Component {
   constructor(props){
@@ -22,10 +27,13 @@ class MainFrame extends React.Component {
         const theNextType = nextPayloadType(this.state.bodyPayloadType)
         this.setState({bodyPayloadType: theNextType})
             }
+
   render(){
       const theNextType = nextPayloadType(this.state.bodyPayloadType)
+      window.scrollTo(0, 0)
       return (
       <div id="topdiv">
+        <Suspense id="my_sky_background" fallback={<div>Loading...</div>}>
           <MainNavbar filterText={this.state.filterText}
                       handleInput = {this.handleInput.bind(this)}
                       nextPayloadType = {theNextType}
@@ -36,6 +44,7 @@ class MainFrame extends React.Component {
                        filterText = {this.state.filterText}
                        routeToPage = {this.routeToPage.bind(this)}
                        href = {this.state.href}></PayloadBody>
+        </Suspense>
       </div>
       );
   }}

@@ -2,8 +2,7 @@ import React from 'react';
 
 import {Navbar, NavbarBrand,Form, Input} from 'reactstrap';
 import ImgBrand from './ImgBrand';
-import "./css/theme.css";
-import "./css/leaf.css";
+
 
 function MainNavbar(props){
       const filterText  = props.filterText

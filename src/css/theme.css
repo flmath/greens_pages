@@ -7,14 +7,14 @@
   --desc-font-size: 10px;
 }
 a.nav-link{position: relative; display: block;}
-.my_cv_container{position:relative;}
-.my_cv_header_container{position:relative;}
-.my_transparent_container{position:relative;}
+.my_cv_container{position: relative;}
+.my_cv_header_container{position: relative;}
+.my_transparent_container{position: relative;}
 .my_cv_header_container_row{}
 #navbar{position: fixed; top: 0px; height: 30px; width: 100%; z-index: 2}
 #skip_absolute_header{ padding-top: 30px;}
 body::after { top: 30px;}
-#navcol{ position: fixed; top: 35px; left: 0px; z-index: 1; visibility: collapse;}
+#navcol{position: fixed; top: 35px; left: 0px; z-index: 1; visibility: collapse;}
 #searchForm{position: fixed; padding-left: 5%; width: 70%; height: 18px; top: 7px;}
 #postSearchInput{height: 7px;  font-size: 8px}
 #cv_image{position: fixed;  width: 20px;  height: 20px; top: 5px; left: 85%;}
@@ -142,13 +142,20 @@ div section { padding-top: 100px;}}
 .my_cv_container {
   font-size: var(--desc-font-size);
   color: rgb(0,0,0);
-  background-color: rgba(228,235,244,.8);
+  background-color: rgba(228,235,244,.85);
+  /* background-image: url(../pics/paper.jpg); */
+  /* background-size: cover; */
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 2%;
   padding-right: 2%;
   text-align: justify;
   text-justify: auto;
+  background-position: center center;
+  background-image: url(../pics/spiral.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-blend-mode:hue;
 }
 
 hr.my_cv_header {
@@ -158,23 +165,14 @@ hr.my_cv_header {
 h1.my_cv_header, h2.my_cv_header {
   font-weight: 700;
   color: black;
-  background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
+  background-color: #4cadd9;
+  background-image: url(../pics/ray.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-blend-mode:darken;
 }
 
 
-h3.my_cv_header {
-  position: relative;
-  width: 104%;
-  left: -2%;
-  color: black;
-  background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
-}
 
 p {
     text-indent: 30px;
@@ -183,21 +181,34 @@ p {
 a.nav-link{
   font-size: var(--main-font-size);
   color: var(--main-font-color);
-  background-color: rgba(75,172,216,0.9);;
+  background-color: #4cadd9;
+  background-image: url(../pics/ray.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-blend-mode:darken;
+
+
 }
 /*rgba(83,192,240,0.8);*/
 a.nav-link:hover {
     color: var(--main-font-color);
     background-color: rgba(185,229,243,1);
+    background-image: none;
 }
 a.nav-link:focus {
     color: var(--main-font-color);
     background-color: rgba(185,229,243,1);
+    background-image: none;
 }
 
  a.active.nav-link {
     color:var(--main-font-color);
     background-color: rgb(212,175,55);
+    background-image: url(../pics/guilloche.svg);
+    background-position: center right;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
 }
 
 body {
@@ -205,10 +216,11 @@ body {
 }
 
 body::after {
+    position:absolute;
     content: "";
     background-image: url('../pics/escher_cropped_small.jpg');
-    opacity: 0.20;
-    filter: alpha(opacity=20);
+    opacity: 0.30;
+    filter: alpha(opacity=30);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     /*background-position: 65%;*/
@@ -217,56 +229,80 @@ body::after {
     left: 0;
     /*  bottom: -100px; in media part */
     right: 0;
-    position:absolute;
+
     z-index: -1;
 }
 .background-tint {
-  background-color: rgba(218,215,254,.8);
+  background-color: rgba(218,215,254,.6);
   background-blend-mode: add;
 }
 
 
 
-#navbar{background-image: url('../pics/grid-blue.png');
+#navbar{
+        background-image: url(../pics/fibonacci.svg);
         background-repeat: no-repeat;
+        background-blend-mode:soft-light;
+        border: none;
         background-size:contain;
         background-color: #4bacd8;
         opacity: 1.0;
         filter: alpha(opacity=1);
         }
 
-.my_postlist_container {
+.my_postlist_container{
           font-size: var(--main-font-size);
-          background-color: rgba(228,235,244,.9);
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 0%;
-          padding-left: 0%;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-right: 2%;
+          padding-left: 2%;
           text-align: justify;
           text-justify: auto;
-        }
+          background-color: rgba(238,238,238,.9);
+          background-position: bottom center;
+          background-image: url(../pics/impossible.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-blend-mode:hue;
+                }
 .my_postlist_button_group{
   width: 100%;
 }
 
 button.my_postlist_button{
     color: var(--main-font-color);
-    background-color: rgba(75,172,216,0.9);
     border: none;
+    border-color: rgba(228,235,244,.85);
+    background-color: #4cadd9;
+    background-image: url(../pics/spiral.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-blend-mode:overlay;
+
 }
 button.my_postlist_button:focus {
     color: var(--main-font-color);;
     background-color: rgb(212,175,55);
+    background-image: url(../pics/guilloche.svg);
+    background-position: center right;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
 }
 button.my_postlist_button:hover {
     color: #000;
     background-color: rgba(185,229,243,1);
+
 }
 
 button.my_postlist_button.active {
-   word-wrap: break-word;
-   color: var(--main-font-color);
-   background-color: rgb(212,175,55);
+  color: var(--main-font-color);;
+  background-color: rgb(212,175,55);
+  background-image: url(../pics/guilloche.svg);
+  background-position: center right;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode:soft-light;
 }
 
 #empty_scroll_postlist { padding-bottom: 80vh;}
