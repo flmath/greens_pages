@@ -6,6 +6,7 @@ I have tried to build the look based on bootstrap, but I have ended with quite a
 #### The navbar:
 https://pixabay.com/images/id-3227459/
 https://pixabay.com/images/id-677521/
+
 Penrose triangle and octagon for the navbar button taken from wikipedia (and colorized)
 https://en.wikipedia.org/wiki/Penrose_triangle
 https://en.wikipedia.org/wiki/File:Penrose_octagon.svg
@@ -13,6 +14,9 @@ https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg
 https://upload.wikimedia.org/wikipedia/commons/a/a3/Penrose_hexagon.svg
 https://upload.wikimedia.org/wikipedia/commons/2/25/Penrose_pentagon.svg
 https://upload.wikimedia.org/wikipedia/commons/1/1c/Penrose_square.svg
+
+Impossible cube:
+https://en.wikipedia.org/wiki/Impossible_cube
 
 A Penrose triangle boxes for postlist container:
 https://pixabay.com/images/id-161955/

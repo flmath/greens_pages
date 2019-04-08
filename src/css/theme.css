@@ -15,7 +15,7 @@ a.nav-link{position: relative; display: block;}
 #skip_absolute_header{ padding-top: 30px;}
 body::after { top: 30px;}
 #navcol{position: fixed; top: 35px; left: 0px; z-index: 1; visibility: collapse;}
-#searchForm{position: fixed; padding-left: 5%; width: 70%; height: 18px; top: 7px;}
+#searchForm{position: fixed; padding-left: 10%; width: 70%; height: 18px; top: 7px;}
 #postSearchInput{height: 7px;  font-size: 8px}
 #cv_image{position: fixed;  width: 20px;  height: 20px; top: 5px; left: 85%;}
 
@@ -43,7 +43,7 @@ div section { padding-top: 30px;}
 #skip_absolute_header{ padding-top: 90px;}
 body::after {}
 #navcol{}
-#searchForm{padding-left: 5%; width: 80%; height: 120px; top: 0px; padding-top: 15px;}
+#searchForm{padding-left: 17%; width: 80%; height: 120px; top: 0px; padding-top: 15px;}
 #postSearchInput{height: 50px;  font-size: 20px; padding-top: 0px; top: 0;}
 #cv_image{width: 70px;  height: 70px; top: 10px; left: 88%;}
 
@@ -66,7 +66,7 @@ div section { padding-top: 90px;}
 #skip_absolute_header{ padding-top: 100px;}
 body::after { top: 100px;}
 #navcol{ top: 105px; font-size: 10px; }
-#searchForm{height: 120px; padding-top: 20px;}
+#searchForm{padding-left: 18%; height: 120px; padding-top: 20px;}
 #postSearchInput{height: 50px;  font-size: 20px}
 #cv_image{width: 90px;  height: 90px; top: 0px; left: 85%;}
 
@@ -240,10 +240,10 @@ body::after {
 
 
 #navbar{
-        background-image: url(../pics/fibonacci.svg);
+        background-image: url(../pics/cube.png);
         background-repeat: no-repeat;
-        background-blend-mode:soft-light;
         border: none;
+        background-origin: content-box;
         background-size:contain;
         background-color: #4bacd8;
         opacity: 1.0;
