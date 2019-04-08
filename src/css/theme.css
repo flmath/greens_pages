@@ -274,10 +274,10 @@ button.my_postlist_button{
     border: none;
     border-color: rgba(228,235,244,.85);
     background-color: #4cadd9;
-    background-image: url(../pics/spiral.jpg);
+    background-image: url(../pics/grid-blue.png);
     background-size: contain;
-    background-repeat: repeat;
-    background-blend-mode:overlay;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
 
 }
 button.my_postlist_button:focus {
@@ -292,6 +292,7 @@ button.my_postlist_button:focus {
 button.my_postlist_button:hover {
     color: #000;
     background-color: rgba(185,229,243,1);
+    background-image: none;
 
 }
 
