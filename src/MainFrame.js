@@ -33,7 +33,7 @@ class MainFrame extends React.Component {
       window.scrollTo(0, 0)
       return (
       <div id="topdiv">
-        <Suspense id="my_sky_background" fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
           <MainNavbar filterText={this.state.filterText}
                       handleInput = {this.handleInput.bind(this)}
                       nextPayloadType = {theNextType}

@@ -1,25 +1,37 @@
 import React from 'react';
 
 import brandCv from './pics/penrosecv.png';
-import brand from './pics/penrose3.png';
+import brandCvAct from './pics/penrosecvact.png';
 import brandList from './pics/penroselist.png';
+import brandListAct from './pics/penroselistact.png';
+
 
 class ImgBrand extends React.Component{
   constructor(props) {
     super(props);
-    this.state = { frame : 0};
+    this.state = {    isActive: 0};
     }
 
-  getPicture(){
-    if (this.state.frame===0) {return brand}
-    else if (this.state.frame===1){return brandCv}
-    else {return brandList}
+  getPicture(){ return this.getPictureHandler(this.props.nextPayloadType, this.state.isActive) }
+
+  getPictureHandler(frame, isActive){
+    if (isActive===0) { return this.getInactivePicture(frame)}
+    else if (isActive===1){return this.getActivePicture(frame)}
+  }
+  getInactivePicture(frame){
+  if (frame===1) { return brandCv}
+    else if (frame===2){return brandList}
+  }
+  getActivePicture(frame){
+  if (frame===1) { return brandCvAct}
+    else if (frame===2){return brandListAct}
+  }
+
+  setOnLeave = () => {
+    this.setState({isActive: 0});
   }
   setOnEnter = () => {
-    this.setState({frame : this.props.nextPayloadType});
-  }
-  setOnLeave = () => {
-    this.setState({frame : 0});
+    this.setState({isActive: 1});
   }
   handleClick = () => {
     this.props.handleStateChange()
@@ -38,5 +50,9 @@ class ImgBrand extends React.Component{
       );
     }
   }
+
+
+
+
 
 export default ImgBrand;

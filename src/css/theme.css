@@ -25,8 +25,7 @@ body::after { bottom: -30px;}
 div section { padding-top: 30px;}
 .ColOffClass {visibility: hidden;}
 #navform{position: relative; width: 90%;  }
-
-#iframe_routed{width: 100%; height: 85vh}
+#iframe_routed{position: relative; width: 100%; height: 90vh; padding-bottom: 0px}
 }
 
 /* Small bootstraps sm*/
@@ -68,14 +67,14 @@ body::after { top: 100px;}
 #navcol{ top: 105px; font-size: 10px; }
 #searchForm{padding-left: 18%; height: 120px; padding-top: 20px;}
 #postSearchInput{height: 50px;  font-size: 20px}
-#cv_image{width: 90px;  height: 90px; top: 0px; left: 85%;}
+#cv_image{width: 90px;  height: 90px; top: 0px; left: 90%;}
 
 #the_body{  }
 body::after {  bottom: -100px;}
 #empty_scroll { padding-bottom: 350px;}
 div section { padding-top: 100px;}
 .ColOffClass {visibility: visible;}
-
+#iframe_routed{left:5%; width: 90%; height: 90vh};
 }
 
 /* Large devices (desktops, 992px and up) bootstraps lg*/
@@ -240,10 +239,9 @@ body::after {
 
 
 #navbar{
-        background-image: url(../pics/cube.png);
+        background-image: url(../pics/penrose3.png);
         background-repeat: no-repeat;
-        border: none;
-        background-origin: content-box;
+        background-origin:content-box;
         background-size:contain;
         background-color: #4bacd8;
         opacity: 1.0;
@@ -306,4 +304,4 @@ button.my_postlist_button.active {
   background-blend-mode:soft-light;
 }
 
-#empty_scroll_postlist { padding-bottom: 80vh;}
+#empty_scroll_postlist { padding-bottom: 60vh;}
