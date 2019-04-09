@@ -1,6 +1,6 @@
 import React from 'react';
-
-import {Container, Button, ButtonGroup} from 'reactstrap';
+import { ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
+import {Container} from 'reactstrap';
 import json_data from './postlist.json';
 
 function PostList(props){
@@ -11,11 +11,11 @@ function PostList(props){
         <div>
         <div id="skip_absolute_header"><br /></div>
     <Container className="my_postlist_container">
-      <ButtonGroup vertical block size="lg" className="my_postlist_button_group">
+      <ListGroup block size="lg" className="my_postlist_button_group">
           <RenderPosts filteredData = {filtered_data}
                        routeToPage  = {route_to_page}
             ></RenderPosts>
-      </ButtonGroup>
+      </ListGroup>
           <div id="empty_scroll_postlist"><br /></div>
 
         </Container>
@@ -35,6 +35,7 @@ props.filteredData.map((aPost, index)=>
             key   = {aPost.id}
             title = {aPost.title}
             href  = {aPost.href}
+            tags  = {aPost.tags}
             routeToPage = {routeToPage} >
 </PostListRow>
 
@@ -58,12 +59,15 @@ function PostListRow(props){
 
     const title = props.title;
     const href = props.href;
-    return (
-        <Button block className = "my_postlist_button"
-             onClick={() => props.routeToPage(href)}
-        >{title}</Button>
-    )}
+    const tags = props.tags;
 
+    return (
+        <ListGroupItem block className="my_postlist_item"
+             onClick={() => props.routeToPage(href)}
+        >
+<ListGroupItemHeading className="my_postlist_head">{title}</ListGroupItemHeading>
+    <ListGroupItemText className="my_postlist_text">Tags:  {tags.map( item => item+" " )} </ListGroupItemText></ListGroupItem>
+    )}
 
 
 export default PostList;

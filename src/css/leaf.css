@@ -128,7 +128,7 @@ div section {
     font-size: var(--desc-font-size);
     padding: 20px 30px;
     background-position: center center;
-    background-image: url(../pics/spiral.jpg);
+    background-image: url(../pics/spiral.png);
     background-size: contain;
     background-repeat: repeat;
     background-blend-mode:hue;

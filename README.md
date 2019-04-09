@@ -236,3 +236,6 @@ https://pixabay.com/illustrations/network-technology-communication-3880571/
 
 https://pixabay.com/users/artbaggage-1189926/
 https://pixabay.com/images/search/guilloche/
+
+https://pixabay.com/vectors/memory-note-notepad-word-writing-1293086/
+https://pixabay.com/photos/backdrop-background-blank-board-72250/

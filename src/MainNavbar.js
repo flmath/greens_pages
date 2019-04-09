@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Navbar, NavbarBrand,Form, Input} from 'reactstrap';
 import ImgBrand from './ImgBrand';
-
+import staticImg from './pics/penrose3.png'
 
 function MainNavbar(props){
       const filterText  = props.filterText
@@ -13,6 +13,10 @@ function MainNavbar(props){
       return (
       <div>
       <Navbar id="navbar">
+      <NavbarBrand className="mr-auto">
+      <img id="cv_static_image" src={staticImg} alt="CV"
+       />
+       </NavbarBrand>
       <Form id="searchForm">
       <Input type="text" name="postSearch" id="postSearchInput" placeholder="Type tag or title"
           value={filterText}  onChange={handleInput}
