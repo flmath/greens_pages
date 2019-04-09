@@ -4,6 +4,7 @@
 
 I have tried to build the look based on bootstrap, but I have ended with quite a modifications:
 #### The navbar:
+https://pixabay.com/images/id-3880571/ heavily edited
 https://pixabay.com/images/id-3227459/
 https://pixabay.com/images/id-677521/
 
@@ -40,7 +41,7 @@ Chrysalis:
 https://pixabay.com/images/id-1548273/
 Depth:
 https://pixabay.com/images/id-1558164/
-The CV container background:
+The CV container background and the list of post:
 https://pixabay.com/images/id-2703890/
 Guilloche for bookmarks:
 https://pixabay.com/images/id-1137074/
@@ -219,7 +220,7 @@ https://pixabay.com/illustrations/concept-gear-planet-technology-1262315/
 https://pixabay.com/photos/pattern-winter-cold-ice-blue-2054281/
 https://pixabay.com/photos/abstract-ice-frost-crystals-frozen-1869263/
 
-https://pixabay.com/photos/sky-stars-constellations-astronomy-828648/
+https://pixabay.com/photos/sky-stars-constellations-astronomy-828648/S
 https://pixabay.com/photos/astronomy-space-darkness-science-3173669/
 https://pixabay.com/photos/ocean-sea-water-wave-chess-2791952/
 https://pixabay.com/photos/magic-chess-chess-harry-potter-play-3795150/
@@ -233,9 +234,17 @@ https://pixabay.com/illustrations/background-color-template-abstract-3266287/
 
 https://pixabay.com/illustrations/network-technology-communication-3880571/
 
+https://pixabay.com/vectors/computer-cyber-circuitry-circuits-3163436/
 
 https://pixabay.com/users/artbaggage-1189926/
 https://pixabay.com/images/search/guilloche/
 
+https://pixabay.com/illustrations/organic-fractal-abstract-background-1280085/
+
 https://pixabay.com/vectors/memory-note-notepad-word-writing-1293086/
 https://pixabay.com/photos/backdrop-background-blank-board-72250/
+
+https://pixabay.com/illustrations/fractals-background-mathematics-1800242/
+https://pixabay.com/vectors/note-notes-memo-cards-cards-learn-1399152/
+https://pixabay.com/illustrations/fractal-abstract-background-physics-1280076/
+https://pixabay.com/illustrations/mandala-coloring-picture-imagine-3225164/
