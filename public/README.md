@@ -1,4 +1,4 @@
-# New take on my webCV, not expanded with blog post features.
+# New take on my webCV, now expanded with blog post features.
 
 ### Graphics Sources and inspirations:
 
