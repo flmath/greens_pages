@@ -11,7 +11,7 @@ function PostList(props){
         <div>
         <div id="skip_absolute_header"><br /></div>
     <Container className="my_postlist_container">
-      <ListGroup block size="lg" className="my_postlist_button_group">
+      <ListGroup size="lg" className="my_postlist_button_group">
           <RenderPosts filteredData = {filtered_data}
                        routeToPage  = {route_to_page}
             ></RenderPosts>
@@ -62,7 +62,7 @@ function PostListRow(props){
     const tags = props.tags;
 
     return (
-        <ListGroupItem block className="my_postlist_item"
+        <ListGroupItem className="my_postlist_item"
              onClick={() => props.routeToPage(href)}
         >
 <ListGroupItemHeading className="my_postlist_head">{title}</ListGroupItemHeading>

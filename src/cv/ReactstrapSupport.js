@@ -39,7 +39,7 @@ const ColHalf = props => (
 );
 
 const ColPic = props => (
-  <Col
+  <Col className="cv_img"
     xs={{size: 0, offset: 0}}
     sm={{size: 0, offset: 0}}
     md={{size: 4, offset: 1}}

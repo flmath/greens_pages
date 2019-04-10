@@ -73,7 +73,22 @@ https://stackoverflow.com/questions/48497358/reactjs-maximum-update-depth-exceed
 ### Search bar reactive:
 https://medium.com/capital-one-tech/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b
 
+### Linking README.md from public directory to root for github.
+https://stackoverflow.com/questions/49980639/specify-alternate-project-level-readme-md-on-github
 
+### Internal history back button handling
+https://stackoverflow.com/questions/24307401/window-history-pushstate-refreshing-the-browser
+```javascript
+window.history.pushState({urlPath:'/page1'},"",'/page1')
+```
+https://stackoverflow.com/questions/49022516/detecting-that-the-back-button-was-pressed-in-react-router?noredirect=1&lq=1
+```javascript
+componentDidUpdate(){
+  window.onpopstate  = (e) => {
+ //your code...
+ }
+}
+```
 ## Libraries I have used:
 https://reactjs.org/
 https://reactstrap.github.io
