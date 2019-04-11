@@ -20,7 +20,7 @@ function MainNavbar(props){
       <Form id="searchForm">
       <Input type="text" name={null} id="postSearchInput" placeholder="Type tag or title"
           value={filterText}  onChange={handleInput}
-          onKeyPress={target=> {if(target.charCode==13) target.preventDefault()}}
+          onKeyPress={target=> {if(target.charCode===13) target.preventDefault()}}
 
          />
       </Form>
