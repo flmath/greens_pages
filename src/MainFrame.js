@@ -53,7 +53,7 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
   }
 
   handleInput(event) {
-    this.setStateWithHistory({filterText: event.target.value})
+    this.setState({filterText: event.target.value})
 
   }
 
