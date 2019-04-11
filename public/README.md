@@ -1,4 +1,5 @@
-# New take on my webCV, now expanded with blog post features.
+## New take on my webCV, now expanded with blog post features.
+ https://flmath.github.io/greens_pages/
 
 ### Graphics Sources and inspirations:
 
@@ -89,12 +90,24 @@ componentDidUpdate(){
  }
 }
 ```
+### Javascript spread operator/ merge objects
+https://flaviocopes.com/how-to-merge-objects-javascript/
+```javascript
+const object1 = {
+  name: 'Flavio'
+}
+const object2 = {
+  age: 35
+}
+const object3 = {...object1, ...object2 }
+```
 ## Libraries I have used:
 https://reactjs.org/
 https://reactstrap.github.io
 https://makotot.github.io/react-scrollspy/
 https://github.com/timarney/react-app-rewired -> https://jaketrent.com/post/change-webpack-config-create-react-app-without-ejecting/
 https://github.com/webpack-contrib/html-loader
+https://github.com/ReactTraining/history
 
 ## For further considerations:
 

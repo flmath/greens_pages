@@ -6,6 +6,7 @@ import "./css/leaf.css";
 
 
 import PayloadBody from './PayloadBody'
+import { createBrowserHistory } from 'history';
 const MainNavbar = React.lazy(() => import('./MainNavbar'));
 
 
@@ -13,16 +14,49 @@ const MainNavbar = React.lazy(() => import('./MainNavbar'));
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
+    let theHistory = createBrowserHistory()
+    theHistory.listen(this.popHistory.bind(this));
     this.state = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage
                   filterText: "",
                   href:  "",
-                  history: [],
-                  historyIndex : 0
+                  history: theHistory
                 }
   }
+
+popHistory(location, action){
+     console.log(location.state)
+     console.log(location.pathname!=="/")
+     console.log(
+                 `The current URL is ${location.pathname}${location.search}${location.hash}`
+               );
+  if(location.state!==undefined & action==='POP')
+  {
+  this.setState(location.state)
+}
+else if(location.state===undefined & location.pathname!=="/" & action==='POP')
+{
+// browser moves automatically when url changes
+}
+}
+
+  setStateWithHistory(stateUpdate){
+    const stateToStore={
+                bodyPayloadType: this.state.bodyPayloadType,
+                filterText: this.state.filterText,
+                href:  this.state.href
+                }
+
+    this.state.history.push({state:
+      {...stateToStore,
+       ...stateUpdate}});
+    this.setState(stateUpdate)
+  }
+
   handleInput(event) {
     this.setStateWithHistory({filterText: event.target.value})
+
   }
+
   routeToPage(new_href){
     this.setStateWithHistory({bodyPayloadType: 3,
                    href:  new_href})}
@@ -31,42 +65,8 @@ class MainFrame extends React.Component {
         this.setStateWithHistory({bodyPayloadType: theNextType})
             }
 
-  setStateWithHistory(stateModificator){
-    let history = this.state.history
-    history.push({ bodyPayloadType: this.state.bodyPayloadType, //1 == CV; 2 == List; 3 == subpage
-                  filterText: this.state.filterText,
-                  href: this.state.href})
-    stateModificator['history'] = history
-    stateModificator['historyIndex'] += 1
-    window.history.pushState({urlPath:'/'},"",'/')
-    this.setState(stateModificator)
-  }
-  getHistoryBack(){
-  const current_history = this.state.history
-  const historyIndex = this.state.historyIndex
-  if(historyIndex>0)
-  {
-  const lastHistoryElement = this.state.history[historyIndex-1]
-  this.setState({ bodyPayloadType: lastHistoryElement.bodyPayloadType, //1 == CV; 2 == List; 3 == subpage
-                  filterText: lastHistoryElement.filterText,
-                  href: lastHistoryElement.href,
-                  historyIndex: historyIndex
-                })}
-  else {
-  this.setState(
-    {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage
-                  filterText: "",
-                  href:  "",
-                  history: []
-                }) }}
+  render() {
 
-  componentDidUpdate(){
-
-                  window.onpopstate  = (e) => {this.getHistoryBack() }
-
-                    }
-
-  render(){
       const theNextType = nextPayloadType(this.state.bodyPayloadType)
       window.scrollTo(0, 0)
       return (
@@ -86,6 +86,7 @@ class MainFrame extends React.Component {
       </div>
       );
   }}
+
 
 function nextPayloadType(currentType)
 {
