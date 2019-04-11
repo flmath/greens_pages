@@ -24,11 +24,11 @@ class MainFrame extends React.Component {
   }
 
 popHistory(location, action){
-     console.log(location.state)
-     console.log(location.pathname!=="/")
-     console.log(
-                 `The current URL is ${location.pathname}${location.search}${location.hash}`
-               );
+     // console.log(location.state)
+     // console.log(location.pathname!=="/")
+     // console.log(
+     //             `The current URL is ${location.pathname}${location.search}${location.hash}`
+     //           );
   if(location.state!==undefined & action==='POP')
   {
   this.setState(location.state)
