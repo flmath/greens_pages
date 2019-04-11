@@ -14,7 +14,7 @@ const MainNavbar = React.lazy(() => import('./MainNavbar'));
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
-    let initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage
+    const initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage
                       filterText: "",
                       href:  ""}
     let theHistory = createBrowserHistory()

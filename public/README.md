@@ -90,6 +90,21 @@ componentDidUpdate(){
  }
 }
 ```
+
+### React block default behaviours connected to listener
+https://hashnode.com/post/why-do-you-write-eventpreventdefault-in-react-cjdznf1el0atom3wt831c2m9o
+```javascript
+doMeow = e => {
+ e.preventDefault();
+ // do meow here
+}
+
+render() {
+    return(
+        <a onClick={this.doMeow} href="/">Meow</a>
+    );
+}```
+
 ### React synchronous states
 https://medium.freecodecamp.org/understanding-setstate-in-react-ea8982168b49
 
