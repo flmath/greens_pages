@@ -39,7 +39,7 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
 }
 }
 
-  setStateWithHistory(stateUpdate){
+  setStateWithHistoryPush(stateUpdate){
     const stateToStore={
                 bodyPayloadType: this.state.bodyPayloadType,
                 filterText: this.state.filterText,
@@ -49,20 +49,36 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
     this.state.history.push({state:
       {...stateToStore,
        ...stateUpdate}});
+    this.setState(stateUpdate) }
+
+  setStateWithHistoryReplace(stateUpdate){
+    const stateToStore={
+                bodyPayloadType: this.state.bodyPayloadType,
+                filterText: this.state.filterText,
+                href:  this.state.href
+                }
+
+    this.state.history.replace({state:
+      {...stateToStore,
+       ...stateUpdate}});
     this.setState(stateUpdate)
   }
 
   handleInput(event) {
-    this.setState({filterText: event.target.value})
-
+    if (this.state.filterText==="") {
+      this.setStateWithHistoryPush({filterText: event.target.value})
+    }
+    else{
+    this.setStateWithHistoryReplace({filterText: event.target.value})
+}
   }
 
   routeToPage(new_href){
-    this.setStateWithHistory({bodyPayloadType: 3,
+    this.setStateWithHistoryPush({bodyPayloadType: 3,
                    href:  new_href})}
   switchState() {
         const theNextType = nextPayloadType(this.state.bodyPayloadType)
-        this.setStateWithHistory({bodyPayloadType: theNextType})
+        this.setStateWithHistoryPush({bodyPayloadType: theNextType})
             }
 
   render() {
