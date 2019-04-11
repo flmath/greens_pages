@@ -90,6 +90,14 @@ componentDidUpdate(){
  }
 }
 ```
+### React synchronous states
+https://medium.freecodecamp.org/understanding-setstate-in-react-ea8982168b49
+
+```javascript
+onClick = () =>
+{this.setState((prevState, props) => ({value: prevState.value + 1}))
+}
+```
 ### Javascript spread operator/ merge objects
 https://flaviocopes.com/how-to-merge-objects-javascript/
 ```javascript

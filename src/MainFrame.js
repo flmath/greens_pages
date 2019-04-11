@@ -14,11 +14,13 @@ const MainNavbar = React.lazy(() => import('./MainNavbar'));
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
+    let initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage
+                      filterText: "",
+                      href:  ""}
     let theHistory = createBrowserHistory()
     theHistory.listen(this.popHistory.bind(this));
-    this.state = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage
-                  filterText: "",
-                  href:  "",
+    theHistory.push({state: initState})
+    this.state = {...initState,
                   history: theHistory
                 }
   }
@@ -40,32 +42,39 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
 }
 
   setStateWithHistoryPush(stateUpdate){
-    const stateToStore={
-                bodyPayloadType: this.state.bodyPayloadType,
-                filterText: this.state.filterText,
-                href:  this.state.href
-                }
-
-    this.state.history.push({state:
+    this.setState((prevState, props) => {
+    const stateToStore = getCurrentHistoryState(prevState)
+    prevState.history.push({state:
       {...stateToStore,
        ...stateUpdate}});
-    this.setState(stateUpdate) }
+    return  stateUpdate
+  })}
 
   setStateWithHistoryReplace(stateUpdate){
-    const stateToStore={
-                bodyPayloadType: this.state.bodyPayloadType,
-                filterText: this.state.filterText,
-                href:  this.state.href
-                }
-
-    this.state.history.replace({state:
+    this.setState((prevState, props) => {
+    const stateToStore = getCurrentHistoryState(prevState)
+    prevState.history.replace({state:
       {...stateToStore,
        ...stateUpdate}});
-    this.setState(stateUpdate)
-  }
+      return  stateUpdate
+  })}
+
+  setStateWithHistoryRemove(stateUpdate){
+
+    this.setState((prevState, props) => {
+    const stateToStore = getCurrentHistoryState(
+                                {...prevState,
+                                 ...stateUpdate})
+    prevState.history.push({state: stateToStore});
+    return stateUpdate
+  })}
 
   handleInput(event) {
+    if (event.target.value==="" & this.state.filterText!=="") {
+      this.setStateWithHistoryRemove({filterText: ""})
+    } else
     if (this.state.filterText==="") {
+      console.log(event.target.value==="")
       this.setStateWithHistoryPush({filterText: event.target.value})
     }
     else{
@@ -99,10 +108,18 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
                        routeToPage = {this.routeToPage.bind(this)}
                        href = {this.state.href}></PayloadBody>
         </Suspense>
+
       </div>
       );
   }}
 
+  function getCurrentHistoryState(thisState){
+                return {
+                bodyPayloadType: thisState.bodyPayloadType,
+                filterText: thisState.filterText,
+                href:  thisState.href
+                }
+  }
 
 function nextPayloadType(currentType)
 {
