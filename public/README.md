@@ -299,3 +299,14 @@ https://pixabay.com/illustrations/fractals-background-mathematics-1800242/
 https://pixabay.com/vectors/note-notes-memo-cards-cards-learn-1399152/
 https://pixabay.com/illustrations/fractal-abstract-background-physics-1280076/
 https://pixabay.com/illustrations/mandala-coloring-picture-imagine-3225164/
+
+
+## Other interesting colors:
+http://www.color-hex.com/color/b9e5f3
+http://www.color-hex.com/color/8ed3f4
+http://www.color-hex.com/color/328daa
+http://www.color-hex.com/color/e4ebf4
+http://www.color-hex.com/color/8a8683
+http://www.color-hex.com/color/5a4d4c
+http://www.color-hex.com/color/51a2d9
+http://www.color-hex.com/color/505961
