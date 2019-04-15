@@ -16,24 +16,45 @@ export default function Experience(props) {
             <p>
               <br />
               Developing SBG (Session Border Gateway) as a Consultant from DEK
-              Sweden. The Media Security Control, Overload Control, Network
-              Provided Location Information features and WiFi access.
-              <br />
-              Creating tool parsing test logs to a SQL database.
+              Sweden.
             </p>
           </div>
         </div>
         <div className="container_leafs right">
           <div className="content">
             <h2>
-              08/2015 to present
+              07/2017 to present
               <br />
-              DEK Sweden
+              DEK Sweden - UNI team
             </h2>
             <p>
               <br />
-              Developing SBG (Session Border Gateway) at Ericsson. Creating a
-              web GUI for OTP Common Test.
+              Developing SBG (Session Border Gateway) at Ericsson.
+              Extending registration fault measuring capabilities,
+              Support for terminating calls to unregistered users,
+              Removal of not compilant headers from incoming SIP messsages.
+              <br />
+              Researching "Matrixes implementations in Erlang".
+              The office timer extended calculator.
+              DEK Machine Learning group participant.
+            </p>
+          </div>
+        </div>
+        <div className="container_leafs right">
+          <div className="content">
+            <h2>
+              08/2015 to 07/2017
+              <br />
+              DEK Sweden - Q team
+            </h2>
+            <p>
+              <br />
+              Developing SBG (Session Border Gateway) at Ericsson.
+              The Media Security Control, Overload Control, Network
+              Provided Location Information features and WiFi access.
+              <br />
+              Creating tool parsing test logs to a SQL database.
+              Creating a web GUI for OTP Common Test.
             </p>
           </div>
         </div>

@@ -131,6 +131,7 @@ https://makotot.github.io/react-scrollspy/
 https://github.com/timarney/react-app-rewired -> https://jaketrent.com/post/change-webpack-config-create-react-app-without-ejecting/
 https://github.com/webpack-contrib/html-loader
 https://github.com/ReactTraining/history
+https://www.npmjs.com/package/marked
 
 ## For further considerations:
 

@@ -14,7 +14,7 @@ const MainNavbar = React.lazy(() => import('./MainNavbar'));
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
-    const initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage
+    const initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage; 4 == readme
                       filterText: "",
                       href:  ""}
     let theHistory = createBrowserHistory()
@@ -74,7 +74,7 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
       this.setStateWithHistoryRemove({filterText: ""})
     } else
     if (this.state.filterText==="") {
-      console.log(event.target.value==="")
+      // console.log(event.target.value==="")
       this.setStateWithHistoryPush({filterText: event.target.value})
     }
     else{
@@ -85,10 +85,12 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
   routeToPage(new_href){
     this.setStateWithHistoryPush({bodyPayloadType: 3,
                    href:  new_href})}
+
   switchState() {
         const theNextType = nextPayloadType(this.state.bodyPayloadType)
         this.setStateWithHistoryPush({bodyPayloadType: theNextType})
             }
+
 
   render() {
 

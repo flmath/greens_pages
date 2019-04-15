@@ -9,7 +9,6 @@ function MainNavbar(props){
       const handleInput = props.handleInput
       const handleStateChange = props.handleStateChange
       const nextPayloadType = props.nextPayloadType
-
       return (
       <div>
       <Navbar id="navbar">

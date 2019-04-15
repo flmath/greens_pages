@@ -25,7 +25,7 @@ export default function PersonalInfo(props) {
             <Row>
               <ColKey>Linkedin profile:</ColKey>
               <ColVal>
-                <a href='https://www.linkedin.com/in/mathias-green'>mathias-green</a>
+                <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/mathias-green'>mathias-green</a>
               </ColVal>
             </Row>
             <Row>
@@ -33,10 +33,10 @@ export default function PersonalInfo(props) {
               <ColVal>
                 <Row>
                   <ColHalf>
-                    <a href='https://github.com/flmath'>main</a>
+                    <a target="_blank" rel="noopener noreferrer" href='https://github.com/flmath'>main</a>
                   </ColHalf>
                   <ColHalf>
-                    <a href='https://github.com/flmath-dirty'>secondary</a>
+                    <a  target="_blank" rel="noopener noreferrer" href='https://github.com/flmath-dirty'>secondary</a>
                   </ColHalf>
                 </Row>
               </ColVal>
@@ -46,10 +46,10 @@ export default function PersonalInfo(props) {
               <ColVal>
                 <Row>
                   <ColHalf>
-                    <a href="/includes/resume.pdf">PDF</a>
+                    <a target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL+"/resumes/resume.pdf"}>PDF</a>
                   </ColHalf>
                   <ColHalf>
-                    <a href="/includes/resume.odt">ODT</a>
+                    <a href={process.env.PUBLIC_URL+"/resumes/resume.odt"}>ODT</a>
                   </ColHalf>
                 </Row>
               </ColVal>

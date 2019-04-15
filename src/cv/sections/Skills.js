@@ -6,32 +6,40 @@ export default function Skills(props) {
   return (<div className="my_cv_container">
 
       <p>
-        As a professional I work as an Erlang programmer developing Session Border Controller node in IMS network. The project is developed and running in Linux environment. We use Git as a version control system. Throughout my career I was working on Agile teams, mostly with Scrum methodologies. At my current team we are trying to follow Clean Code and TDD rules, as much as, it is compilant with the project established ways of working.
+        As a professional I work as an Erlang programmer developing Session Border Controller node in IMS network.
+        The technical stack is based on Linux, the above mentioned Erlang, Git/Gerrit as the projects version control system, and Jenkins for CI/CD.
+        Throughout my career I was working in Agile teams(usually SCRUM) tasked with end-to-end process of delivering requested feature. I usually was responsible for:
+        analysing requirements, evaluating feasibillity and designing solutions, implementing solutions, writing function tests.
       </p>
       <p>
-        I also use Python (often connected with Sqlite database) as a scripting language to automate and expedite my work. In a limited manner I also use the R language. Occasionally Javascript to visualize tasks and problems.
+        Outside of feature work I also implement tools for development environment,
+        for example a written in Python tool to parse html testlogs into Sqlite database (to enable more advanced analysis)
+        Python is my favourite scripting language, I usually use Anaconda to have an access to libraries like Numpy, Pandas and Jupyter.
+        During my various projects and courses I have took I used a lot of different languages( and frameworks) including React,
+        Matlab/Octave, R and SQL(Sqlite).
+      </p>
+        <p>
+           I have two github accounts where I'm keeping my public projects.
+           The <a target="_blank" rel="noopener noreferrer" href='https://github.com/flmath'>main</a>&nbsp;
+            repository contains projects that are finished and clean (like various implementations of matrixes in Erlang) and active ones like this blog.
+        The <a  target="_blank" rel="noopener noreferrer" href='https://github.com/flmath-dirty'>"dirty"</a> repository contains less clean code,
+        and projects that are queued for cleaning.
+        For example web graphics application to Erlang Common Test
+        (AngularJs which I plan to replace with other framework and the Cowboy framework which is dependency I am planning to remove).
       </p>
       <p>
-        Outside of professional work I'm trying to bridge my professional skills with things I've learnt during studies. As a result of Computer Science to Mathematics study I developed interest in fields as Artificial Inteligence, Statistics, Computer Vision, Cryptography and Computional Genetics.
+       The first programming language I have learnt was C++, I has been some time since I have used it, but it does not mean I have anything against it.
       </p>
-      <p>
-        Aside of that I have a github account where I'm keeping the Jump to Conclusions project. The project is web graphics application to Erlang Common Test. It uses Angularjs, Bootstrap for frontend and the Cowboy framework over OTP for backend.
-      </p>
-
       <hr/>
 
       <Row>
         <ColShortKey>Professional product development:
         </ColShortKey>
-        <ColShortVal>Erlang, IMS, Linux, Git, Scrum, Clean Code</ColShortVal>
+        <ColShortVal>Erlang, IMS, Linux, SCRUM, Git/Gerrit</ColShortVal>
       </Row>
       <Row>
         <ColShortKey>Scripting for professional purpose:</ColShortKey>
         <ColShortVal>Python, Sqlite, Javascript, R language</ColShortVal>
-      </Row>
-      <Row>
-        <ColShortKey>Fields of additional interest:</ColShortKey>
-        <ColShortVal>Mathematics and its applied subfields in IT</ColShortVal>
       </Row>
   </div>);
 }
