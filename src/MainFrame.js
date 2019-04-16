@@ -9,12 +9,13 @@ import PayloadBody from './PayloadBody'
 import { createBrowserHistory } from 'history';
 const MainNavbar = React.lazy(() => import('./MainNavbar'));
 
-ReactGA.initialize('UA-118756062-2');
-ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
+    ReactGA.initialize('UA-118756062-2');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     const initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage; 4 == readme
                       filterText: "",
                       href:  ""}
@@ -92,6 +93,12 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
         this.setStateWithHistoryPush({bodyPayloadType: theNextType})
             }
 
+  componentDidMount(){
+    ReactGA.event({
+      category: 'User',
+      action: 'Main component mounted'
+        });
+  }
 
   render() {
 
