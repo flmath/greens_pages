@@ -22,7 +22,7 @@ export default function Skills(props) {
            The <a target="_blank" rel="noopener noreferrer" href='https://github.com/flmath'>main</a>&nbsp;repository contains projects that are finished and clean (like various implementations of matrixes in Erlang) and active ones like this blog.
         The <a  target="_blank" rel="noopener noreferrer" href='https://github.com/flmath-dirty'>"dirty"</a> repository contains less clean code,
         and projects that are queued for cleaning.
-        For example web graphics application to Erlang Common Test
+        For example web graphics application for Erlang Common Test
         (AngularJs which I plan to replace with other framework and the Cowboy framework which is dependency I am planning to remove).
       </p>
       <p>
