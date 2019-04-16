@@ -13,6 +13,7 @@ const MainNavbar = React.lazy(() => import('./MainNavbar'));
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
+    window.scrollTo(0, 0)
     const initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage; 4 == readme
                       filterText: "",
                       href:  ""}
@@ -93,7 +94,6 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
   render() {
 
       const theNextType = nextPayloadType(this.state.bodyPayloadType)
-      window.scrollTo(0, 0)
       return (
       <div id="topdiv">
         <Suspense fallback={<div>Loading...</div>}>
