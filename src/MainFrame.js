@@ -13,7 +13,6 @@ const MainNavbar = React.lazy(() => import('./MainNavbar'));
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
-    window.scrollTo(0, 0)
     const initState = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage; 4 == readme
                       filterText: "",
                       href:  ""}
