@@ -4,20 +4,19 @@ import {ColShortVal, ColShortKey} from '../ReactstrapSupport';
 
 export default function Skills(props) {
   return (<div className="my_cv_container">
-
-
     <p>
   Professionally I work as an Erlang programmer developing Session Border Controller node in IMS network.
   The technical stack is based on Linux, the above mentioned Erlang, Git/Gerrit as the project version control system,
   and Jenkins for CI/CD. Throughout my career I was working in Agile teams(usually SCRUM) tasked with end-to-end process of delivering requested feature.
   I was usually responsible for: analyzing requirements, evaluating feasibility and designing solutions, implementing solutions, writing function tests.
-</p>    <p>
+</p>
+   <p>
   Outside of feature work I also implement tools for a development environments I work in.
   For example I have written in Python tool to parse HTML test logs into a sqlite database (to enable more advanced analysis&#39;).
    Python is my favorite scripting language, I usually use Anaconda to have access to libraries like Numpy, Pandas and Jupyter.
    During my various projects and courses I have taken I used a lot of different languages( and frameworks) including React, Matlab/Octave,
    R and SQL(Sqlite).
-</p>
+</p> <p>
 
            I have two github accounts where I'm keeping my public projects.
            The <a target="_blank" rel="noopener noreferrer" href='https://github.com/flmath'>main</a>&nbsp;repository contains projects that are finished and clean (like various implementations of matrixes in Erlang) and active ones like this blog.
