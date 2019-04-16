@@ -1,5 +1,5 @@
 import React, { Suspense} from 'react';
-
+import ReactGA from 'react-ga';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./css/theme.css";
 import "./css/leaf.css";
@@ -91,7 +91,10 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
         this.setStateWithHistoryPush({bodyPayloadType: theNextType})
             }
 
-
+  componentDidMount(){
+    ReactGA.initialize('UA-118756062-2');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
   render() {
 
       const theNextType = nextPayloadType(this.state.bodyPayloadType)
