@@ -1,5 +1,4 @@
 import React, { Suspense} from 'react';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./css/theme.css";
 import "./css/leaf.css";
@@ -90,7 +89,6 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
         const theNextType = nextPayloadType(this.state.bodyPayloadType)
         this.setStateWithHistoryPush({bodyPayloadType: theNextType})
             }
-
 
   render() {
 
