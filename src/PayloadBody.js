@@ -7,7 +7,6 @@ const PagesInterface = React.lazy(() => import('./PagesInterface'));
 
 function PayloadBody(props)
 {
-window.scrollTo(0, 0)  
 if(props.type===1){
   return(<div><CvMain></CvMain></div>)
 }

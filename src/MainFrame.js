@@ -89,7 +89,7 @@ else if(location.state===undefined & location.pathname!=="/" & action==='POP')
         const theNextType = nextPayloadType(this.state.bodyPayloadType)
         this.setStateWithHistoryPush({bodyPayloadType: theNextType})
             }
-
+  componentWillMount() { window.scrollTo(0, 0) }
   render() {
 
       const theNextType = nextPayloadType(this.state.bodyPayloadType)
