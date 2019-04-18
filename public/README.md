@@ -336,3 +336,8 @@ http://www.color-hex.com/color/8a8683
 http://www.color-hex.com/color/5a4d4c
 http://www.color-hex.com/color/51a2d9
 http://www.color-hex.com/color/505961
+
+### English language support:
+
+https://www.slickwrite.com
+https://app.grammarly.com

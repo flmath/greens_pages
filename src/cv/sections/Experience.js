@@ -32,9 +32,9 @@ export default function Experience(props) {
               Developing SBG (Session Border Gateway) at Ericsson.
               Extending registration fault measuring capabilities,
               Support for terminating calls to unregistered users,
-              Removal of not compilant headers from incoming SIP messsages.
+              Removal of not compliant headers from incoming SIP messages.
               <br />
-              Researching "Matrixes implementations in Erlang".
+              Researching "Matrixes implementations in Erlang" article.
               The office timer extended calculator.
               DEK Machine Learning group participant.
             </p>
@@ -50,10 +50,10 @@ export default function Experience(props) {
             <p>
               <br />
               Developing SBG (Session Border Gateway) at Ericsson.
-              The Media Security Control, Overload Control, Network
-              Provided Location Information features and WiFi access.
+              Introducing features: Media Security Control, Overload Control, Network
+              Provided Location Information, and extending WiFi access.
               <br />
-              Creating tool parsing test logs to a SQL database.
+              Creating a tool parsing test logs to a SQL database.
               Creating a web GUI for OTP Common Test.
             </p>
           </div>
@@ -67,11 +67,10 @@ export default function Experience(props) {
             </h2>
             <p>
               <br />
-              Expanding a TLS support for the project. Assessing efficiency of
-              throttling algorithms for SIP messages with a simulation of the
-              node (in R language).
-              <br />
-              Writting support scripts for tagging PTA language.
+                Expanding TLS support for the project. Assessing the efficiency of
+                    throttling algorithms for SIP messages with a simulation of nodes (in R language).
+                    <br />
+                    Writing support scripts for tagging PTA language.
             </p>
           </div>
         </div>
@@ -85,7 +84,7 @@ export default function Experience(props) {
             <p>
               <br />
               Developing MTAS (Multimedia Telephony Application Server). Working
-              with in agile methodology on design (C++), test (TTCN-3), and
+              within agile methodology on design (C++), test (TTCN-3), and
               documentation of the IMS node.
             </p>
           </div>
@@ -99,11 +98,11 @@ export default function Experience(props) {
             </h2>
             <p>
               <br />
-              Trainings and examinations preparing for a supplier role in
+              Participate in training events and examinations preparing for a supplier role in
               external companies. <br />
               Passed exams from Erlang, TTCN-3, and C++ languages.
               <br />
-              Internal in-house trainings. <br />
+              Internal in-house training. <br />
               A supplier for MTAS and SBG projects.
               <br />
             </p>
