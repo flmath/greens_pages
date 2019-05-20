@@ -8,7 +8,7 @@ function MainNavbar(props){
       const filterText  = props.filterText
       const handleInput = props.handleInput
       const handleStateChange = props.handleStateChange
-      const nextPayloadType = props.nextPayloadType
+      const type = props.type
       return (
       <div>
       <Navbar id="navbar">
@@ -19,13 +19,11 @@ function MainNavbar(props){
       <Form id="searchForm">
       <Input type="text" name={null} id="postSearchInput" placeholder="Type tag or title"
           value={filterText}  onChange={handleInput}
-          onKeyPress={target=> {if(target.charCode===13) target.preventDefault()}}
-
          />
       </Form>
         <NavbarBrand className="ml-auto">
             <ImgBrand handleStateChange = {handleStateChange}
-                      nextPayloadType = {nextPayloadType}></ImgBrand>
+                      type = {type}></ImgBrand>
         </NavbarBrand>
       </Navbar>
       </div>

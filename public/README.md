@@ -114,7 +114,7 @@ componentDidUpdate(){
 }
 ```
 
-### React block default behaviours connected to listener
+### React block default behaviors connected to listeners
 https://hashnode.com/post/why-do-you-write-eventpreventdefault-in-react-cjdznf1el0atom3wt831c2m9o
 ```javascript
 doMeow = e => {
@@ -147,6 +147,67 @@ const object2 = {
 }
 const object3 = {...object1, ...object2 }
 ```
+
+### React route with forwarded props
+https://tylermcginnis.com/react-router-pass-props-to-components/
+
+### Separate library without component is possible
+https://stackoverflow.com/questions/43262599/call-js-function-from-another-file-in-react
+
+``` javascript
+//slideshow.js
+export const plusSlides = (n)=>{
+    showSlides(slideIndex += n);
+}
+```
+
+and import it where you need to
+
+```
+//Homepage.js
+import {plusSlides} from './slide'
+
+handleClick (event) {
+        plusSlides(1);
+    }
+```    
+### withRouter Router usage
+https://medium.com/@AkyunaAkish/understanding-react-router-4-df73a66d96c4
+https://stackoverflow.com/questions/53539314/what-is-withrouter-for-in-react-router-dom
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/withRouter.md
+
+### withRouter Router usage onClick
+https://stackoverflow.com/questions/31079081/programmatically-navigate-using-react-router
+
+``` javascript
+import { withRouter } from 'react-router-dom'
+// this also works with react-router-native
+
+const Button = withRouter(({ history }) => (
+  <button
+    type='button'
+    onClick={() => { history.push('/new-location') }}
+  >
+    Click Me!
+  </button>
+))
+```
+
+``` javascript
+import { Route } from 'react-router-dom'
+
+const Button = () => (
+  <Route render={({ history}) => (
+    <button
+      type='button'
+      onClick={() => { history.push('/new-location') }}
+    >
+      Click Me!
+    </button>
+  )} />
+)
+```
+
 ## Libraries I have used:
 https://reactjs.org/
 https://reactstrap.github.io

@@ -65,7 +65,7 @@ function PostListRow(props){
              onClick={() => props.routeToPage(href)}
         >
 <ListGroupItemHeading className="my_postlist_head">{title}</ListGroupItemHeading>
-    <ListGroupItemText className="my_postlist_text">Tags:  {tags.map( item => item+" " )} </ListGroupItemText></ListGroupItem>
+    <ListGroupItemText className="my_postlist_text">Tags:  {tags.map( item => item + " " )} </ListGroupItemText></ListGroupItem>
     )}
 
 

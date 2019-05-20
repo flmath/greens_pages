@@ -1,13 +1,11 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainFrame from './MainFrame';
+import MainFrameLazyWithRouter from './MainFrameLazyWithRouter';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 ReactDOM.render(
-    <MainFrame />,
+    <MainFrameLazyWithRouter />,
   document.getElementById('root')
 );

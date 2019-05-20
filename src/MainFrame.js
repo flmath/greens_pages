@@ -1,18 +1,16 @@
-import React, { Suspense} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./css/theme.css";
-import "./css/leaf.css";
-
+import React from 'react';
 
 import PayloadBody from './PayloadBody'
+import { withRouter } from "react-router-dom"
+
+import {nextPayloadType} from './SupportFunctions'
+
 const MainNavbar = React.lazy(() => import('./MainNavbar'));
 
 class MainFrame extends React.Component {
   constructor(props){
     super(props)
-    this.state = {bodyPayloadType: 2, //1 == CV; 2 == List; 3 == subpage; 4 == readme
-                      filterText: "",
-                      href:  ""}
+    this.state = {filterText: ""}
   }
 
   handleInput(event) {
@@ -20,44 +18,34 @@ class MainFrame extends React.Component {
     }
 
   routeToPage(new_href){
-    this.setState({bodyPayloadType: 3,
-                   href:  new_href})}
+    console.log("/display" + new_href)
+    this.props.history.push("/display" + new_href)
+  }
 
   switchState() {
-        const theNextType = nextPayloadType(this.state.bodyPayloadType)
-        this.setState({bodyPayloadType: theNextType})
-            }
+        const theType = nextPayloadType(this.props.location.pathname)
+        this.props.history.push(theType)
+        }
 
   componentWillMount() { window.scrollTo(0, 0) }
 
   render() {
-      const theNextType = nextPayloadType(this.state.bodyPayloadType)
-      return (
-      <div id="topdiv">
-        <Suspense fallback={<div>Loading...</div>}>
+    return (
+      <div>
           <MainNavbar filterText={this.state.filterText}
                       handleInput = {this.handleInput.bind(this)}
-                      nextPayloadType = {theNextType}
+                      type = {this.props.location.pathname}
                       handleStateChange = {this.switchState.bind(this)}
                        >
           </MainNavbar>
-          <PayloadBody type = {this.state.bodyPayloadType}
+
+          <PayloadBody type = {this.props.location.pathname}
                        filterText = {this.state.filterText}
                        routeToPage = {this.routeToPage.bind(this)}
-                       href = {this.state.href}></PayloadBody>
-        </Suspense>
-
+                       ></PayloadBody>
       </div>
       );
   }}
 
 
-function nextPayloadType(currentType)
-{
-  // 1 -> 2, 2-> 1, 3 -> 2
-  // CV -> List, List -> CV,  Subpage -> List
-  const stateMap = {1:2,2:1,3:2};
-  return stateMap[currentType]
-}
-
-export default MainFrame;
+export default withRouter(MainFrame);

@@ -1,25 +1,25 @@
 import React from 'react';
 
-const CvMain = React.lazy(() => import('./cv/CvMain'));
-const PostList = React.lazy(() => import('./PostList'));
-const PagesInterface = React.lazy(() => import('./PagesInterface'));
-
+import {Route, Switch, withRouter} from "react-router-dom"
+import CvMain from './cv/CvMain';
+import PostList  from './PostList';
+import PagesInterface from './PagesInterface';
 
 function PayloadBody(props)
 {
-if(props.type===1){
-  return(<div><CvMain></CvMain></div>)
-}
-else if(props.type===2){
-  return(<div><PostList filterText = {props.filterText}
-                        routeToPage = {props.routeToPage}>
-              </PostList></div>)
-}
-else if(props.type===3){
-  return(<div><PagesInterface href={props.href}></PagesInterface></div>)
-}
 
+return(
+<div>
+  <Switch>
+  <Route exact path="/" render={(prop) => <PostList {...prop}
+    filterText = {props.filterText} routeToPage = {props.routeToPage} />}
+        />
+  <Route path="/cv"  render={props => <CvMain {...props} />}
+        />
+      <Route path="/display/:href"
+    render={prop => <PagesInterface {...prop} />}
+      />
+  </Switch>
+</div>)
 }
-
-
-export default PayloadBody;
+export default withRouter(PayloadBody);
