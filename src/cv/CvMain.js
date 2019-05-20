@@ -19,7 +19,7 @@ function CvMain(props) {
               lg={{ size: 2, offset: 0 }}
               xl={{ size: 2, offset: 1 }}
             >
-              <Scrollspy
+              <Scrollspy basename={process.env.PUBLIC_URL}
                 offset={-100}
                 items={[
                   "PersonalInfo",
