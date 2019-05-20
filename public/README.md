@@ -233,7 +233,15 @@ export default withRouter(BookDetailedView) ;
 )}/>
 ```
 
+### Change basename of the router, so it works on githun Pages
+https://medium.com/@Dragonza/react-router-problem-with-gh-pages-c93a5e243819
+https://github.com/facebook/create-react-app/issues/1765#issuecomment-327615099
 
+``` javascript
+<BrowserRouter basename={process.env.PUBLIC_URL}>
+  {/* routes */}
+</BrowserRouter>
+```
 
 ## Libraries I have used:
 https://reactjs.org/
