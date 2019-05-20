@@ -207,6 +207,33 @@ const Button = () => (
   )} />
 )
 ```
+### Router parameters :id
+https://stackoverflow.com/questions/45468837/get-path-params-in-react-router-v4
+
+``` javascript
+import {withRouter} from 'react-router';
+
+class BookDetailedView extends React.Component {
+    render() {
+        var id = this.props.match.params.id
+
+
+    }
+}
+export default withRouter(BookDetailedView) ;
+```
+
+``` javascript
+<Route path="/details/:id" render={({match}) => (
+          <BookDetailedView
+            bookStateUpdated = {this.bookStateUpdated}
+            book = {this.state.books}
+            id={match.params.id}
+          />
+)}/>
+```
+
+
 
 ## Libraries I have used:
 https://reactjs.org/
