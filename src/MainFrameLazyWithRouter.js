@@ -11,7 +11,7 @@ function MainFrameLazyWithRouter(props) {
     return (
       <div id="topdiv">
         <Suspense fallback={<div>Loading...</div>}>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <MainFrame></MainFrame>
         </Router>
         </Suspense>
