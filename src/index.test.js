@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainFrame from './MainFrame';
+import MainFrameLazyWithRouter from './MainFrameLazyWithRouter';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<MainFrame />, div);
+  ReactDOM.render(<MainFrameLazyWithRouter />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
