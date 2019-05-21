@@ -242,6 +242,8 @@ https://github.com/facebook/create-react-app/issues/1765#issuecomment-327615099
   {/* routes */}
 </BrowserRouter>
 ```
+### The SPA (Single Page Application) subpages redirecting to 404 issue on github.io pages
+https://github.com/rafrex/spa-github-pages
 
 ## Libraries I have used:
 https://reactjs.org/
