@@ -233,7 +233,7 @@ export default withRouter(BookDetailedView) ;
 )}/>
 ```
 
-### Change basename of the router, so it works on githun Pages
+### Change basename of the router, so it works on github Pages
 https://medium.com/@Dragonza/react-router-problem-with-gh-pages-c93a5e243819
 https://github.com/facebook/create-react-app/issues/1765#issuecomment-327615099
 
@@ -244,6 +244,24 @@ https://github.com/facebook/create-react-app/issues/1765#issuecomment-327615099
 ```
 ### The SPA (Single Page Application) subpages redirecting to 404 issue on github.io pages
 https://github.com/rafrex/spa-github-pages
+
+### Default value for object attributes in Javascript
+https://stackoverflow.com/questions/6600868/set-default-value-of-javascript-object-attributes
+
+``` javascript
+var handler = {
+  get: function(target, name) {
+    return target.hasOwnProperty(name) ? target[name] : 42;
+  }
+};
+
+var p = new Proxy({}, handler);
+
+p.answerToTheUltimateQuestionOfLife; //=> 42
+
+```
+### React router handling 404
+https://tylermcginnis.com/react-router-handling-404-pages/
 
 ## Libraries I have used:
 https://reactjs.org/

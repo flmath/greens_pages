@@ -42,6 +42,7 @@ class MainFrame extends React.Component {
           <PayloadBody type = {this.props.location.pathname}
                        filterText = {this.state.filterText}
                        routeToPage = {this.routeToPage.bind(this)}
+                       handleStateChange = {this.switchState.bind(this)}
                        ></PayloadBody>
       </div>
       );

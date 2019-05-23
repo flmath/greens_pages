@@ -329,4 +329,8 @@ body::after {
   background-blend-mode:soft-light;
 }
 
+#empty_page{
+    background-color: rgba(90,199,249);
+    background-image: none;}
+
 #empty_scroll_postlist { padding-bottom: 60vh;}

@@ -6,7 +6,7 @@ function nextPayloadType(currentType)
   // 1 -> 2, 2-> 1, 3 -> 2
   // CV -> List, List -> CV,  Subpage -> List
   const stateMap = {'/cv':'/','/':'/cv','/display':'/'};
-  return stateMap[currentType]
+  return (stateMap.hasOwnProperty(currentType) ? stateMap[currentType] : '/');
 }
 
 
