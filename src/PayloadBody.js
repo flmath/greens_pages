@@ -14,12 +14,12 @@ return(
   <Route exact path="/" render={(prop) => <PostList {...prop}
     filterText = {props.filterText} routeToPage = {props.routeToPage} />}
         />
-  <Route path="/cv"  render={props => <CvMain {...props} />}
+  <Route exact path="/cv"  render={props => <CvMain {...props} />}
         />
-      <Route path="/display/:href"
+      <Route exact path="/display/:href"
     render={prop => <PagesInterface {...prop} />}
       />
-    <Route render={prop => <NoMatch {...prop} handleStateChange = {props.handleStateChange}/> } />
+    <Route render={prop => <NoMatch {...prop}/> } />
   </Switch>
 </div>)
 }
