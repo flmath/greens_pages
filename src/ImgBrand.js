@@ -1,7 +1,7 @@
 import React from 'react';
 
-import brandCv from './pics/penrosecv.png';
-import brandCvAct from './pics/penrosecvact.png';
+import brandCv from './pics/cvguil2.png';
+import brandCvAct from './pics/cvhighg.png';
 import brandList from './pics/penroselist.png';
 import brandListAct from './pics/penroselistact.png';
 
