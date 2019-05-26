@@ -19,5 +19,4 @@ function MainFrameLazyWithRouter(props) {
       );
   }
 
-
 export default MainFrameLazyWithRouter;

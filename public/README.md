@@ -387,7 +387,10 @@ https://pixabay.com/photos/spiral-notebook-notebook-open-3475360/
 https://pixabay.com/photos/chess-metaphor-board-business-315940/
 https://pixabay.com/photos/chess-metaphor-board-business-316657/
 
+https://pixabay.com/vectors/certificate-diploma-award-background-1253260/
 https://pixabay.com/vectors/guilloche-rosette-security-printing-1337833/
+https://pixabay.com/illustrations/spirograph-pattern-design-geometric-1991340/
+
 
 https://pixabay.com/illustrations/fractal-background-digitization-2173803/
 https://pixabay.com/illustrations/black-and-white-background-spiral-2703890/
