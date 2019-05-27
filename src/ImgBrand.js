@@ -1,11 +1,11 @@
 import React from 'react';
 
-import brandCv from './pics/spirographcv.png';
-import brandCvAct from './pics/spirographcvact.png';
-import brandList from './pics/spirographlist.png';
-import brandListAct from './pics/spirographlistact.png';
-import brandNone from './pics/spirographlist.png';
-import brandNoneAct from './pics/spirographlistact.png';
+import brandCv from './pics/penrosecv.png';
+import brandCvAct from './pics/penrosecvact.png';
+import brandList from './pics/penroselist.png';
+import brandListAct from './pics/penroselistact.png';
+import brandNone from './pics/penroselist.png';
+import brandNoneAct from './pics/penroselistact.png';
 import {nextPayloadType} from './SupportFunctions'
 
 class ImgBrand extends React.Component{

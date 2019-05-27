@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Navbar, NavbarBrand,Form, Input, InputGroup, Nav, NavItem, NavLink, InputGroupAddon, Button, ButtonGroup} from 'reactstrap';
+import {Navbar, NavbarBrand,Form, Input} from 'reactstrap';
 import ImgBrand from './ImgBrand';
 
 function MainNavbar(props){
@@ -11,31 +11,15 @@ function MainNavbar(props){
       return (
       <div>
       <Navbar id="navbar">
-
-
       <Form id="searchForm">
-
-        <InputGroup>
- <InputGroupAddon addonType="prepend">
-          
-                <NavLink href="/">Articles list</NavLink>
-
-            </InputGroupAddon>
-
-              <InputGroupAddon addonType="prepend">
-
-              <NavLink href="/cv">Web CV</NavLink>
-
-
-  </InputGroupAddon>
-
-
       <Input type="text" name={null} id="postSearchInput" placeholder="Type tag or title"
           value={filterText}  onChange={handleInput}
          />
-            </InputGroup>
-
       </Form>
+        <NavbarBrand className="ml-auto">
+            <ImgBrand handleStateChange = {handleStateChange}
+                      type = {type}></ImgBrand>
+        </NavbarBrand>
       </Navbar>
       </div>
       );
