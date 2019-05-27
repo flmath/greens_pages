@@ -269,6 +269,9 @@ p.answerToTheUltimateQuestionOfLife; //=> 42
 ### React router handling 404
 https://tylermcginnis.com/react-router-handling-404-pages/
 
+### Crazy error 'Cannot read property 'toLowerCase' of undefined'
+https://stackoverflow.com/questions/55212280/npm-run-build-failed-to-compile-cannot-read-property-tolowercase-of-undefi
+
 ## Libraries I have used:
 https://reactjs.org/
 https://reactstrap.github.io
