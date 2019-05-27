@@ -51,12 +51,8 @@ div section {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    background-image: url(../pics/guil.png);
     background-position: center right;
-    background-size: contain;
-    background-repeat: repeat-y;
-    background-blend-mode:overlay;
-}
+  }
 
 /* Container around content */
 .container_leafs {
@@ -126,30 +122,25 @@ div section {
 /* The actual content */
 .container_leafs div.content {
     font-size: var(--desc-font-size);
-    padding: 20px 30px;
-    background-position: center center;
-    background-image: url(../pics/spiral.png);
-    background-size: contain;
-    background-repeat: repeat;
-    background-blend-mode:hue;
+    padding: 0px 0px 20px 0px;
     background-color: rgba(228,235,244,.85);
     position: relative;
     border-radius: 6px;
 }
-
+.container_leafs div.content p{
+    font-size: var(--desc-font-size);
+    padding: 0px 20px 0px 20px;
+    background-color: rgba(228,235,244,.85);
+    position: relative;
+    border-radius: 6px;
+}
 .container_leafs div.content h2 {
     font-weight: 600;
+    padding: 10px 20px 10px 20px;
     font-size: var(--bigger-font-size);
-    background-color: rgba(225,225,225,.85);
-    background-image: url(../pics/guil.png);
-    background-position: center right;
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-blend-mode:lighten;
-
-
-
-    color: #111111;
+    background-clip:padding-box;
+    background-color: var(--main-color);
+    color: white;
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media all and (max-width: 600px) {

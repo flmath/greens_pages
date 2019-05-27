@@ -113,6 +113,12 @@ componentDidUpdate(){
  }
 }
 ```
+### React non breaking space
+https://www.javascriptstuff.com/how-whitespace-works-in-jsx/
+
+```
+<div>&nbsp;•Hello•World</div>
+```
 
 ### React block default behaviors connected to listeners
 https://hashnode.com/post/why-do-you-write-eventpreventdefault-in-react-cjdznf1el0atom3wt831c2m9o
