@@ -1,7 +1,7 @@
 import React from 'react';
 import { ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import {Container} from 'reactstrap';
-import json_data from './postlist.json';
+import json_data from '../../../postlist.json';
 
 function PostList(props){
       const filtered_data = json_data.the_list.filter(filterPostFun(props.filterText));

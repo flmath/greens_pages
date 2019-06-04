@@ -1,11 +1,9 @@
 import React from 'react';
-
-import PayloadBody from './PayloadBody'
 import { withRouter } from "react-router-dom"
-
 import {nextPayloadType} from './SupportFunctions'
 
-const MainNavbar = React.lazy(() => import('./MainNavbar'));
+import PayloadBody from './payload_body/PayloadBody'
+const MainNavbar = React.lazy(() => import('./main_navbar/MainNavbar'));
 
 class MainFrame extends React.Component {
   constructor(props){
@@ -18,7 +16,6 @@ class MainFrame extends React.Component {
     }
 
   routeToPage(new_href){
-    console.log("/display" + new_href)
     this.props.history.push("/display" + new_href)
   }
 

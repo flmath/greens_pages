@@ -1,10 +1,10 @@
 {"the_list" :[
-  {"id": 1, "title" : "Matrixes in erlang", "is_address_relative": false, "tags": ["erlang", "efficiency", "jupyter", "mathematics" ],
+  {"id": 1, "title" : "Matrixes in erlang", "is_address_public": true, "tags": ["erlang", "efficiency", "jupyter", "mathematics" ],
     "href": "/matrix_implementations_pt1.html" },
-  {"id": 2, "title": "Matrixes in erlang: growth projections ", "is_address_relative": false,
+  {"id": 2, "title": "Matrixes in erlang: growth projections ", "is_address_public": true,
     "tags": ["growth","projections","erlang", "efficiency", "jupyter", "mathematics" ],
       "href": "/growth_projections.html" },
-  {"id": 3, "title": "Empirical growth testing", "is_address_relative": true,
+  {"id": 3, "title": "Empirical growth testing", "is_address_public": true,
         "tags": ["growth","projections", "efficiency", "jupyter", "mathematics"],
           "href": "/Empirical_growth_testing.html" }
 ]}

@@ -162,6 +162,7 @@ h1.my_cv_header, h2.my_cv_header {
   font-weight: 700;
   color: white;
   text-indent: 5px;
+  padding-bottom: 5px;
   background-color: var(--main-color);
 }
 

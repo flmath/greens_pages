@@ -1,6 +1,6 @@
 import React from 'react';
-
 import {Navbar, NavbarBrand,Form, Input} from 'reactstrap';
+
 import ImgBrand from './ImgBrand';
 
 function MainNavbar(props){

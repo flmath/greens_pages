@@ -4,7 +4,7 @@ import "./css/theme.css";
 import "./css/leaf.css";
 
 import { BrowserRouter as Router } from "react-router-dom"
-import MainFrame from './MainFrame';
+import MainFrame from './main_frame/MainFrame';
 
 
 function MainFrameLazyWithRouter(props) {

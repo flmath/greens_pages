@@ -1,10 +1,10 @@
 import React from 'react';
 import {Container, Jumbotron} from 'reactstrap';
 import { withRouter} from "react-router-dom"
-import {nextPayloadType} from './SupportFunctions'
+import {nextPayloadType} from '../../SupportFunctions'
 
 class NoMatch extends React.Component {
-  
+
   switchState() {
                     const theType = nextPayloadType(this.props.location.pathname)
                     this.props.history.push(theType)
