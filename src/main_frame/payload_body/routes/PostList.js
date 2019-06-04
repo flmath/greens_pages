@@ -16,9 +16,9 @@ function PostList(props){
                        routeToPage  = {route_to_page}
             ></RenderPosts>
       </ListGroup>
-      <div id="empty_scroll_postlist"><br /></div>
+      <div id="empty_scroll_postlist"></div>
         </Container>
-        <div id="empty_scroll"><br /></div>
+    <br />
         </div>
       );
 

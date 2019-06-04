@@ -9,11 +9,14 @@
   --hover-color: rgba(155,199,213,1);
 }
 a.nav-link{position: relative; display: block;}
-.my_cv_container{position: relative;}
+.my_cv_container{position: relative; }
 .my_cv_header_container{position: relative;}
 .my_transparent_container{position: relative;}
 .my_cv_header_container_row{}
 .cv_img{visibility: hidden; position: fixed;}
+
+body{ overflow-y: hidden;}
+#payload_body{overflow-y: auto; height: 100vh;}
 
 #navbar{position: fixed; top: 0px; height: 50px; width: 100%; z-index: 2}
 #skip_absolute_header{ padding-top: 50px;}
@@ -23,13 +26,13 @@ body::after { top: 50px;}
 #postSearchInput{height: 16px;  font-size: 12px}
 #cv_static_image{position: fixed;  width: 30px;  height: 30px; top: 5px; left: 85%; }
 #cv_image{position: fixed;  width: 30px;  height: 30px; top: 5px; left: 5%;}
-#the_body{ position: relative; top: 0px; left: 20%; width: 70%; z-index: 0}
+#the_body{ position: relative; top: 0px; left: 20%; width: 70%; z-index: 0; overflow-y: scroll;}
 body::after { bottom: -30px;}
 #empty_scroll { padding-bottom: 40px;}
 div section { padding-top: 30px;}
 .ColOffClass {visibility: hidden;}
 #navform{position: relative; width: 90%; }
-#iframe_routed{position: relative; width: 100%; height: 90vh; padding-bottom: 0px}
+#iframe_routed{position: relative; width: 100%; height: 90vh; padding-bottom: 0px;}
 }
 
 /* Small bootstraps sm*/
@@ -119,6 +122,7 @@ a.nav-link{width: 150%; left: -18%;}
 #cvmainbody{
     width: 70%;
     transform: translate(30%, 0%);
+
   }
 #skip_absolute_header{}
 body::after { top: 100px;}

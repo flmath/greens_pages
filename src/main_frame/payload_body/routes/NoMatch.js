@@ -16,7 +16,7 @@ render(){
           <div id="skip_absolute_header"><br /></div>
 
           <Container className="my_postlist_container">
-            <Jumbotron   id="empty_page">
+            <Jumbotron id="empty_page">
               <h2 className="display-3">This page is designed to be empty. </h2>
             </Jumbotron>
           </Container>

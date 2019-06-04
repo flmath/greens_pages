@@ -10,7 +10,7 @@ function PayloadBody(props)
 {
 
 return(
-<div>
+<div id="payload_body">
   <Switch>
   <Route exact path="/" render={(prop) => <PostList {...prop}
     filterText = {props.filterText} routeToPage = {props.routeToPage} />}

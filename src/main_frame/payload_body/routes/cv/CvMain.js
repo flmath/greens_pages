@@ -39,7 +39,7 @@ function CvMain(props) {
                 <NavLink href="#Interests">Interests</NavLink>
               </Scrollspy>
             </Col>
-            <Col>
+            <Col id = "cvmain">
               <CvText> </CvText>
             </Col>
           </Row>
