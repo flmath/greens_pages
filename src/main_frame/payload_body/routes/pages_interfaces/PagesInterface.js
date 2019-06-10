@@ -11,13 +11,13 @@ function PagesInterface(props) {
   const thePost = json_data.the_list.find(checkPost)
 
    if(thePost){
+    if(thePost.is_address_public===true)
             return(
             <PublicPagesInterface postHref={thePost.href.substring(1)}></PublicPagesInterface>)
+    else return(<NoMatch></NoMatch>)
+    }
+       else return(<NoMatch></NoMatch>)
 
-}          else{
-            return(
-            <NoMatch></NoMatch>)
-              }
 }
 
 function createCheckPost(href){
