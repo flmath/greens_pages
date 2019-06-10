@@ -1,10 +1,10 @@
 import React from 'react';
 import {Route, Switch, withRouter} from "react-router-dom"
 
-import CvMain from './routes/cv/CvMain';
-import PostList  from './routes/postlist/PostList';
-import PagesInterface from './routes/pages_interfaces/PagesInterface';
-import NoMatch from './routes/NoMatch';
+const CvMain = React.lazy(() => import('./routes/cv/CvMain'))
+const PostList = React.lazy(() => import('./routes/postlist/PostList'))
+const PagesInterface = React.lazy(() => import('./routes/pages_interfaces/PagesInterface'))
+const NoMatch = React.lazy(() => import('./routes/NoMatch'))
 
 function PayloadBody(props)
 {

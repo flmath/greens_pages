@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom"
 import {nextPayloadType} from './SupportFunctions'
 
 import PayloadBody from './payload_body/PayloadBody'
-const MainNavbar = React.lazy(() => import('./main_navbar/MainNavbar'));
+import MainNavbar from './main_navbar/MainNavbar'
 
 class MainFrame extends React.Component {
   constructor(props){
@@ -35,7 +35,7 @@ class MainFrame extends React.Component {
           </MainNavbar>
 
           <PayloadBody type = {this.props.location.pathname}
-                       filterText = {this.state.filterText}                    
+                       filterText = {this.state.filterText}
                        handleStateChange = {this.switchState.bind(this)}
                        ></PayloadBody>
       </div>
