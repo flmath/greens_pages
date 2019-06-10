@@ -11,13 +11,14 @@ class NoMatch extends React.Component {
                     }
 
 render(){
+      const h2_style = {color: 'white'};
       return (
         <div onClick={this.switchState.bind(this)}>
           <div id="skip_absolute_header"><br /></div>
 
           <Container className="my_postlist_container">
             <Jumbotron id="empty_page">
-              <h2 className="display-3">This page is designed to be empty. </h2>
+              <h2 className="display-3" style={h2_style}>This page is designed to be empty. </h2>
             </Jumbotron>
           </Container>
         <Container className="my_postlist_container">
@@ -28,5 +29,7 @@ render(){
       );
     }
   }
+
+
 
 export default withRouter(NoMatch);

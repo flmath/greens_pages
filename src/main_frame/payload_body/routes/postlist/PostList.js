@@ -2,8 +2,8 @@ import React from 'react';
 import {Container, ListGroup} from 'reactstrap';
 import PostListRow from './PostListRow'
 
-import {filterPostFun} from './SupportFunctions'
-import json_data from '../../../postlist.json';
+import {filterPostFun} from '../SupportFunctions'
+import json_data from '../../../../postlist.json';
 
 function PostList(props){
       const filtered_data = json_data.the_list.filter(filterPostFun(props.filterText));
@@ -26,7 +26,7 @@ function PostList(props){
 function RenderPosts(props){
 const routeToPage = props.routeToPage
 return (
-  
+
 props.filteredData.map((aPost, index)=>
 { return (
 <PostListRow

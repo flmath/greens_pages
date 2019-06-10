@@ -2,8 +2,8 @@ import React from 'react';
 import {Route, Switch, withRouter} from "react-router-dom"
 
 import CvMain from './routes/cv/CvMain';
-import PostList  from './routes/PostList';
-import PagesInterface from './routes/PagesInterface';
+import PostList  from './routes/postlist/PostList';
+import PagesInterface from './routes/pages_interfaces/PagesInterface';
 import NoMatch from './routes/NoMatch';
 
 function PayloadBody(props)

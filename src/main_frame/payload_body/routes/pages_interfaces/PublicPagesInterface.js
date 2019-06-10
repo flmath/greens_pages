@@ -1,7 +1,7 @@
 import React  from 'react';
 import { withRouter} from "react-router-dom"
-import json_data from '../../../postlist.json';
-import NoMatch from './NoMatch';
+import json_data from '../../../../postlist.json';
+import NoMatch from '../NoMatch';
 
 
 function PublicPagesInterface(props) {

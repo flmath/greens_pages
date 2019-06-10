@@ -1,7 +1,6 @@
 import React from 'react';
 import {ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import { withRouter } from "react-router-dom"
-import json_data from '../../../postlist.json';
 
 class PostListRow extends React.Component{
 
