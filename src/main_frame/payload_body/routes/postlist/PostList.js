@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, ListGroup} from 'reactstrap';
+
 import PostListRow from './PostListRow'
 
 import {filterPostFun} from '../SupportFunctions'
@@ -24,7 +25,6 @@ function PostList(props){
   }
 
 function RenderPosts(props){
-const routeToPage = props.routeToPage
 return (
 
 props.filteredData.map((aPost, index)=>
