@@ -13,7 +13,7 @@ return(
 <div id="payload_body">
   <Switch>
   <Route exact path="/" render={(prop) => <PostList {...prop}
-    filterText = {props.filterText} routeToPage = {props.routeToPage} />}
+    filterText = {props.filterText} />}
         />
   <Route exact path="/cv"  render={props => <CvMain {...props} />}
         />

@@ -15,9 +15,7 @@ class MainFrame extends React.Component {
       this.setState({filterText: event.target.value})
     }
 
-  routeToPage(new_href){
-    this.props.history.push("/display" + new_href)
-  }
+
 
   switchState() {
         const theType = nextPayloadType(this.props.location.pathname)
@@ -37,8 +35,7 @@ class MainFrame extends React.Component {
           </MainNavbar>
 
           <PayloadBody type = {this.props.location.pathname}
-                       filterText = {this.state.filterText}
-                       routeToPage = {this.routeToPage.bind(this)}
+                       filterText = {this.state.filterText}                    
                        handleStateChange = {this.switchState.bind(this)}
                        ></PayloadBody>
       </div>
