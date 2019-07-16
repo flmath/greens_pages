@@ -1,5 +1,5 @@
 import React  from 'react';
-import { withRouter} from "react-router-dom"
+import {Route, Switch, withRouter} from "react-router-dom"
 import PublicPagesInterface from "./PublicPagesInterface"
 import json_data from '../../../../postlist.json';
 import NoMatch from '../NoMatch';
@@ -12,9 +12,23 @@ function PagesInterface(props) {
 
    if(thePost){
     if(thePost.is_address_public===true)
-            return(
-            <PublicPagesInterface postHref={thePost.href.substring(1)}></PublicPagesInterface>)
-    else return(<NoMatch></NoMatch>)
+    {
+      return(
+        <PublicPagesInterface postHref={thePost.href.substring(1)}>
+        </PublicPagesInterface>)
+    }
+    else
+    {
+      const ComponentPage = React.lazy(()=> import('../../../../private_pages'+thePost.href))
+      return(
+        <div>
+          <Switch>
+              <Route exact path="/display/:href"
+            render={prop => <ComponentPage {...prop} />}
+              />
+          </Switch>
+        </div>)
+    }
     }
        else return(<NoMatch></NoMatch>)
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, NavbarBrand,Form, Input} from 'reactstrap';
+import {Navbar, NavbarBrand, Form, Input} from 'reactstrap';
 
 import ImgBrand from './ImgBrand';
 
