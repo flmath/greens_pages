@@ -1,9 +1,7 @@
 import React  from 'react';
 import { withRouter} from "react-router-dom"
 import { Table, Row, Col, Container } from 'reactstrap';
-import { Card, CardTitle, CardText, CardHeader, CardBody} from 'reactstrap';
-import { ListGroup, ListGroupItem} from 'reactstrap';
-
+import { Card, CardText, CardHeader, CardBody} from 'reactstrap';
 
 function Recipes(props) {
 
