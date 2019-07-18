@@ -13,7 +13,7 @@ function Recipes(props) {
     <Col xs="12" >
       <Card>
       <CardHeader tag="h3">Banana Oat Pancakes</CardHeader>
-  <Row>  <Col xs="3" ><CardBody>
+  <Row>  <Col xs="12" md="3" ><CardBody>
         <CardText>
           <Table bordered hover >
                   <thead>
@@ -30,7 +30,7 @@ function Recipes(props) {
           </CardText>
         </CardBody>
         </Col>
-        <Col xs="9" >
+        <Col xs="12" md="9" >
 
         <CardBody>
 
