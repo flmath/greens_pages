@@ -1,5 +1,5 @@
 import React from "react";
-import { CvHeader} from "../../main_frame/payload_body/routes/cv/HeadersSupport";
+import { CvShortHeader as CvHeader} from "../../main_frame/payload_body/routes/cv/HeadersSupport";
 import Introduction from "./sections/Introduction";
 import Setup from "./sections/Setup";
 import BasicScenario from "./sections/BasicScenario";
