@@ -9,5 +9,8 @@
           "href": "/Empirical_growth_testing.html" },
   {"id": 4, "title": "Recipes", "is_address_public": false,
                 "tags": ["food", "recipes", "thermomix", "cooking"],
-                  "href": "/Recipes" }
+                  "href": "/Recipes" },
+  {"id": 5, "title": "Erlang dbg use scenarios", "is_address_public": false,
+                "tags": ["erlang", "otp", "dbg", "debugger", "programming", "tracing", "trace"],
+                "href": "/ErlangDBG" }
 ]}

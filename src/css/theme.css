@@ -10,6 +10,7 @@
 }
 a.nav-link{position: relative; display: block;}
 .my_cv_container{position: relative; }
+.my_md_container{position: relative; }
 .my_cv_header_container{position: relative;}
 .my_transparent_container{position: relative;}
 .my_cv_header_container_row{}
@@ -20,6 +21,7 @@ body{ overflow-y: hidden;}
 
 #navbar{position: fixed; top: 0px; height: 50px; width: 100%; z-index: 2}
 #skip_absolute_header{ padding-top: 50px;}
+#skip_absolute_header_margin{ margin-top: 50px;}
 body::after { top: 50px;}
 #navcol{position: fixed; top: 55px; left: 0px; z-index: 1; visibility: collapse;}
 #searchForm{position: fixed; padding-left: 10%; width: 70%; height: 25px; top: 10px;}
@@ -42,6 +44,7 @@ div section { padding-top: 30px;}
     --desc-font-size: 12px;
   }
 .my_cv_container{}
+.my_md_container{}
 .my_cv_header_container{}
 .my_transparent_container{}
 .my_cv_header_container_row{}
@@ -66,10 +69,12 @@ div section { padding-top: 90px;}
     --desc-font-size: 14px;
   }
 .my_cv_container{}
+.my_md_container{}
 .my_transparent_container{}
 .my_cv_header_container_row{}
 #navbar{ height: 100px}
 #skip_absolute_header{ padding-top: 100px;}
+#skip_absolute_header_margin{ padding-top: 100px;}
 body::after { top: 100px;}
 #navcol{ top: 105px; font-size: 10px; }
 #searchForm{padding-left: 18%; height: 120px; padding-top: 20px;}
@@ -80,6 +85,7 @@ body::after { top: 100px;}
 body::after {  bottom: -100px;}
 #empty_scroll { padding-bottom: 350px;}
 div section { padding-top: 100px;}
+
 .ColOffClass {visibility: visible;}
 #iframe_routed{left:5%; width: 90%; height: 90vh};
 }
@@ -93,6 +99,7 @@ div section { padding-top: 100px;}
 a.nav-link{padding: 10px 15px; width: 120%; left: -23%;}
 .my_transparent_container{left: 9%; width: 88%;}
 .my_cv_container{left: 15%; width: 78%;}
+.my_md_container{left: 15%; width: 78%;}
 .my_cv_header_container{left: 15%;}
 .my_cv_header_container_row{width: 80%;}
 .cv_img{visibility: visible; position: relative;}
@@ -116,6 +123,7 @@ div section { padding-top: 100px;}
 a.nav-link{width: 150%; left: -18%;}
 .my_transparent_container{left: 8%; width: 88%;}
 .my_cv_container{left: 15%; width: 78%;}
+.my_md_container{left: 15%; width: 78%;}
 .my_cv_header_container{left: 15%;}
 .my_cv_header_container_row{width: 80%;}
 #navbar{}
@@ -130,7 +138,8 @@ body::after { top: 100px;}
 #the_body{ top: 0px }
 body::after { bottom: -100px;}
 #empty_scroll { padding-bottom: 600px;}
-div section { padding-top: 100px;}}
+div section { padding-top: 100px;}
+}
 
 .ColOffClass {
   position: absolute;
@@ -161,6 +170,18 @@ div section { padding-top: 100px;}}
   text-justify: auto;
   background-position: center center;
 }
+.my_md_container {
+  font-size: var(--desc-font-size);
+  color: rgb(0,0,0);
+  background-color: rgba(228,235,244,.85);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: justify;
+  text-justify: auto;
+  background-position: center center;
+}
 
 h1.my_cv_header, h2.my_cv_header {
   font-weight: 700;
@@ -169,6 +190,7 @@ h1.my_cv_header, h2.my_cv_header {
   padding-bottom: 5px;
   background-color: var(--main-color);
 }
+
 
 p {
     text-indent: 30px;
@@ -277,6 +299,9 @@ body::after {
   background-color: rgb(212,175,55);
   background-position: center right;
 }
+
+.my_md_container p{offset: 0px; text-indent: 0; }
+.my_md_container pre {margin-left: 10px; background-color: rgba(245,245,245,.85);}
 
 #empty_page{
     background-color: var(--main-color);

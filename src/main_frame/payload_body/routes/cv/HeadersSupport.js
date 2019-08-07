@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col} from "reactstrap";
-export function CvHeader(props)
+function CvHeader(props)
 {
   return (
     <div className="my_cv_header_container">
@@ -17,3 +17,22 @@ export function CvHeader(props)
     </div>
 );
 }
+
+function CvShortHeader(props)
+{
+  return (
+    <div className="my_cv_header_container">
+
+      <Row className="my_cv_header_container_row">
+
+      <Col>
+
+      <h2 className="my_cv_header"> {props.children}{" "}</h2>
+      </Col>
+      </Row>
+
+    </div>
+);
+}
+
+export {CvHeader, CvShortHeader}
