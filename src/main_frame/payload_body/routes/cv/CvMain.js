@@ -29,6 +29,7 @@ function CvMain(props) {
                   "Certificates",
                   "Interests"
                 ]}
+
                 currentClassName="active"
               >
                 <NavLink href="#PersonalInfo">Personal Info</NavLink>
