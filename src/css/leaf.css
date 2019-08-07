@@ -46,7 +46,7 @@ div section {
     content: '';
     position: absolute;
     width: 6px;
-    background-color:rgb(75,172,216);
+    background-color:var(--main-color);
     top: 0;
     bottom: 0;
     left: 50%;
