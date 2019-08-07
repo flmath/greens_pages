@@ -15,7 +15,7 @@ function CvText(props) {
         <PersonalInfo />
       </section>
       <section id="Skills">
-      <CvHeader>Skills</CvHeader>
+        <CvHeader>Skills</CvHeader>
         <Skills />
       </section>
       <section id="Experience">
@@ -34,7 +34,7 @@ function CvText(props) {
       <CvHeader>Interests</CvHeader>
         <Interests />
       </section>
-      <div id="empty_scroll"><br /></div>
+      <div className="empty_scroll"><br /></div>
     </div>
   );
 }

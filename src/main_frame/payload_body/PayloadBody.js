@@ -10,6 +10,7 @@ function PayloadBody(props)
 {
 
 return(
+<div>
 <div id="payload_body">
   <Switch>
   <Route exact path="/" render={(prop) => <PostList {...prop}
@@ -22,6 +23,7 @@ return(
       />
     <Route render={prop => <NoMatch {...prop}/> } />
   </Switch>
+</div>
 </div>)
 }
 export default withRouter(PayloadBody);

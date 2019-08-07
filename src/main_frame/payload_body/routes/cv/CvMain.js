@@ -30,7 +30,6 @@ function CvMain(props) {
                   "Interests"
                 ]}
                 rootEl="#payload_body"
-
                 currentClassName="active"
               >
                 <NavLink href="#PersonalInfo">Personal Info</NavLink>

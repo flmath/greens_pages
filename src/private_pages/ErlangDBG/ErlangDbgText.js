@@ -16,10 +16,9 @@ import Conclusion from "./sections/Conclusion";
 function ErlangDbgText(props) {
   return (
     <div id = "cvmainbody">
-
-        <section id="Introduction">
+      <section id="Introduction">
       <CvHeader>Introduction</CvHeader>
-        <Introduction />
+        <Introduction  />
       </section>
 
       <section  id="Setup">
@@ -77,7 +76,7 @@ function ErlangDbgText(props) {
         <Conclusion />
       </section>
 
-      <div id="empty_scroll"><br /></div>
+      <div className="empty_scroll"><br /></div>
     </div>
   );
 }

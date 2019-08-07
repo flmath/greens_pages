@@ -11,7 +11,7 @@ function PostList(props){
       window.scrollTo(0, 0)
       return (
         <div>
-        <div id="skip_absolute_header"><br /></div>
+    
     <Container className="my_postlist_container">
       <ListGroup size="lg" className="my_postlist_button_group">
           <RenderPosts filteredData = {filtered_data}

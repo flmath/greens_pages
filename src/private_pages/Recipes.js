@@ -8,7 +8,7 @@ function Recipes(props) {
 
         return(
           <div>
-          <div id="skip_absolute_header"><br /></div>
+          <div className="skip_absolute_header"><br /></div>
           <Container fluid>
             <RecipeRow header="Banana Oat Pancakes"
               ingredients = {["2 fistfulls of oatmeals", "2 eggs", "A banana", "Sunflower oil"]}

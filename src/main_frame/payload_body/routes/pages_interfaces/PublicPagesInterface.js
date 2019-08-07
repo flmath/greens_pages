@@ -6,8 +6,7 @@ function PublicPagesInterface(props) {
 
         return(
           <div>
-            <div id="skip_absolute_header"></div>
-              <iframe id="iframe_routed" title="iframe_router_title"
+                <iframe id="iframe_routed" title="iframe_router_title"
                 src={process.env.PUBLIC_URL + "/pages/" +  props.postHref}></iframe>
             </div>)}
 

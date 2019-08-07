@@ -17,11 +17,18 @@ a.nav-link{position: relative; display: block;}
 .cv_img{visibility: hidden; position: fixed;}
 
 body{ overflow-y: hidden;}
-#payload_body{overflow-y: auto; height: 100vh;}
+#payload_body{height: 100vh; width: 100%; top: 30px; position: fixed; overflow-y: scroll;
+  background-image: url('../pics/escher_cropped_small60.jpeg');
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /*background-position: 65%;*/
+  background-repeat:no-repeat;
+  background-size:cover;
+ }
+#navbar{position: fixed; top: 0px; height: 50px; width: 100%; z-index: 8;}
 
-#navbar{position: fixed; top: 0px; height: 50px; width: 100%; z-index: 2}
-#skip_absolute_header{ padding-top: 50px;}
-#skip_absolute_header_margin{ margin-top: 50px;}
+.skip_absolute_header{ height: 0px;}
+.skip_absolute_header_margin{ margin-top: 30px;}
 body::after { top: 50px;}
 #navcol{position: fixed; top: 55px; left: 0px; z-index: 1; visibility: collapse;}
 #searchForm{position: fixed; padding-left: 10%; width: 70%; height: 25px; top: 10px;}
@@ -30,8 +37,8 @@ body::after { top: 50px;}
 #cv_image{position: fixed;  width: 30px;  height: 30px; top: 5px; left: 5%;}
 #the_body{ position: relative; top: 0px; left: 20%; width: 70%; z-index: 0; overflow-y: scroll;}
 body::after { bottom: -30px;}
-#empty_scroll { padding-bottom: 40px;}
-div section { padding-top: 30px;}
+.empty_scroll { padding-bottom: 40px;}
+div section { /*padding-top: 30px;*/}
 .ColOffClass {visibility: hidden;}
 #navform{position: relative; width: 90%; }
 #iframe_routed{position: relative; width: 100%; height: 90vh; padding-bottom: 0px;}
@@ -48,8 +55,9 @@ div section { padding-top: 30px;}
 .my_cv_header_container{}
 .my_transparent_container{}
 .my_cv_header_container_row{}
-#navbar{height: 90px}
-#skip_absolute_header{ padding-top: 90px;}
+#payload_body{top: 90px;}
+#navbar{height: 90px;}
+.skip_absolute_header{ padding-top: 90px;}
 body::after {}
 #navcol{}
 #searchForm{padding-left: 17%; width: 80%; height: 120px; top: 0px; padding-top: 15px;}
@@ -59,8 +67,8 @@ body::after {}
 #navcol{ top: 95px; width: 20%}
 #the_body{top: 0px}
 body::after { bottom: -90px;}
-#empty_scroll { padding-bottom: 95px;}
-div section { padding-top: 90px;}
+.empty_scroll { padding-bottom: 95px;}
+div section {  /*padding-top: 90px;*/}
 }
 /* Medium devices (tablets, 768px and up) bootstraps md*/
 @media (min-width: 768px) {
@@ -72,9 +80,10 @@ div section { padding-top: 90px;}
 .my_md_container{}
 .my_transparent_container{}
 .my_cv_header_container_row{}
-#navbar{ height: 100px}
-#skip_absolute_header{ padding-top: 100px;}
-#skip_absolute_header_margin{ padding-top: 100px;}
+#payload_body{top: 100px;}
+#navbar{ height: 100px;}
+.skip_absolute_header{ padding-top: 100px;}
+.skip_absolute_header_margin{ padding-top: 100px;}
 body::after { top: 100px;}
 #navcol{ top: 105px; font-size: 10px; }
 #searchForm{padding-left: 18%; height: 120px; padding-top: 20px;}
@@ -83,8 +92,8 @@ body::after { top: 100px;}
 #cv_image{width: 90px;  height: 90px; top: 0px; left: 3%;}
 #the_body{  }
 body::after {  bottom: -100px;}
-#empty_scroll { padding-bottom: 350px;}
-div section { padding-top: 100px;}
+.empty_scroll { padding-bottom: 350px;}
+div section {  /*padding-top: 100px;*/}
 
 .ColOffClass {visibility: visible;}
 #iframe_routed{left:5%; width: 90%; height: 90vh};
@@ -103,15 +112,16 @@ a.nav-link{padding: 10px 15px; width: 120%; left: -23%;}
 .my_cv_header_container{left: 15%;}
 .my_cv_header_container_row{width: 80%;}
 .cv_img{visibility: visible; position: relative;}
+#payload_body{}
 #navbar{}
-#skip_absolute_header{}
+.skip_absolute_header{}
 #navcol{visibility: visible; width: 20%;}
 #cv_static_image{width: 110px;  height: 110px; top: -10px}
 #cv_image{width: 110px;  height: 110px; top: -10px}
 #the_body{ top: 0px }
 body::after { bottom: -100px;}
-#empty_scroll { padding-bottom: 450px;}
-div section { padding-top: 100px;}
+.empty_scroll { padding-bottom: 450px;}
+div section { }
 
 }
 /* Extra large devices (large desktops, 1200px and up) bootstraps xl*/
@@ -126,19 +136,20 @@ a.nav-link{width: 150%; left: -18%;}
 .my_md_container{left: 15%; width: 78%;}
 .my_cv_header_container{left: 15%;}
 .my_cv_header_container_row{width: 80%;}
+#payload_body{}
 #navbar{}
 #cvmainbody{
     width: 70%;
     transform: translate(30%, 0%);
 
   }
-#skip_absolute_header{}
+.skip_absolute_header{}
 body::after { top: 100px;}
 #navcol{ top: 105px; width: 15%;}
 #the_body{ top: 0px }
 body::after { bottom: -100px;}
-#empty_scroll { padding-bottom: 600px;}
-div section { padding-top: 100px;}
+.empty_scroll { padding-bottom: 600px;}
+div section { }
 }
 
 .ColOffClass {

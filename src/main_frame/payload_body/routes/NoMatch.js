@@ -14,7 +14,7 @@ render(){
       const h2_style = {color: 'white'};
       return (
         <div onClick={this.switchState.bind(this)}>
-          <div id="skip_absolute_header"><br /></div>
+      
 
           <Container className="my_postlist_container">
             <Jumbotron id="empty_page">
@@ -22,7 +22,7 @@ render(){
             </Jumbotron>
           </Container>
         <Container className="my_postlist_container">
-          <div id="empty_scroll"><br /></div>
+          <div className="empty_scroll"><br /></div>
         </Container>
 
        </div>
