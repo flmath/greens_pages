@@ -7,8 +7,6 @@ import Scrollspy from "react-scrollspy";
 
 
 function CvMain(props) {
-    console.log("Public URL")
-    console.log(process.env.PUBLIC_URL)
     return (
       <div id="cvmaindiv">
         <Container fluid id="cvcontainer">
@@ -31,6 +29,7 @@ function CvMain(props) {
                   "Certificates",
                   "Interests"
                 ]}
+                rootEl="#payload_body"
 
                 currentClassName="active"
               >

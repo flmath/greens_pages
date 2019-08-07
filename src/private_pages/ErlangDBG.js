@@ -36,6 +36,7 @@ function ErlangDBG(props) {
                     "Conclusion"
                 ]}
                 currentClassName="active"
+                rootEl="#payload_body"
               >
                 <NavLink href="#Introduction">Introduction</NavLink>
                 <NavLink href="#Setup">Setup</NavLink>
