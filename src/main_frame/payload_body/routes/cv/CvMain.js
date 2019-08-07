@@ -7,6 +7,8 @@ import Scrollspy from "react-scrollspy";
 
 
 function CvMain(props) {
+    console.log("Public URL")
+    console.log(process.env.PUBLIC_URL)
     return (
       <div id="cvmaindiv">
         <Container fluid id="cvcontainer">
@@ -19,7 +21,7 @@ function CvMain(props) {
               lg={{ size: 2, offset: 0 }}
               xl={{ size: 2, offset: 1 }}
             >
-              <Scrollspy basename={process.env.PUBLIC_URL}
+              <Scrollspy basename={process.env.PUBLIC_URL+'/cv'}
                 offset={-100}
                 items={[
                   "PersonalInfo",
