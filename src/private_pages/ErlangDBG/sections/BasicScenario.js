@@ -54,7 +54,7 @@ const input =
 '```\n'+
 '```erlang\n'+
 ' > tracing_experiments:switch_state()\n'+
-' ok\n'+
+' ok \n'+
 '```\n'+
 
 'So we can see additional printout for `traced_function/2`.\n'+
