@@ -113,6 +113,11 @@ componentDidUpdate(){
  }
 }
 ```
+
+### React + Markdown
+react-markdown + react-syntax-highlighter prism:
+https://medium.com/young-developer/react-markdown-code-and-syntax-highlighting-632d2f9b4ada
+
 ### React non breaking space
 https://www.javascriptstuff.com/how-whitespace-works-in-jsx/
 

@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from 'react-markdown';
+import CodeBlock from "../CodeBlock";
 
 export default function Timestamps(props) {
 
@@ -41,7 +42,7 @@ const input =
 
   return (
     <div className="my_md_container">
-    <ReactMarkdown source={input} />
+      <ReactMarkdown source={input} renderers={{ code: CodeBlock }}/>
     </div>
   );
 }

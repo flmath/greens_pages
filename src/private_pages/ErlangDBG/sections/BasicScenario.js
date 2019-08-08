@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from 'react-markdown';
+import CodeBlock from "../CodeBlock";
 
 const input =
 'Lets start with a basic scenario. I will omit some of the messages printed out by the shell for clarity.\n'+
@@ -80,7 +81,7 @@ export default function BasicScenario(props) {
 
   return (
     <div className="my_md_container">
-     <ReactMarkdown source={input} />
+     <ReactMarkdown source={input} renderers={{ code: CodeBlock }}/>
     </div>
   );
 }

@@ -22,7 +22,7 @@ function CvShortHeader(props)
 {
   return (
     <div className="my_cv_header_container">
-
+<br />
       <Row className="my_cv_header_container_row">
 
       <Col>
