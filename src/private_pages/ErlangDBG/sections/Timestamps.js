@@ -5,8 +5,8 @@ import CodeBlock from "../CodeBlock";
 export default function Timestamps(props) {
 
 const input =
-'Lets retrieve timestamps of entering and leaving the function.\n'+
-'To get them need to add another two flags in `dbg:p/2`, the `strict_monotonic_timestamp` and `return_to`\n'+
+'Let us retrieve timestamps of entering and leaving the function.\n'+
+'To get them to need to add another two flags in `dbg:p/2`, the `strict_monotonic_timestamp`, and `return_to`\n'+
 
 '```erlang\n'+
 ' > dbg:p(all,[call, strict_monotonic_timestamp, return_to]),\n'+

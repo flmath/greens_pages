@@ -5,8 +5,8 @@ import CodeBlock from "../CodeBlock";
 export default function Cleanup(props) {
 
 const input =
-'Lets purge the tracing from the system.\n'+
-'First clean up the process flags.\n'+
+'Let us purge the tracing from the system.\n'+
+'First, clean up the process flags.\n'+
 '```erlang\n'+
 ' > dbg:p(all,clear).\n'+
 '```\n'+

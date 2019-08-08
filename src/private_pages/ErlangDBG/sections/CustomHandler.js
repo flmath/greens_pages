@@ -8,11 +8,11 @@ const input =
 
 'The problem with all of the command above is, '+
 'that all the messages are printed out to the shell. What '+
-'in case of tracing very active function ends up blocking the shell by spamming it with continous unreadable amount of printouts.\n'+
+'in case of tracing very active function ends up blocking the shell by spamming it with a continuous unreadable amount of printouts.\n'+
 
 'The classic example provided on https://massemanet.github.io/eper/redbug\n'+
 'is: \n'+
-'(CAUTION: it will hang the shell, run it in seperate only to see how it looks like).\n'+
+'(CAUTION: it will hang the shell, run it in separate only to see how it looks like).\n'+
 '```erlang\n'+
 ' > dbg:tracer(),dbg:p(all,[m]).\n'+
 ' {ok,[{matched,nonode@nohost,71}]}\n'+
@@ -25,14 +25,14 @@ const input =
 
 'Since we consider here scenario with limited options '+
 '(otherwise it is just better to install one of the mentioned frameworks), we will use the process case. '+
-'In that scenario the second argument of the `dbg:trace/2` has form of tuple: `{Fun, InitData}`.'+
-'The Fun is function that takes two arguments. '+
-'The first is received message and the second is the accumulator returned from previous iteration. '+
-'The `InitData` is a starting value of the accumulator.'+
-'In other words it works like `lists:foldl/3` with difference that instead input list we process received trace messages.\n'+
+'In that scenario, the second argument of the `dbg:trace/2` has a form of a tuple: `{Fun, InitData}`. '+
+'The Fun is a function that takes two arguments. '+
+'The first is the received message and the second is the accumulator returned from the previous iteration. '+
+'The `InitData` is a starting value of the accumulator. '+
+'In other words, it works like `lists:foldl/3` with the difference that instead input list we process received trace messages.\n'+
 
-'Lets start with a Fun that will assure that dbg will stop after receiving exactly one message, '+
-'eliminating possibility that we hang the shell by flooding it with a continuous stream of messages.\n'+
+'Let us start with a Fun that will assure that dbg will stop after receiving exactly one message, '+
+'eliminating the possibility that we hang the shell by flooding it with a continuous stream of messages.\n'+
 '\n'+
 '```erlang\n'+
 ' > Fun = fun(X, Acc) ->\n'+

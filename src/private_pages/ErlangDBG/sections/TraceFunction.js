@@ -5,8 +5,8 @@ import CodeBlock from "../CodeBlock";
 export default function TraceFunction(props) {
 
 const input =
-'Tracing all functions in a module is sometimes to much for printout readability.\n'+
-'Fortunately it is easy to narrow tracing to a specific function. Lets trace `traced_function/2`. First lets use `dbg:tp`\n'+
+'Tracing all functions in a module is sometimes too much for printout readability.\n'+
+'Fortunately, it is easy to narrow tracing to a specific function. Lets trace `traced_function/2`. First, let us use `dbg:tp`\n'+
 '```erlang\n'+
 ' > dbg:tp({tracing_experiments, traced_function, 2},[]),\n'+
 ' > tracing_experiments:switch_state().\n'+                 

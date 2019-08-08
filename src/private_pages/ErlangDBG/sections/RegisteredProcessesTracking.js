@@ -5,7 +5,7 @@ import CodeBlock from "../CodeBlock";
 export default function RegisteredProcessesTracking(props) {
 
 const input =
-'If system consists of many OTP processes that are handled \n'+
+'If the system consists of many OTP processes that are handled \n'+
 'with special messages and the process we are interested in \n'+
 'is registered it is worth to narrow our search by tracing specific process.\n'+
 

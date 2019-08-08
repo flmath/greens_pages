@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import CodeBlock from "../CodeBlock";
 
 const input =
-'Lets start with a basic scenario. I will omit some of the messages printed out by the shell for clarity.\n'+
+'Let us start with a basic scenario. I will omit some of the messages printed out by the shell for clarity.\n'+
 
 '```erlang\n'+
 ' > dbg:tracer(). \n'+
@@ -44,7 +44,7 @@ const input =
 ' (<0.117.0>) call tracing_experiments:module_info()\n'+
 ' {ok,[{matched,nonode@nohost,14}]}\n'+
 '```\n'+
-'Lets see how it works:\n'+
+'Let us see how it works:\n'+
 '```erlang\n'+
 ' > tracing_experiments:switch_state().\n'+
 ' (<0.117.0>) call tracing_experiments:switch_state()\n'+

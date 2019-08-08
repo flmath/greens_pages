@@ -34,7 +34,7 @@ const input =
 ' exit(global:whereis_name(tracing_experiments), normal).\n'+
 ' ...\n'+
 '```\n'+
-'Of course when we are dealing with local processes we should replace \n'+
+'Of course, when we are dealing with local processes we should replace \n'+
 'the `global:whereis_name(ProcessName)` with the `whereis(ProcessName)`.'
 
   return (
