@@ -5,6 +5,7 @@
   "homepage": "https://flmath.github.io/greens_pages/",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "fetch": "^1.1.0",
     "fetchers": "^0.2.1",
     "jquery": "^3.4.1",
     "npm": "^6.10.3",
