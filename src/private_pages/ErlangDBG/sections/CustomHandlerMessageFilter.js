@@ -10,7 +10,7 @@ const input =
 'Let it print the first 2 messages that state number is multiplication of 5:\n'+
 'For clarity lets define trace record in our shell\n'+
 '```erlang\n'+
-'> rd(trace, {pid, type, mfa}).\n'+
+' > rd(trace, {pid, type, mfa}).\n'+
 '```\n'+
 '\n'+
 '```erlang\n'+
