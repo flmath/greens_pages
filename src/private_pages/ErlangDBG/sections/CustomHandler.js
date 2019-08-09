@@ -6,7 +6,7 @@ export default function CustomHandler(props) {
 
 const input =
 
-'The problem with all of the command above is, '+
+'The problem with all of the commands above is, '+
 'that all the messages are printed out to the shell. What '+
 'in case of tracing very active function ends up blocking the shell by spamming it with a continuous unreadable amount of printouts.\n'+
 
