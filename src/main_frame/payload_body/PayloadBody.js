@@ -6,24 +6,20 @@ const PostList = React.lazy(() => import('./routes/postlist/PostList'))
 const PagesInterface = React.lazy(() => import('./routes/pages_interfaces/PagesInterface'))
 const NoMatch = React.lazy(() => import('./routes/NoMatch'))
 
-function PayloadBody(props)
-{
-
+function PayloadBody(props){
 return(
-<div>
 <div id="payload_body">
   <Switch>
   <Route exact path="/" render={(prop) => <PostList {...prop}
     filterText = {props.filterText} />}
         />
-  <Route exact path="/cv"  render={props => <CvMain {...props} />}
-        />
+      <Route exact path="/cv"   render={(props) => <CvMain {...props} />}
+              />
       <Route exact path="/display/:href"
-    render={prop => <PagesInterface {...prop} />}
+        render={prop => <PagesInterface {...prop} />}
       />
     <Route render={prop => <NoMatch {...prop}/> } />
   </Switch>
-</div>
 </div>)
 }
 export default withRouter(PayloadBody);
