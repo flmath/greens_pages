@@ -5,8 +5,29 @@ import ErlangDbgText from "./ErlangDBG/ErlangDbgText";
 import { NavLink } from "reactstrap";
 import Scrollspy from "react-scrollspy";
 
+class ErlangDBG extends React.Component {
+  constructor(props){
+    super(props)
+    this.onHashchange = this.onHashchange.bind(this);
+  }
 
-function ErlangDBG(props) {
+  onHashchange(){
+      const rootEl = document.querySelector("#payload_body")
+      const hashEl =
+        this.props.location.hash ? document.querySelector(this.props.location.hash) : null
+      if(hashEl)
+      hashEl.scrollIntoView()
+      else
+      rootEl.scrollTo(0,0)
+      }
+ componentDidMount(){
+    window.addEventListener('hashchange', this.onHashchange, false);
+    }
+    componentWillUnmount() {
+      window.removeEventListener('hashchange', this.onHashchange, false);
+   }
+
+   render(){
     return (
       <div id="cvmaindiv">
         <Container fluid id="cvcontainer">
@@ -59,6 +80,7 @@ function ErlangDBG(props) {
         </Container>
       </div>
     );
+}
 }
 
 export default ErlangDBG;
