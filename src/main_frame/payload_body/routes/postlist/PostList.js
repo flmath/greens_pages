@@ -8,10 +8,13 @@ import json_data from '../../../../postlist.json';
 
 function PostList(props){
       const filtered_data = json_data.the_list.filter(filterPostFun(props.filterText));
-      window.scrollTo(0, 0)
+      const RootEl = document.querySelector("#payload_body")
+      if(RootEl) RootEl.scrollTo(0, 0)
+      else console.log("Warning: #payload_body not found.")
+
       return (
         <div>
-    
+
     <Container className="my_postlist_container">
       <ListGroup size="lg" className="my_postlist_button_group">
           <RenderPosts filteredData = {filtered_data}
