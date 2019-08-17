@@ -124,6 +124,9 @@ https://www.javascriptstuff.com/how-whitespace-works-in-jsx/
 ```
 <div>&nbsp;•Hello•World</div>
 ```
+### CSS for wrapping in code fences in markdown.
+
+https://stackoverflow.com/questions/41238148/how-to-line-wrap-long-lines-inside-markdown-code-blocks-in-githubgitlab
 
 ### React block default behaviors connected to listeners
 https://hashnode.com/post/why-do-you-write-eventpreventdefault-in-react-cjdznf1el0atom3wt831c2m9o
