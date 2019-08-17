@@ -319,3 +319,7 @@ body::after {
     background-image: none;}
 
 #empty_scroll_postlist { padding-bottom: 60vh;}
+
+code {
+  white-space : pre-wrap !important;
+}
