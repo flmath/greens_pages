@@ -7,9 +7,9 @@ function RecipeRow(props) {
   const instructionList = props.instructions.map((instruction, index) =>
         <tr key={index}>
             <th scope="row">{(index+1).toString()}</th>
-            <td>{instruction} </td>
+            <td dangerouslySetInnerHTML={{__html: instruction}}></td>
         </tr>)
-
+ const note = props.note ? <p dangerouslySetInnerHTML={{__html: props.note }}></p> : ""
         return(
           <div>
   <Row>
@@ -42,8 +42,11 @@ function RecipeRow(props) {
                         {instructionList}
                         </tbody>
                       </Table>
+
               </CardBody>
+
             </Col>
+            {note}
             </Row>
       </Card>
     </Col>
