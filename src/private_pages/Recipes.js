@@ -31,9 +31,39 @@ function Recipes(props) {
                  "Run the thermomix increamentally speed 4, 5, 6, 7, 8 for 30 seconds each.",
                  "Add the cream cheese to Thermomix with speed 4, for 10 seconds."
                 ]}
-            note = {"NOTE: Prefered cream cheese of my wife: "+
+            note = {"NOTE: Prefered cream cheese (I am not paid for this): "+
                     "<a href='http://piatnica.com.pl/en/products/cream-cheeses'>"+
                     "Piatnica cream cheese.</a>"}
+                 >
+            </RecipeRow>
+          </Container>
+  <br/>
+          <Container fluid>
+            <RecipeRow header="Pasta with tomatos sauce"
+              ingredients = {["A small onion", "A clove of garlic", "4 dried tomatos from oil",
+                 "400g of tomato passata", "Pasta", "Parmeggiano"]}
+              instructions = {["Put the onion, garlic and tomatos into a thermomix and stew them (Varoma/3 min/speed 1).",
+                "Clean and cut the zucchini (do not remove the skin). ",
+                 "Add the passata to thermomix and switch the thermomix to 100&deg;C, speed 5 for 5 minutes. ",
+                 "Run the thermomix with speed 4, temperature 100&deg;C for 15 minutes.",
+                 "Meanwhile make the pasta according to instruction on the package.",
+                 "Mix the sauce, pasta and add parmeggiano."
+                ]}
+            note = {"NOTE: Prefered tomatos (I am not paid for this): "+
+                    "<a href='http://wole-ole.pl/en/products/dried-tomatoes-in-oil-with-herbs/'>"+
+                    "Dried Tomatoes	in Oil.</a>"}
+                 >
+            </RecipeRow>
+          </Container>
+  <br/>
+          <Container fluid>
+            <RecipeRow header="Soft boiled eggs"
+              ingredients = {["2 eggs"]}
+              instructions = {["Put eggs into basket, add 500g water, run thermomix (Varoma/10 min/speed 1)."
+                ]}
+            note = {"Reference: "+
+                    "<a href='https://www.recipecommunity.com.au/basics-recipes/boiled-eggs/zw503db9-c84a8-765849-cfcd2-7dqmuw04'>"+
+                    "Australian recipe community.</a>"}
                  >
             </RecipeRow>
           </Container>

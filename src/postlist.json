@@ -7,7 +7,7 @@
   {"id": 3, "title": "Empirical growth testing", "is_address_public": true,
         "tags": ["growth","projections", "efficiency", "jupyter", "mathematics"],
           "href": "/Empirical_growth_testing.html" },
-  {"id": 4, "title": "Recipes", "is_address_public": false,
+  {"id": 4, "title": "Thermomix cooking", "is_address_public": false,
                 "tags": ["food", "recipes", "thermomix", "cooking"],
                   "href": "/Recipes" },
   {"id": 5, "title": "Erlang dbg use scenarios", "is_address_public": false,
