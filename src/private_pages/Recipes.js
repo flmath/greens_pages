@@ -20,7 +20,7 @@ function Recipes(props) {
           <br/>
 
           <Container fluid>
-            <RecipeRow header="Zucchini Crumpet"
+            <RecipeRow header="Zucchini Soup"
               ingredients = {["A small onion", "A clove of garlic", "Olive oil",
                  "A zuccini", "A teaspoon of bouillon powder", "50g of cream cheese"]}
               instructions = {["Put the onion, garlic into a Thermomix and blend them (15s/speed 5).",
@@ -31,7 +31,7 @@ function Recipes(props) {
                  "Run the thermomix increamentally speed 4, 5, 6, 7, 8 for 30 seconds each.",
                  "Add the cream cheese to Thermomix with speed 4, for 10 seconds."
                 ]}
-            note = {"NOTE: Prefered cream cheese (I am not paid for this): "+
+            note = {"NOTE: Prefered cream cheese: "+
                     "<a href='http://piatnica.com.pl/en/products/cream-cheeses'>"+
                     "Piatnica cream cheese.</a>"}
                  >
@@ -49,7 +49,7 @@ function Recipes(props) {
                  "Meanwhile make the pasta according to instruction on the package.",
                  "Mix the sauce, pasta and add parmeggiano."
                 ]}
-            note = {"NOTE: Prefered tomatos (I am not paid for this): "+
+            note = {"NOTE: Prefered tomatos: "+
                     "<a href='http://wole-ole.pl/en/products/dried-tomatoes-in-oil-with-herbs/'>"+
                     "Dried Tomatoes	in Oil.</a>"}
                  >

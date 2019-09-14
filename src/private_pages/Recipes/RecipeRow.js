@@ -46,8 +46,14 @@ function RecipeRow(props) {
               </CardBody>
 
             </Col>
-            {note}
+
+
             </Row>
+          <Row>
+              <Col xs="12" md="9" >
+          {note}
+        </Col>
+        </Row>
       </Card>
     </Col>
   </Row>
