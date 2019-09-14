@@ -23,8 +23,8 @@ class ErlangDBG extends React.Component {
  componentDidMount(){
     window.addEventListener('hashchange', this.onHashchange, false);
     }
-    componentWillUnmount() {
-      window.removeEventListener('hashchange', this.onHashchange, false);
+componentWillUnmount() {
+    window.removeEventListener('hashchange', this.onHashchange, false);
    }
 
    render(){
